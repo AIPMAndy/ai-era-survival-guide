@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 770" role="img" aria-label="算总时间，别只算生成速度" width="1440" height="770">
+<rect width="1440" height="770" fill="#F7F6F1"/>
+<text x="70" y="68" fill="#38675B" font-size="20" font-weight="650" letter-spacing="2" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">AI ERA / FIELD NOTES    03</text>
+<line x1="68" y1="94" x2="1370" y2="94" stroke="#DCE1D8" stroke-width="2"/>
+<text x="70" y="175" fill="#132822" font-size="53" font-weight="700" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">算总时间，别只算生成速度</text>
+<text x="72" y="220" fill="#66716B" font-size="23" font-weight="400" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">统计工作总用时，也记录质量问题。模型越快，未必意味着交付越快。</text>
+<rect x="70" y="287" width="622" height="310" rx="12" fill="#FFFFFF" stroke="#DCE1D8" stroke-width="1.5"/>
+<rect x="744" y="287" width="620" height="310" rx="12" fill="#FFFFFF" stroke="#DCE1D8" stroke-width="1.5"/>
+<text x="101" y="344" fill="#132822" font-size="30" font-weight="700" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">人工基线 / T0</text>
+<text x="780" y="344" fill="#132822" font-size="30" font-weight="700" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">AI 辅助总耗时 / T1</text>
+<text x="105" y="427" fill="#66716B" font-size="26" font-weight="400" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">实际完成时间</text>
+<text x="105" y="490" fill="#66716B" font-size="26" font-weight="400" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">真实错误或返工</text>
+<text x="780" y="427" fill="#66716B" font-size="26" font-weight="400" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">AI 操作 + 人工复核</text>
+<text x="780" y="490" fill="#66716B" font-size="26" font-weight="400" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">再加上返工时间</text>
+<text x="143" y="565" fill="#38675B" font-size="22" font-weight="400" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">每批样本要可比，质量要单独检查</text>
+<text x="840" y="565" fill="#38675B" font-size="22" font-weight="400" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">没有数据就留空，不算假效率</text>
+<line x1="68" y1="714" x2="1370" y2="714" stroke="#DCE1D8" stroke-width="2"/>
+<text x="70" y="747" fill="#66716B" font-size="17" font-weight="400" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">AI 酋长 Andy  /  一张图，只讲清楚一件事</text>
+</svg>

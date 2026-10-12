@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>21-why-change｜AI 时代不被淘汰保姆级指南</title><style>
+:root{--bg:#f7f7f4;--paper:#fff;--ink:#1d2e29;--muted:#627269;--line:#dfe5df;--accent:#376957;--gold:#b28a50}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.85 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}button,select{font:inherit}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}.site-nav{background:#172922;color:#eff4ec;position:relative}.site-nav .wrap{display:flex;align-items:center;justify-content:space-between;min-height:66px;gap:12px;flex-wrap:wrap}.site-nav a{color:#e8eee9}.site-nav .brand{font-size:16px;font-weight:800;text-decoration:none;letter-spacing:.02em}.navlinks{display:flex;gap:20px;font-size:13px}
+.hero{background:#172922;color:#fff;padding-bottom:68px}.hero img.cover{display:block;width:100%;max-width:1060px;max-height:460px;object-fit:cover;margin:0 auto}.hero-inner{padding-top:36px}.eyebrow{font-weight:750;letter-spacing:.16em;color:#b59d7a;font-size:11px;margin:0 0 8px}.hero h1{font-size:clamp(39px,5.6vw,66px);line-height:1.16;letter-spacing:-1.2px;margin:0 0 21px}.hero p{color:#d4ded6;max-width:720px;font-size:17px;margin:0}.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;background:#eae7dc;color:#182e27;border-radius:6px;border:1px solid #eae7dc;padding:11px 21px;font-weight:700;font-size:14px;cursor:pointer;text-decoration:none}.btn.secondary{background:transparent;border-color:#718078;color:#f4f5ef}.btn:hover{text-decoration:none;filter:brightness(.96)}
+section.chapter{border-bottom:1px solid var(--line);padding:51px 0}.chapter h2{font-size:27px;line-height:1.4;margin:5px 0 13px;letter-spacing:-.5px}.subtext{color:var(--muted);max-width:820px;margin:0 0 20px}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.card{border:1px solid var(--line);background:#fff;border-radius:7px;padding:22px;min-height:170px}.card h3{font-size:18px;margin:8px 0}.card p{font-size:14px;color:var(--muted);margin:0}.mini{font-size:12px;font-weight:800;color:var(--gold)}
+.columns{display:grid;grid-template-columns:1fr 1fr;gap:16px}.panel{border:1px solid var(--line);background:white;border-radius:8px;padding:22px}.panel label{font-weight:650;display:block;margin:12px 0 7px}.panel select{width:100%;padding:10px;border:1px solid #cfd9d1;border-radius:6px;background:#fff;color:var(--ink)}.suggestion{margin-top:18px;border-left:3px solid #85a995;padding:15px 17px;background:#f4f7f3;font-size:14px;line-height:1.8}.suggestion p{margin:8px 0}.suggestion strong{display:block;font-size:16px}
+.days{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.day{border:1px solid var(--line);border-radius:7px;padding:17px 19px;display:flex;align-items:flex-start;gap:12px;background:#fff;cursor:pointer}.day.done{border-color:#a2b7a7;background:#f2f7f1}.day input{accent-color:#397c61;margin-top:6px;width:17px;height:17px}.day .day-name{display:block;font-weight:750;margin-bottom:5px}.day .desc{display:block;font-size:13px;color:var(--muted)}.day .donewhen{display:block;font-size:12px;color:#59735d;margin-top:10px}.day-number{color:#b1966c;font-weight:850;font-size:24px;line-height:1.2}.bar{height:9px;background:#e2e7e1;border-radius:20px;overflow:hidden}.bar-fill{height:100%;background:#568e6f;width:0%;transition:width .2s}.progress-line{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:0 0 11px}.muted-link{border:0;background:none;text-decoration:underline;color:#65796b;cursor:pointer;font-size:13px}.note{font-size:13px;color:var(--muted)}
+.resources{display:grid;grid-template-columns:repeat(2,1fr);gap:11px}.resource{padding:17px 20px;border:1px solid var(--line);border-radius:7px;background:white;color:var(--ink);display:block}.resource strong{display:block}.resource span{font-size:13px;color:var(--muted)}footer{color:var(--muted);font-size:13px;padding:32px 0 55px}
+.article-page{max-width:900px;margin:30px auto 60px;background:#fff;border:1px solid #e4e5df;box-shadow:0 15px 55px #1d29210a;padding:52px 61px}.article-page h1{font-size:31px;line-height:1.45;margin:4px 0 24px}.article-page h2{font-size:22px;border-bottom:1px solid var(--line);padding-bottom:11px;margin:54px 0 19px}.article-page h3{font-size:18px;margin:32px 0 12px}.article-page p{line-height:1.95;margin:15px 0 21px}.article-page strong{color:#204c3b}.article-page img{display:block;width:100%;height:auto;margin:24px auto;border:1px solid var(--line)}.article-page pre{overflow:auto;background:#f2f5f2;border:1px solid #dfe6df;padding:18px 20px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.7;font-size:13px}.article-page code{font-size:13px;overflow-wrap:anywhere}.article-page blockquote{margin:20px 0;padding:4px 18px;border-left:3px solid #9caa91;background:#f5f7f4}.article-page table{border-collapse:collapse;width:100%;min-width:600px;font-size:14px}.article-page table td,.article-page table th{border:1px solid #dce3dc;padding:10px;text-align:left;vertical-align:top}.table-wrap{overflow-x:auto;margin:20px 0}.article-page ul,.article-page ol{padding-left:25px}.article-page li{margin:7px 0}
+@media(max-width:750px){.wrap{padding:0 18px}.cards,.columns,.days,.resources{grid-template-columns:1fr}.hero{padding-bottom:43px}.hero img.cover{max-height:none}.hero-inner{padding-top:24px}.chapter h2{font-size:23px}.site-nav .wrap{padding-top:10px;padding-bottom:10px}.navlinks{gap:12px;flex-wrap:wrap}.article-page{border:0;box-shadow:none;margin:0;padding:23px 18px}.article-page h1{font-size:25px}.article-page h2{font-size:20px;margin-top:40px}}
+</style><style>.article-page blockquote{background:#f0f4ef;border-left:3px solid #49715b;padding:7px 19px;margin:16px 0}.article-page pre{background:#f5f6f3;white-space:pre-wrap;overflow-wrap:anywhere}.article-page img{max-width:100%;height:auto}.article-page h2{scroll-margin-top:24px}.article-page h3{scroll-margin-top:24px}.article-page code{overflow-wrap:anywhere}.article-page ol,.article-page ul{padding-left:22px}.article-page a{text-decoration:underline}@media(max-width:650px){.article-page{border:none;margin:0;padding:23px 18px}}</style><style>.article-page .table-scroll{display:block;box-sizing:border-box;width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;margin:16px 0 25px}.article-page .table-scroll>table{width:100%;min-width:600px;margin:0}.article-page{min-width:0}</style></head><body><nav class="site-nav"><div class="wrap"><a class="brand" href="../index.html">AI 时代不被淘汰保姆级指南</a><div class="navlinks"><a href="../article.html">完整攻略</a><a href="../docs/START-HERE.html">按处境开始</a><a href="../lab.html">评分实验</a><a href="../docs/SOURCES.html">资料来源</a><a href="https://metaver.vip/" target="_blank" rel="noopener noreferrer">个人官网</a></div></div></nav><main class="article-page"><article><h1 id="为什么-ai-时代的职业会改变-从企业账本讲清楚">为什么 AI 时代的职业会改变？从企业账本讲清楚</h1>
+<p>这篇是《AI 时代不被淘汰保姆级指南》的证据补充。用企业经营、岗位任务、就业数据三条线解释原因。<strong>行业发生变化有多个因素，不能把每一次裁员都说成 AI 造成。</strong></p>
+<h2 id="一-先从企业算一笔账">一、先从企业算一笔账</h2>
+<p>假设一个运营团队每周要整理几百条公开评价。过去需要人逐条阅读、分类、转成报表。今天一些分类、摘要和排版步骤能用 AI 做。管理者看到变化，至少会考虑三件事：同样人数能处理更多任务；原来分给外包的工作要不要收回来；新招聘时是否需要员工会把 AI 放进流程。</p>
+<p>但企业最终决定取决于<strong>总成本</strong>，包括采购、接入、数据治理、核对、失败返工、客户损失、员工培训。这几项加起来比原来人工贵的时候，公司不一定采用。AI 分类错误导致投诉的企业，可能在试完之后继续保留人工岗位。</p>
+<p>这不是预测。对照两项真实研究就清楚：NBER 的客服现场研究观察到效率提高，METR 在 2025 年熟练开源开发任务上却观察到完成时间变长。<strong>技术在不同任务上的效果差异很大。</strong><a href="https://www.nber.org/papers/w31161">客服研究</a> · <a href="https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/">开发者研究</a></p>
+<h2 id="二-重复步骤更容易被重新定价-整份工作却有很多看不见的部分">二、重复步骤更容易被重新定价，整份工作却有很多看不见的部分</h2>
+<p>“内容运营”可能包含整理素材、制作初稿、数据判断、跨部门协调、跟进投诉和结果复盘。AI 可以先起草；但如果客户投诉、合同交付、权限违规，负责人不能跟客户说“模型生成的，跟我没关系”。</p>
+<p>这意味着岗位可能先经历<strong>任务重新分配</strong>，然后才可能出现编制调整：公司可能要求每个人做得更多，或把原来多个小职位合并成一个综合岗位。也有些企业用 AI 后扩大服务范围、增加新产品和就业需求。</p>
+<p>国际劳工组织 2025 年职业任务研究发现，全球约四分之一就业处于不同程度生成式 AI 暴露范围，更可能的变化是工作内容重组。<strong>暴露指数不等于裁员名单</strong>。<a href="https://www.ilo.org/zh-hans/resource/news/%E5%9B%9B%E5%88%86%E4%B9%8B%E4%B8%80%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%B2%97%E4%BD%8D%E9%9D%A2%E4%B8%B4%E8%A2%AB%E7%94%9F%E6%88%90%E5%BC%8F%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%94%B9%E5%8F%98%E7%9A%84%E9%A3%8E%E9%99%A9">ILO 原文</a></p>
+<h2 id="三-为什么刚毕业的人可能先感受到压力">三、为什么刚毕业的人可能先感受到压力？</h2>
+<p>一些初级岗位原来主要负责整理资料、初稿、格式、简单测试。在某些公司，这些任务现在可以由少数资深同事配合 AI 完成，因此<strong>可能先减少新增初级岗位</strong>，而未必立即裁掉老员工。另一边，企业也可能增加 AI 工作流、数据安全、行业落地等新需求。</p>
+<p>2026 年 Anthropic 针对美国就业指标和平台使用的研究提示：高 AI 暴露职业还未观察到系统性失业率增加，但 22—25 岁进入部分职业的招聘可能放缓。斯坦福 AI Index 2026 也收集了类似的分化证据。<strong>不是因果定论，更不是对中国应届生的个人预测。</strong><a href="https://www.anthropic.com/research/labor-market-impacts">Anthropic</a> · <a href="https://hai.stanford.edu/ai-index/2026-ai-index-report/economy">Stanford AI Index</a></p>
+<p><strong>给应届生的动作：</strong>同时维护投递表和作品集。作品要能解释：输入是什么、标准答案怎么定、用了 AI 哪一步、自己在哪一步发现错误、结果能否重做。被问到 AI 代写时，你可以现场说明整个流程。</p>
+<h2 id="四-为什么政策也在推动岗位技能变化">四、为什么政策也在推动岗位技能变化？</h2>
+<p>中国政策正在同时推进两件事：应用场景落地，以及职业培训与就业服务。2025 年国务院“人工智能+”政策提出跨行业应用目标；2025—2027 年职业技能提升行动提出技能培训和就业服务联动；2026 年四部门推进“人工智能+人社”应用，提出用职业分类、求职匹配与培训模型改善公共就业服务。详情见 <a href="19-policy-and-opportunities.html">政策逐条讲解</a>。</p>
+<p>这些政策为企业、职业培训和公共服务提供方向，但<strong>不能证明每家公司已经落地 AI，更不能单凭文件给个人保证职位或补贴</strong>。实际验证仍要看本地岗位 JD、单位内部工具政策和官方报名条件。</p>
+<h2 id="五-读者怎么用这些证据判断自己">五、读者怎么用这些证据判断自己？</h2>
+<p>花一个晚上做四件事：</p>
+<ol>
+<li>从最近五个工作日写下 15—30 项实际任务，别写抽象职位头衔。</li>
+<li>给每个任务标出「公开或合法输入」「可检查的输出」「出错代价」「人需要最终负责的环节」。</li>
+<li>选一个低风险任务做同类样本对比：人工总时长 vs AI 初稿 + 提示编写 + 复核 + 返工总时长。</li>
+<li>再看 5—10 条目标岗位 JD，记录真实招聘要求是否变化。没有数据，就写“待核实”。</li>
+</ol>
+<p>这四个动作只能帮你判断<strong>下一步练什么</strong>，不能换算成自己被裁的概率。你不需要马上转行做算法工程师。更稳妥的起点，是用自己已经了解的业务，做一件能证明价值的事。</p>
+<h2 id="六-至少要拒绝五种错误的因果关系">六、至少要拒绝五种错误的因果关系</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>听到的结论</th>
+<th>为何证据不够</th>
+<th>更合理的判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>“某公司裁员了，就是 AI 干的”</td>
+<td>可能涉及需求下滑、资本结构、外包、周期</td>
+<td>去查同期招聘、收入、管理层表述和其他原因</td>
+</tr>
+<tr>
+<td>“AI 使用比例上升，失业率一定上升”</td>
+<td>使用量与岗位数量不是同一指标</td>
+<td>分开看实际使用、招聘、离职和失业率</td>
+</tr>
+<tr>
+<td>“政策支持 AI，所以政府保证转行成功”</td>
+<td>政策多是方向、项目安排或目标</td>
+<td>核实当地对象、期限、项目及录用条件</td>
+</tr>
+<tr>
+<td>“某企业提效 14%，我也会提效 14%”</td>
+<td>样本、任务、工具与管理条件不同</td>
+<td>做自己的同类任务测试</td>
+</tr>
+<tr>
+<td>“AI 给了漂亮报告，所以我会了”</td>
+<td>文字好看不等于你能解释错误</td>
+<td>面试现场复述、手动核对、重复完成</td>
+</tr>
+</tbody>
+</table></div>
+<p><a href="20-real-world-cases.html">真实案例</a> · <a href="19-policy-and-opportunities.html">政策可执行清单</a> · <a href="07-seven-days.html">7 天训练</a></p>
+</article></main><footer class="wrap"><p>AI 酋长 Andy · 学习和研究资料，不能保证避免失业、涨薪或录用。<a href="../docs/ADVERSARIAL_AUDIT.html">阅读对抗式审核</a></p><p>需要结合个人情况讨论求职、职业发展、AI 应用或副业方向，可自愿联系微信 <strong>AIPMAndy</strong> · <a href="https://metaver.vip/" target="_blank" rel="noopener noreferrer">个人官网</a>。具体咨询范围与费用事先沟通，免费资料可直接使用，不保证录用、收入或效果。</p></footer></body></html>

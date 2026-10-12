@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>15-evaluation-protocol｜AI 时代不被淘汰保姆级指南</title><style>
+:root{--bg:#f7f7f4;--paper:#fff;--ink:#1d2e29;--muted:#627269;--line:#dfe5df;--accent:#376957;--gold:#b28a50}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.85 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}button,select{font:inherit}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}.site-nav{background:#172922;color:#eff4ec;position:relative}.site-nav .wrap{display:flex;align-items:center;justify-content:space-between;min-height:66px;gap:12px;flex-wrap:wrap}.site-nav a{color:#e8eee9}.site-nav .brand{font-size:16px;font-weight:800;text-decoration:none;letter-spacing:.02em}.navlinks{display:flex;gap:20px;font-size:13px}
+.hero{background:#172922;color:#fff;padding-bottom:68px}.hero img.cover{display:block;width:100%;max-width:1060px;max-height:460px;object-fit:cover;margin:0 auto}.hero-inner{padding-top:36px}.eyebrow{font-weight:750;letter-spacing:.16em;color:#b59d7a;font-size:11px;margin:0 0 8px}.hero h1{font-size:clamp(39px,5.6vw,66px);line-height:1.16;letter-spacing:-1.2px;margin:0 0 21px}.hero p{color:#d4ded6;max-width:720px;font-size:17px;margin:0}.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;background:#eae7dc;color:#182e27;border-radius:6px;border:1px solid #eae7dc;padding:11px 21px;font-weight:700;font-size:14px;cursor:pointer;text-decoration:none}.btn.secondary{background:transparent;border-color:#718078;color:#f4f5ef}.btn:hover{text-decoration:none;filter:brightness(.96)}
+section.chapter{border-bottom:1px solid var(--line);padding:51px 0}.chapter h2{font-size:27px;line-height:1.4;margin:5px 0 13px;letter-spacing:-.5px}.subtext{color:var(--muted);max-width:820px;margin:0 0 20px}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.card{border:1px solid var(--line);background:#fff;border-radius:7px;padding:22px;min-height:170px}.card h3{font-size:18px;margin:8px 0}.card p{font-size:14px;color:var(--muted);margin:0}.mini{font-size:12px;font-weight:800;color:var(--gold)}
+.columns{display:grid;grid-template-columns:1fr 1fr;gap:16px}.panel{border:1px solid var(--line);background:white;border-radius:8px;padding:22px}.panel label{font-weight:650;display:block;margin:12px 0 7px}.panel select{width:100%;padding:10px;border:1px solid #cfd9d1;border-radius:6px;background:#fff;color:var(--ink)}.suggestion{margin-top:18px;border-left:3px solid #85a995;padding:15px 17px;background:#f4f7f3;font-size:14px;line-height:1.8}.suggestion p{margin:8px 0}.suggestion strong{display:block;font-size:16px}
+.days{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.day{border:1px solid var(--line);border-radius:7px;padding:17px 19px;display:flex;align-items:flex-start;gap:12px;background:#fff;cursor:pointer}.day.done{border-color:#a2b7a7;background:#f2f7f1}.day input{accent-color:#397c61;margin-top:6px;width:17px;height:17px}.day .day-name{display:block;font-weight:750;margin-bottom:5px}.day .desc{display:block;font-size:13px;color:var(--muted)}.day .donewhen{display:block;font-size:12px;color:#59735d;margin-top:10px}.day-number{color:#b1966c;font-weight:850;font-size:24px;line-height:1.2}.bar{height:9px;background:#e2e7e1;border-radius:20px;overflow:hidden}.bar-fill{height:100%;background:#568e6f;width:0%;transition:width .2s}.progress-line{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:0 0 11px}.muted-link{border:0;background:none;text-decoration:underline;color:#65796b;cursor:pointer;font-size:13px}.note{font-size:13px;color:var(--muted)}
+.resources{display:grid;grid-template-columns:repeat(2,1fr);gap:11px}.resource{padding:17px 20px;border:1px solid var(--line);border-radius:7px;background:white;color:var(--ink);display:block}.resource strong{display:block}.resource span{font-size:13px;color:var(--muted)}footer{color:var(--muted);font-size:13px;padding:32px 0 55px}
+.article-page{max-width:900px;margin:30px auto 60px;background:#fff;border:1px solid #e4e5df;box-shadow:0 15px 55px #1d29210a;padding:52px 61px}.article-page h1{font-size:31px;line-height:1.45;margin:4px 0 24px}.article-page h2{font-size:22px;border-bottom:1px solid var(--line);padding-bottom:11px;margin:54px 0 19px}.article-page h3{font-size:18px;margin:32px 0 12px}.article-page p{line-height:1.95;margin:15px 0 21px}.article-page strong{color:#204c3b}.article-page img{display:block;width:100%;height:auto;margin:24px auto;border:1px solid var(--line)}.article-page pre{overflow:auto;background:#f2f5f2;border:1px solid #dfe6df;padding:18px 20px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.7;font-size:13px}.article-page code{font-size:13px;overflow-wrap:anywhere}.article-page blockquote{margin:20px 0;padding:4px 18px;border-left:3px solid #9caa91;background:#f5f7f4}.article-page table{border-collapse:collapse;width:100%;min-width:600px;font-size:14px}.article-page table td,.article-page table th{border:1px solid #dce3dc;padding:10px;text-align:left;vertical-align:top}.table-wrap{overflow-x:auto;margin:20px 0}.article-page ul,.article-page ol{padding-left:25px}.article-page li{margin:7px 0}
+@media(max-width:750px){.wrap{padding:0 18px}.cards,.columns,.days,.resources{grid-template-columns:1fr}.hero{padding-bottom:43px}.hero img.cover{max-height:none}.hero-inner{padding-top:24px}.chapter h2{font-size:23px}.site-nav .wrap{padding-top:10px;padding-bottom:10px}.navlinks{gap:12px;flex-wrap:wrap}.article-page{border:0;box-shadow:none;margin:0;padding:23px 18px}.article-page h1{font-size:25px}.article-page h2{font-size:20px;margin-top:40px}}
+</style><style>.article-page blockquote{background:#f0f4ef;border-left:3px solid #49715b;padding:7px 19px;margin:16px 0}.article-page pre{background:#f5f6f3;white-space:pre-wrap;overflow-wrap:anywhere}.article-page img{max-width:100%;height:auto}.article-page h2{scroll-margin-top:24px}.article-page h3{scroll-margin-top:24px}.article-page code{overflow-wrap:anywhere}.article-page ol,.article-page ul{padding-left:22px}.article-page a{text-decoration:underline}@media(max-width:650px){.article-page{border:none;margin:0;padding:23px 18px}}</style><style>.article-page .table-scroll{display:block;box-sizing:border-box;width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;margin:16px 0 25px}.article-page .table-scroll>table{width:100%;min-width:600px;margin:0}.article-page{min-width:0}</style></head><body><nav class="site-nav"><div class="wrap"><a class="brand" href="../index.html">AI 时代不被淘汰保姆级指南</a><div class="navlinks"><a href="../article.html">完整攻略</a><a href="../docs/START-HERE.html">按处境开始</a><a href="../lab.html">评分实验</a><a href="../docs/SOURCES.html">资料来源</a><a href="https://metaver.vip/" target="_blank" rel="noopener noreferrer">个人官网</a></div></div></nav><main class="article-page"><article><h1 id="真正测一次-ai-有没有帮上忙-评估协议">真正测一次 AI 有没有帮上忙：评估协议</h1>
+<p>很多人只记录“AI 生成用了 2 分钟”，不算自己写指令、复核、改错的时间。这种数字毫无参考价值。</p>
+<h2 id="0-先冻结测试条件">0. 先冻结测试条件</h2>
+<ul>
+<li>写下你真正的任务。例如“把 24 条反馈分成价格/功能/履约/其他/待人工复核”。</li>
+<li>写下具体输出格式和错误定义。不能为了让 AI 看起来更准，事后改规则。</li>
+<li>确保样本有权使用。无授权用本仓库 <a href="../labs/feedback-24.csv">24 条虚构反馈</a>。</li>
+<li>写下测试日期、工具/模型（知道则填）、付费成本、网络/使用限制。</li>
+</ul>
+<h2 id="1-人工基线-t0">1. 人工基线（T0）</h2>
+<p>在<strong>不借助 AI</strong>的情况下完成 A 组样本，按同一套规则记录：输入数 N、总耗时 T0、错误数量 E0、漏项 M0、需人工复核的条数 U0。最好留下一份结果表。</p>
+<h2 id="2-ai-辅助-t1">2. AI 辅助（T1）</h2>
+<p>用难度相近的 B 组；若只能使用同一组材料，必须注明记忆/顺序效应，不能当严格因果对照。记录：准备输入时间、写 Prompt 时间、运行时间、人工复核时间、返工时间、异常恢复时间。<strong>T1 等于所有这些时间之和</strong>。</p>
+<h2 id="3-质量判定">3. 质量判定</h2>
+<ul>
+<li><strong>覆盖率</strong>：已输出且符合格式的条数 / 总条数。</li>
+<li><strong>准确率（有标准答案时）</strong>：正确分类条数 / 总条数。题目允许“待人工复核”时按预先定义的标准答案核对。</li>
+<li><strong>严重错误</strong>：泄露隐私、编造引用、把投诉当表扬、漏掉重要异常、超出权限执行。严重错误出现一次也可能不适合继续自动化。</li>
+<li><strong>复核工作量</strong>：为了把结果改成能交付的版本，需要多少分钟及多少次人工修改。</li>
+<li><strong>可复现性</strong>：换一天/换一批输入/换执行人时结果是否仍能达到验收标准。</li>
+</ul>
+<h2 id="4-用公式算-不要随便说-提升-300%">4. 用公式算，不要随便说“提升 300%”</h2>
+<p>若 T0&gt;0 且可比：<code>耗时变化率 = (T0 - T1) / T0 × 100%</code>。正值表示这次更快，负值表示更慢。<code>T1 / T0</code> 是所用时间的相对比例，和“工作效率提升比例”不是一回事。</p>
+<p><strong>演算例子（虚构）：</strong> T0=70 分钟，AI 运行 12 分钟，复核 25 分钟，则 T1=37 分钟，耗时减少 <code>(70-37)/70=47.1%</code>。这并不能推出工资或产出提高了 47.1%，更不能概括到其他岗位。</p>
+<h2 id="5-至少做第二轮">5. 至少做第二轮</h2>
+<p>第一次熟悉输入会造成学习效应。换另一批数据再次做（如可能交换人工/AI 的执行顺序），记录异常。如果第二次变慢，如实写。样本很少时，不做“显著提升”的统计推断。</p>
+<h2 id="6-决策标准-提前写">6. 决策标准，提前写</h2>
+<ul>
+<li><strong>继续试</strong>：权限合规、质量达到人工底线、复核成本可承受、输出结果能让别人复现。</li>
+<li><strong>调整</strong>：格式错误多、遗漏集中、复核成本太高、只在样本上表现好。</li>
+<li><strong>停止</strong>：资料无授权、涉及重要不可逆操作、失实风险无法控制、真实总耗时持续更差且无其他明确收益。</li>
+</ul>
+<h2 id="可以复制的报告表">可以复制的报告表</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>日期/批次</th>
+<th>样本与来源</th>
+<th style="text-align:right">人工总时 T0</th>
+<th style="text-align:right">AI含复核总时 T1</th>
+<th>质量与严重错误</th>
+<th>限制</th>
+<th>决定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>____</td>
+<td>____</td>
+<td style="text-align:right">____</td>
+<td style="text-align:right">____</td>
+<td>____</td>
+<td>____</td>
+<td>____</td>
+</tr>
+</tbody>
+</table></div>
+<p><a href="../labs/README.html">练习与评分工具</a> · <a href="../templates/experiment-log.html">实验模板</a></p>
+<h3 id="为什么必须连错误一起算">为什么必须连错误一起算？</h3>
+<p>NBER 客服现场研究观察到提效，METR 特定开发者随机实验观察到变慢。二者测量的不是一回事；结论必须结合任务、工具、样本和人工返工成本。<a href="20-real-world-cases.html">六个案例</a> · <a href="../templates/verified-case-card.html">案例核查模板</a>。</p>
+</article></main><footer class="wrap"><p>AI 酋长 Andy · 学习和研究资料，不能保证避免失业、涨薪或录用。<a href="../docs/ADVERSARIAL_AUDIT.html">阅读对抗式审核</a></p><p>需要结合个人情况讨论求职、职业发展、AI 应用或副业方向，可自愿联系微信 <strong>AIPMAndy</strong> · <a href="https://metaver.vip/" target="_blank" rel="noopener noreferrer">个人官网</a>。具体咨询范围与费用事先沟通，免费资料可直接使用，不保证录用、收入或效果。</p></footer></body></html>

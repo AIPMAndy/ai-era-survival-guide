@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>START-HERE｜AI 时代不被淘汰保姆级指南</title><style>
+:root{--bg:#f7f7f4;--paper:#fff;--ink:#1d2e29;--muted:#627269;--line:#dfe5df;--accent:#376957;--gold:#b28a50}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.85 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}button,select{font:inherit}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}.site-nav{background:#172922;color:#eff4ec;position:relative}.site-nav .wrap{display:flex;align-items:center;justify-content:space-between;min-height:66px;gap:12px;flex-wrap:wrap}.site-nav a{color:#e8eee9}.site-nav .brand{font-size:16px;font-weight:800;text-decoration:none;letter-spacing:.02em}.navlinks{display:flex;gap:20px;font-size:13px}
+.hero{background:#172922;color:#fff;padding-bottom:68px}.hero img.cover{display:block;width:100%;max-width:1060px;max-height:460px;object-fit:cover;margin:0 auto}.hero-inner{padding-top:36px}.eyebrow{font-weight:750;letter-spacing:.16em;color:#b59d7a;font-size:11px;margin:0 0 8px}.hero h1{font-size:clamp(39px,5.6vw,66px);line-height:1.16;letter-spacing:-1.2px;margin:0 0 21px}.hero p{color:#d4ded6;max-width:720px;font-size:17px;margin:0}.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;background:#eae7dc;color:#182e27;border-radius:6px;border:1px solid #eae7dc;padding:11px 21px;font-weight:700;font-size:14px;cursor:pointer;text-decoration:none}.btn.secondary{background:transparent;border-color:#718078;color:#f4f5ef}.btn:hover{text-decoration:none;filter:brightness(.96)}
+section.chapter{border-bottom:1px solid var(--line);padding:51px 0}.chapter h2{font-size:27px;line-height:1.4;margin:5px 0 13px;letter-spacing:-.5px}.subtext{color:var(--muted);max-width:820px;margin:0 0 20px}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.card{border:1px solid var(--line);background:#fff;border-radius:7px;padding:22px;min-height:170px}.card h3{font-size:18px;margin:8px 0}.card p{font-size:14px;color:var(--muted);margin:0}.mini{font-size:12px;font-weight:800;color:var(--gold)}
+.columns{display:grid;grid-template-columns:1fr 1fr;gap:16px}.panel{border:1px solid var(--line);background:white;border-radius:8px;padding:22px}.panel label{font-weight:650;display:block;margin:12px 0 7px}.panel select{width:100%;padding:10px;border:1px solid #cfd9d1;border-radius:6px;background:#fff;color:var(--ink)}.suggestion{margin-top:18px;border-left:3px solid #85a995;padding:15px 17px;background:#f4f7f3;font-size:14px;line-height:1.8}.suggestion p{margin:8px 0}.suggestion strong{display:block;font-size:16px}
+.days{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.day{border:1px solid var(--line);border-radius:7px;padding:17px 19px;display:flex;align-items:flex-start;gap:12px;background:#fff;cursor:pointer}.day.done{border-color:#a2b7a7;background:#f2f7f1}.day input{accent-color:#397c61;margin-top:6px;width:17px;height:17px}.day .day-name{display:block;font-weight:750;margin-bottom:5px}.day .desc{display:block;font-size:13px;color:var(--muted)}.day .donewhen{display:block;font-size:12px;color:#59735d;margin-top:10px}.day-number{color:#b1966c;font-weight:850;font-size:24px;line-height:1.2}.bar{height:9px;background:#e2e7e1;border-radius:20px;overflow:hidden}.bar-fill{height:100%;background:#568e6f;width:0%;transition:width .2s}.progress-line{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:0 0 11px}.muted-link{border:0;background:none;text-decoration:underline;color:#65796b;cursor:pointer;font-size:13px}.note{font-size:13px;color:var(--muted)}
+.resources{display:grid;grid-template-columns:repeat(2,1fr);gap:11px}.resource{padding:17px 20px;border:1px solid var(--line);border-radius:7px;background:white;color:var(--ink);display:block}.resource strong{display:block}.resource span{font-size:13px;color:var(--muted)}footer{color:var(--muted);font-size:13px;padding:32px 0 55px}
+.article-page{max-width:900px;margin:30px auto 60px;background:#fff;border:1px solid #e4e5df;box-shadow:0 15px 55px #1d29210a;padding:52px 61px}.article-page h1{font-size:31px;line-height:1.45;margin:4px 0 24px}.article-page h2{font-size:22px;border-bottom:1px solid var(--line);padding-bottom:11px;margin:54px 0 19px}.article-page h3{font-size:18px;margin:32px 0 12px}.article-page p{line-height:1.95;margin:15px 0 21px}.article-page strong{color:#204c3b}.article-page img{display:block;width:100%;height:auto;margin:24px auto;border:1px solid var(--line)}.article-page pre{overflow:auto;background:#f2f5f2;border:1px solid #dfe6df;padding:18px 20px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.7;font-size:13px}.article-page code{font-size:13px;overflow-wrap:anywhere}.article-page blockquote{margin:20px 0;padding:4px 18px;border-left:3px solid #9caa91;background:#f5f7f4}.article-page table{border-collapse:collapse;width:100%;min-width:600px;font-size:14px}.article-page table td,.article-page table th{border:1px solid #dce3dc;padding:10px;text-align:left;vertical-align:top}.table-wrap{overflow-x:auto;margin:20px 0}.article-page ul,.article-page ol{padding-left:25px}.article-page li{margin:7px 0}
+@media(max-width:750px){.wrap{padding:0 18px}.cards,.columns,.days,.resources{grid-template-columns:1fr}.hero{padding-bottom:43px}.hero img.cover{max-height:none}.hero-inner{padding-top:24px}.chapter h2{font-size:23px}.site-nav .wrap{padding-top:10px;padding-bottom:10px}.navlinks{gap:12px;flex-wrap:wrap}.article-page{border:0;box-shadow:none;margin:0;padding:23px 18px}.article-page h1{font-size:25px}.article-page h2{font-size:20px;margin-top:40px}}
+</style><style>.article-page blockquote{background:#f0f4ef;border-left:3px solid #49715b;padding:7px 19px;margin:16px 0}.article-page pre{background:#f5f6f3;white-space:pre-wrap;overflow-wrap:anywhere}.article-page img{max-width:100%;height:auto}.article-page h2{scroll-margin-top:24px}.article-page h3{scroll-margin-top:24px}.article-page code{overflow-wrap:anywhere}.article-page ol,.article-page ul{padding-left:22px}.article-page a{text-decoration:underline}@media(max-width:650px){.article-page{border:none;margin:0;padding:23px 18px}}</style></head><body><nav class="site-nav"><div class="wrap"><a class="brand" href="../index.html">AI 时代不被淘汰保姆级指南</a><div class="navlinks"><a href="../article.html">完整攻略</a><a href="../docs/START-HERE.html">按处境开始</a><a href="../lab.html">评分实验</a><a href="../docs/SOURCES.html">资料来源</a><a href="https://metaver.vip/" target="_blank" rel="noopener noreferrer">个人官网</a></div></div></nav><main class="article-page"><article><h1 id="从这里开始-按你现在的处境走一条路">从这里开始：按你现在的处境走一条路</h1>
+<p><strong>只有 30 分钟？</strong> 打开 <a href="07-seven-days.html">7 天训练</a>，完成 Day 1：把上周五件真实工作写下来。没有工作记录就用公开练习材料，先别购买会员。</p>
+<h2 id="a-在职-但担心工作内容越来越容易被-ai-完成">A. 在职，但担心工作内容越来越容易被 AI 完成</h2>
+<ol>
+<li>先读 <a href="../article.html#%E4%BA%8C%E7%AC%AC%E4%B8%80%E6%AD%A5%E6%8A%8A%E4%BD%A0%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%8B%86%E5%88%B0%E4%BB%BB%E5%8A%A1%E5%B1%82">任务拆解</a>；把过去 5 天的真实工作写进 <a href="../templates/task-inventory.html">任务清单</a>。</li>
+<li>从里面选一件<strong>已获授权、可人工复核、出错可恢复</strong>的事。先人工做一次，再 AI 辅助一次。</li>
+<li>用 <a href="15-evaluation-protocol.html">评估协议</a> 测<strong>总耗时、漏项、错误、复核成本</strong>，分别写明。</li>
+<li>先和负责人讨论小范围试点；没获批就只能用公开/自造数据演示。</li>
+</ol>
+<p><strong>先别做：</strong>把企业客户资料、内部聊天、账号密钥和未公开数据扔进个人 AI 账号。不要私自创建可以操作生产系统的 Agent。</p>
+<h2 id="b-正在失业-待裁员-或下一笔收入最重要">B. 正在失业、待裁员、或下一笔收入最重要</h2>
+<ol>
+<li>先看 <a href="11-career-defense.html">工作与现金流安全垫</a>，盘点现金、必要支出、招聘周期和可接受的临时工作。</li>
+<li>每天保留固定时间搜索、联系和投递<strong>真实岗位</strong>，不要用整个星期“学 AI”代替找工作。</li>
+<li>选 5—10 条与你经历匹配的 JD，做 <a href="../templates/job-match.html">匹配表</a>，把差距分为“有证据但没表达”“可用作品补”“短期补不了”。</li>
+<li>准备一份可核查的作品，做一次模拟面试，投递并记录结果；没有面试则修改筛选和联系策略。</li>
+</ol>
+<p><strong>先别做：</strong>冲动辞职、借钱报班、付费买内推保证、用虚构项目成果包装简历。</p>
+<h2 id="c-在校生-实习生-无正式项目经验">C. 在校生、实习生、无正式项目经验</h2>
+<ol>
+<li>用 10 条公开岗位 JD 做归纳，辨别必备技能和加分项。</li>
+<li>选 1 个与目标岗位对应的<strong>公开数据练习</strong>，先不追求技术复杂度。</li>
+<li>保留原始材料、过程、核对和修改记录，让面试官能看出你真正做了什么。</li>
+<li>看 <a href="../workshops/02-jd-to-portfolio.html">JD → 作品完整示范</a>，严格标注“教学样品/个人练习”，不要包装成真实客户成果。</li>
+</ol>
+<h2 id="d-管理者-业务负责人">D. 管理者、业务负责人</h2>
+<ol>
+<li>征求参与者同意，找一段低风险流程。先有<strong>业务验收标准</strong>，再谈模型选型。</li>
+<li>明确审批权、数据流向、权限、人工复核、回滚与停止条件。</li>
+<li>小组试用 2—3 批次，以<strong>返工率、合规风险和真实成本</strong>决定是否扩大，而非以 AI 使用次数考核下属。</li>
+</ol>
+<h2 id="e-自由职业者-创作者-小商家">E. 自由职业者、创作者、小商家</h2>
+<ol>
+<li>找目前已有付费客户、明确需求的场景，先做小样并询问真实反馈。</li>
+<li>用 AI 辅助做整理、草稿、结构转换。授权、版权、生成内容标识、对外承诺由自己检查。</li>
+<li>记录成本：会员费、制作时间、人工复核、修改次数、退款、回款。没有付款不要当作生意跑通。</li>
+</ol>
+<h2 id="最低设备与成本">最低设备与成本</h2>
+<ul>
+<li>手机浏览器能使用合规工具，也可以先完成阅读和资料搜集；大量表格处理在电脑更方便。</li>
+<li>文档或电子表格任选一种能正常使用的；CSV 可用 WPS、Excel 或开源表格程序。</li>
+<li><strong>全部练习都能使用仓库提供的虚构数据</strong>，不要求接入公司系统，不要求绑定支付卡。</li>
+<li>若一个工具收费、无法访问或不符合政策要求，换成可用的同类工具；流程不依赖某一品牌。</li>
+</ul>
+<p><strong>最低完成标准：</strong>一张真实任务表、一份公开/已授权的练习样品、一页注明限制的前后对比。三者比“会十种模型”更能说明问题。</p>
+<h3 id="先看新证据再开始">先看新证据再开始</h3>
+<p><a href="19-policy-and-opportunities.html">国家政策和补贴核验</a> · <a href="20-real-world-cases.html">六个真实企业案例</a> · <a href="21-why-change.html">岗位为什么变化</a></p>
+</article></main><footer class="wrap"><p>AI 酋长 Andy · 学习和研究资料，不能保证避免失业、涨薪或录用。<a href="../docs/ADVERSARIAL_AUDIT.html">阅读对抗式审核</a></p><p>需要结合个人情况讨论求职、职业发展、AI 应用或副业方向，可自愿联系微信 <strong>AIPMAndy</strong> · <a href="https://metaver.vip/" target="_blank" rel="noopener noreferrer">个人官网</a>。具体咨询范围与费用事先沟通，免费资料可直接使用，不保证录用、收入或效果。</p></footer></body></html>

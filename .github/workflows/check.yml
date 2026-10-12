@@ -1,0 +1,45 @@
+name: Content and site checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check repository content, local links and images
+        run: python3 scripts/check_content.py
+      - name: Parse browser JavaScript
+        run: |
+          node --version
+          python3 scripts/extract_script.py
+          node --check /tmp/ai-era-check-script.js
+      - name: Run offline feedback grading tests
+        run: |
+          python3 -m unittest discover -s tests -v
+          python3 scripts/grade_feedback.py labs/sample-predictions-not-a-model-result.csv
+      - name: Check laboratory JavaScript syntax
+        run: |
+          python3 - <<'PYTEST'
+          from html.parser import HTMLParser
+          from pathlib import Path
+          class Parser(HTMLParser):
+              def __init__(self):
+                  super().__init__();self.inside=False;self.chunks=[]
+              def handle_starttag(self, tag, attrs):
+                  if tag == 'script': self.inside=True
+              def handle_endtag(self,tag):
+                  if tag == 'script': self.inside=False
+              def handle_data(self,data):
+                  if self.inside:self.chunks.append(data)
+          for name in ['index.html','lab.html']:
+              parser=Parser();parser.feed(Path(name).read_text(encoding='utf8'))
+              Path('/tmp/'+name+'.js').write_text(''.join(parser.chunks),encoding='utf8')
+          PYTEST
+          node --check /tmp/index.html.js
+          node --check /tmp/lab.html.js

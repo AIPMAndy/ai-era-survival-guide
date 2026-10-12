@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>SOURCES｜AI 时代不被淘汰保姆级指南</title><style>
+:root{--bg:#f7f7f4;--paper:#fff;--ink:#1d2e29;--muted:#627269;--line:#dfe5df;--accent:#376957;--gold:#b28a50}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.85 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}button,select{font:inherit}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}.site-nav{background:#172922;color:#eff4ec;position:relative}.site-nav .wrap{display:flex;align-items:center;justify-content:space-between;min-height:66px;gap:12px;flex-wrap:wrap}.site-nav a{color:#e8eee9}.site-nav .brand{font-size:16px;font-weight:800;text-decoration:none;letter-spacing:.02em}.navlinks{display:flex;gap:20px;font-size:13px}
+.hero{background:#172922;color:#fff;padding-bottom:68px}.hero img.cover{display:block;width:100%;max-width:1060px;max-height:460px;object-fit:cover;margin:0 auto}.hero-inner{padding-top:36px}.eyebrow{font-weight:750;letter-spacing:.16em;color:#b59d7a;font-size:11px;margin:0 0 8px}.hero h1{font-size:clamp(39px,5.6vw,66px);line-height:1.16;letter-spacing:-1.2px;margin:0 0 21px}.hero p{color:#d4ded6;max-width:720px;font-size:17px;margin:0}.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;background:#eae7dc;color:#182e27;border-radius:6px;border:1px solid #eae7dc;padding:11px 21px;font-weight:700;font-size:14px;cursor:pointer;text-decoration:none}.btn.secondary{background:transparent;border-color:#718078;color:#f4f5ef}.btn:hover{text-decoration:none;filter:brightness(.96)}
+section.chapter{border-bottom:1px solid var(--line);padding:51px 0}.chapter h2{font-size:27px;line-height:1.4;margin:5px 0 13px;letter-spacing:-.5px}.subtext{color:var(--muted);max-width:820px;margin:0 0 20px}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.card{border:1px solid var(--line);background:#fff;border-radius:7px;padding:22px;min-height:170px}.card h3{font-size:18px;margin:8px 0}.card p{font-size:14px;color:var(--muted);margin:0}.mini{font-size:12px;font-weight:800;color:var(--gold)}
+.columns{display:grid;grid-template-columns:1fr 1fr;gap:16px}.panel{border:1px solid var(--line);background:white;border-radius:8px;padding:22px}.panel label{font-weight:650;display:block;margin:12px 0 7px}.panel select{width:100%;padding:10px;border:1px solid #cfd9d1;border-radius:6px;background:#fff;color:var(--ink)}.suggestion{margin-top:18px;border-left:3px solid #85a995;padding:15px 17px;background:#f4f7f3;font-size:14px;line-height:1.8}.suggestion p{margin:8px 0}.suggestion strong{display:block;font-size:16px}
+.days{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.day{border:1px solid var(--line);border-radius:7px;padding:17px 19px;display:flex;align-items:flex-start;gap:12px;background:#fff;cursor:pointer}.day.done{border-color:#a2b7a7;background:#f2f7f1}.day input{accent-color:#397c61;margin-top:6px;width:17px;height:17px}.day .day-name{display:block;font-weight:750;margin-bottom:5px}.day .desc{display:block;font-size:13px;color:var(--muted)}.day .donewhen{display:block;font-size:12px;color:#59735d;margin-top:10px}.day-number{color:#b1966c;font-weight:850;font-size:24px;line-height:1.2}.bar{height:9px;background:#e2e7e1;border-radius:20px;overflow:hidden}.bar-fill{height:100%;background:#568e6f;width:0%;transition:width .2s}.progress-line{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:0 0 11px}.muted-link{border:0;background:none;text-decoration:underline;color:#65796b;cursor:pointer;font-size:13px}.note{font-size:13px;color:var(--muted)}
+.resources{display:grid;grid-template-columns:repeat(2,1fr);gap:11px}.resource{padding:17px 20px;border:1px solid var(--line);border-radius:7px;background:white;color:var(--ink);display:block}.resource strong{display:block}.resource span{font-size:13px;color:var(--muted)}footer{color:var(--muted);font-size:13px;padding:32px 0 55px}
+.article-page{max-width:900px;margin:30px auto 60px;background:#fff;border:1px solid #e4e5df;box-shadow:0 15px 55px #1d29210a;padding:52px 61px}.article-page h1{font-size:31px;line-height:1.45;margin:4px 0 24px}.article-page h2{font-size:22px;border-bottom:1px solid var(--line);padding-bottom:11px;margin:54px 0 19px}.article-page h3{font-size:18px;margin:32px 0 12px}.article-page p{line-height:1.95;margin:15px 0 21px}.article-page strong{color:#204c3b}.article-page img{display:block;width:100%;height:auto;margin:24px auto;border:1px solid var(--line)}.article-page pre{overflow:auto;background:#f2f5f2;border:1px solid #dfe6df;padding:18px 20px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.7;font-size:13px}.article-page code{font-size:13px;overflow-wrap:anywhere}.article-page blockquote{margin:20px 0;padding:4px 18px;border-left:3px solid #9caa91;background:#f5f7f4}.article-page table{border-collapse:collapse;width:100%;min-width:600px;font-size:14px}.article-page table td,.article-page table th{border:1px solid #dce3dc;padding:10px;text-align:left;vertical-align:top}.table-wrap{overflow-x:auto;margin:20px 0}.article-page ul,.article-page ol{padding-left:25px}.article-page li{margin:7px 0}
+@media(max-width:750px){.wrap{padding:0 18px}.cards,.columns,.days,.resources{grid-template-columns:1fr}.hero{padding-bottom:43px}.hero img.cover{max-height:none}.hero-inner{padding-top:24px}.chapter h2{font-size:23px}.site-nav .wrap{padding-top:10px;padding-bottom:10px}.navlinks{gap:12px;flex-wrap:wrap}.article-page{border:0;box-shadow:none;margin:0;padding:23px 18px}.article-page h1{font-size:25px}.article-page h2{font-size:20px;margin-top:40px}}
+</style><style>.article-page blockquote{background:#f0f4ef;border-left:3px solid #49715b;padding:7px 19px;margin:16px 0}.article-page pre{background:#f5f6f3;white-space:pre-wrap;overflow-wrap:anywhere}.article-page img{max-width:100%;height:auto}.article-page h2{scroll-margin-top:24px}.article-page h3{scroll-margin-top:24px}.article-page code{overflow-wrap:anywhere}.article-page ol,.article-page ul{padding-left:22px}.article-page a{text-decoration:underline}@media(max-width:650px){.article-page{border:none;margin:0;padding:23px 18px}}</style><style>.article-page .table-scroll{display:block;box-sizing:border-box;width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;margin:16px 0 25px}.article-page .table-scroll>table{width:100%;min-width:600px;margin:0}.article-page{min-width:0}</style></head><body><nav class="site-nav"><div class="wrap"><a class="brand" href="../index.html">AI 时代不被淘汰保姆级指南</a><div class="navlinks"><a href="../article.html">完整攻略</a><a href="../docs/START-HERE.html">按处境开始</a><a href="../lab.html">评分实验</a><a href="../docs/SOURCES.html">资料来源</a><a href="https://metaver.vip/" target="_blank" rel="noopener noreferrer">个人官网</a></div></div></nav><main class="article-page"><article><h1 id="原始资料与核查说明">原始资料与核查说明</h1>
+<p>更新：2026-10-12。以下引用用于理解劳动市场整体趋势，不能推断某个个人的就业结局。任何“百分比”都应明确研究对象、发表日期与口径。</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>来源</th>
+<th>发布时间</th>
+<th>可以支持什么</th>
+<th>不能推导什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.ilo.org/resource/news/one-four-jobs-risk-being-transformed-genai-new-ilo%E2%80%93nask-global-index-shows">ILO–NASK 生成式 AI 职业暴露研究</a></td>
+<td>2025-05-20</td>
+<td>全球约 1/4 工作处于某种程度 GenAI 暴露之下；更常见可能是工作变化</td>
+<td>1/4 工作者必然失业</td>
+</tr>
+<tr>
+<td><a href="https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure">ILO 完整研究</a></td>
+<td>2025</td>
+<td>研究基于任务、专家意见和模型评分，有多个暴露梯度</td>
+<td>将职业名称直接等同个人风险分数</td>
+</tr>
+<tr>
+<td><a href="https://www.weforum.org/publications/the-future-of-jobs-report-2025/">WEF Future of Jobs Report 2025</a></td>
+<td>2025-01</td>
+<td>受访企业预测 2025—2030 年约 39% 的现有技能发生变化或过时；技术与人口经济因素共同影响</td>
+<td>AI 单独导致 39% 的岗位消失</td>
+</tr>
+<tr>
+<td><a href="https://www.oecd.org/en/publications/skills-in-the-ai-age_972bd15e-en/full-report.html">OECD Skills in the AI age</a></td>
+<td>2026-07-08</td>
+<td>不同地区、行业、技能层级受影响不一致；需要学习与转型</td>
+<td>某一个职业在每个国家都会以同样速度变化</td>
+</tr>
+<tr>
+<td><a href="https://www.oecd.org/en/publications/bridging-the-ai-skills-gap_66d0702e-en.html">OECD Bridging the AI skills gap</a></td>
+<td>2025-04-24</td>
+<td>专业 AI 技能和一般 AI 素养都重要；培训供需有缺口</td>
+<td>人人都应转行当算法工程师</td>
+</tr>
+<tr>
+<td><a href="https://www.anthropic.com/research/economic-index-march-2026-report">Anthropic Economic Index: Learning curves</a></td>
+<td>2026-03-24</td>
+<td>某平台 2026 年 2 月观察到的 AI 使用方式，以及熟练用户学习曲线</td>
+<td>平台使用比例等于全部劳动力市场比例</td>
+</tr>
+<tr>
+<td><a href="https://www.nist.gov/itl/ai-risk-management-framework">NIST AI Risk Management Framework</a></td>
+<td>2023 起，持续更新</td>
+<td>安全、隐私、可靠性、透明与治理的重要性</td>
+<td>有了一条 Prompt 就能完全规避风险</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="本项目内容的证据层级">本项目内容的证据层级</h2>
+<ul>
+<li><strong>A／明确来源：</strong>国际组织研究、官方产品文档、用户提供的可公开材料。</li>
+<li><strong>B／可检验方法：</strong>任务表、样品、质量复核、时间对比。方法本身可测试，但效果取决于执行环境。</li>
+<li><strong>C／教学示例：</strong>用于说明如何填写的数据和假设用户，不代表任何真实客户或已验证业绩。</li>
+</ul>
+<h2 id="禁止误读">禁止误读</h2>
+<ol>
+<li>职业暴露程度不等于失业概率，也不等于薪酬跌幅。</li>
+<li>WEF 的技能变化预测不全由 AI 造成，并非对个体的确定预测。</li>
+<li>单次工作前后对比不等于严格因果试验。输入熟悉程度、学习效应、样本和工具版本都会影响结果。</li>
+<li>AI 模型输出不能代替原始记录、具备资格的专业意见或企业内部审批。</li>
+<li>读者的训练结果可能为零；项目名称中的“不被淘汰”代表努力方向，不构成保证。</li>
+</ol>
+<p><a href="../index.html">返回首页</a> · <a href="../article.html">完整教程</a></p>
+<h2 id="2026-年-10-月二次核查-加入反面证据">2026 年 10 月二次核查：加入反面证据</h2>
+<p>以下是本次升级后新增的研究。<strong>带来积极结果的研究和得出负面结果的研究都保留，不靠单篇论文下万能结论。</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>来源与链接</th>
+<th>日期、对象</th>
+<th>读者能怎样用</th>
+<th>关键限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.anthropic.com/research/labor-market-impacts">Anthropic：劳动力市场实际暴露与早期证据</a></td>
+<td>2026-03-05，使用平台任务数据并对照美国劳动力指标</td>
+<td>理论上可由 AI 完成的任务不等于已经广泛投入生产；年轻人招聘可能有变化</td>
+<td>未发现高暴露工作者失业率系统性升高；年轻人招聘放缓仅为提示性证据，不能归因到所有国家</td>
+</tr>
+<tr>
+<td><a href="https://www.anthropic.com/research/anthropic-economic-index-january-2026-report">Anthropic Economic Index</a></td>
+<td>2026-01，平台用户与 API 使用</td>
+<td>工作任务与 AI 使用集中在某些领域；交互可能是增强或自动化</td>
+<td>仅该平台样本，不代表全部企业、国家或职业</td>
+</tr>
+<tr>
+<td><a href="https://www.nber.org/papers/w31161">NBER：生成式 AI 在客服岗位的现场研究</a></td>
+<td>2023 工作论文，5179 名客服</td>
+<td>具体系统在具体任务上能带来生产率改变，新手收益可能更明显</td>
+<td>研究行业、工具与时间点有限，不能推广到任何岗位</td>
+</tr>
+<tr>
+<td><a href="https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/">METR：资深开发者早期 AI 工具随机试验</a></td>
+<td>2025-07，16 位资深开源开发者、246 项任务</td>
+<td>使用 AI 未必提效；必须测总耗时，不能靠主观感觉</td>
+<td>2025 年特定代码仓库、工具和人群，不代表所有开发者</td>
+</tr>
+<tr>
+<td><a href="https://metr.org/blog/2026-02-24-uplift-update/">METR：2026 年测量局限更新</a></td>
+<td>2026-02，更晚一轮研究</td>
+<td>模型和工具变化很快，旧研究不能当作当前永久结论</td>
+<td>新实验出现选择偏差和计时问题，尚不能可靠估计提效幅度</td>
+</tr>
+<tr>
+<td><a href="https://www.pwc.com/gx/en/news-room/press-releases/2025/ai-linked-to-a-fourfold-increase-in-productivity-growth.html">PwC 2025 全球 AI 就业晴雨表</a></td>
+<td>2025-06，跨地区岗位广告与企业数据</td>
+<td>AI 技能相关职业和产业出现工资、技能要求差异</td>
+<td><strong>56% 工资溢价是统计关联，不是学会 AI 就能涨薪 56%</strong>；地区和样本不同</td>
+</tr>
+<tr>
+<td><a href="https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence">NIST AI 600-1</a></td>
+<td>2024 原始发布，持续更新</td>
+<td>帮读者区分虚构信息、信息安全、隐私、测试和人工管理</td>
+<td>风险指南不是法律许可，也不能通过一条 Prompt 完成治理</td>
+</tr>
+<tr>
+<td><a href="https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm">国家网信办：生成式人工智能服务管理暂行办法</a></td>
+<td>2023-08-15 起施行</td>
+<td>提醒阅读数据、隐私、商业秘密相关规则</td>
+<td>具体适用范围、企业政策和平台条款仍要核实</td>
+</tr>
+<tr>
+<td><a href="https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm">国家网信办：人工智能生成合成内容标识办法</a></td>
+<td>2025-09-01 起施行</td>
+<td>AI 生成发布内容要结合规定和平台功能处理标识</td>
+<td>不能仅凭本表替代逐条法律与平台规则检查</td>
+</tr>
+<tr>
+<td><a href="https://www.gov.cn/zhengce/zhengceku/202507/content_7032222.htm">国务院：2025—2027 年职业技能提升培训行动</a></td>
+<td>2025 年指导意见</td>
+<td>失业或转岗读者可关注官方职业培训与地方公开招聘服务</td>
+<td><strong>并非每位读者都自动符合补贴资格</strong>，以当地官方申请条件为准</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="重点数字别误写">重点数字别误写</h3>
+<ul>
+<li><strong>ILO 约 1/4 工作存在一定 GenAI 暴露</strong>：职业任务潜在变化，不能换算成失业人口。</li>
+<li><strong>ILO 约 3.3% 全球工作处于最高暴露梯度</strong>：也是潜在任务暴露，不等于 3.3% 岗位失业。</li>
+<li><strong>WEF 约 39% 核心技能变化</strong>：受访雇主对 2025—2030 年的调查预测，包含多种因素，不等于 39% 的人失业。</li>
+<li><strong>NBER 客服效率提升</strong>：限定被研究系统与工作场景，不能概括到所有企业。</li>
+<li><strong>METR 2025 反向结果约 19%</strong>：特定样本、特定工具，不能说明 AI 对所有程序员都没用；2026 年更新进一步提醒测量难度。</li>
+<li><strong>PwC 56% 工资溢价</strong>：相关性与样本口径限制很大，不能承诺个人职业回报。</li>
+</ul>
+<h3 id="资料更新规程">资料更新规程</h3>
+<p>每次重大版本先核实三个维度：发布日期、样本与地区、数字真正衡量什么。优先研究原文；媒体二次传播不能当唯一出处。新增观点如果只有一篇厂商研究支持，要标出利益关系、数据来源局限和可能相反的解释。每季度至少复查动态数字，且重大技术变化时优先复测练习而非强行沿用旧结论。</p>
+<h2 id="v3-0-政策与实际案例分开核查-2026-10-12">v3.0：政策与实际案例分开核查（2026-10-12）</h2>
+<p>下面新增了每项依据的<strong>文件/研究类别</strong>，方便读者识别“政策目标、真实测量、公司观点”的差别。完整拆解见 <a href="19-policy-and-opportunities.html">政策说明</a>、<a href="20-real-world-cases.html">六个案例</a>、<a href="21-why-change.html">岗位变化原因</a>。</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>日期 / 原始依据</th>
+<th>性质 / 对象</th>
+<th>支持的说法</th>
+<th>不支持的说法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.cac.gov.cn/2025-08/27/c_1758018277755538.htm">2025-08 国发〔2025〕11号</a></td>
+<td>国务院政策文件</td>
+<td>国家推动 AI 与多行业结合</td>
+<td>政府保证个体不失业或有补贴</td>
+</tr>
+<tr>
+<td><a href="https://www.gov.cn/zhengce/zhengceku/202507/content_7032222.htm">2025-06 国就劳发〔2025〕4号</a></td>
+<td>全国职业培训指导意见</td>
+<td>2025—2027 年补贴性培训 3000 万人次以上为<strong>政策目标</strong></td>
+<td>任何一名读者有具体额度或报名资格</td>
+</tr>
+<tr>
+<td><a href="https://www.cac.gov.cn/2024-04/18/c_1715116192334988.htm">2024-04 数字人才行动方案</a></td>
+<td>九部门人才培养方案</td>
+<td>数字工程师、数字技能培训政策方向</td>
+<td>免费包就业</td>
+</tr>
+<tr>
+<td><a href="https://www.nda.gov.cn/sjj/zwgk/zcfb/0708/20260708133949899211227_pc.html">2026-07 人社部发〔2026〕40号</a></td>
+<td>人社部等四部门实施意见</td>
+<td>公共就业服务规划 AI 辅助匹配与培训</td>
+<td>相关功能已在每个城市上线</td>
+</tr>
+<tr>
+<td><a href="https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_e81d115419b4463ebb59ec46467fb136.html">失业保险法律条文</a></td>
+<td>国家社会保险法</td>
+<td>基本参保、失业条件</td>
+<td>用户已经符合申领资格</td>
+</tr>
+<tr>
+<td><a href="https://fgk.chinatax.gov.cn/zcfgk/c100009/c5211776/content.html">个人信息保护法</a></td>
+<td>个人信息处理法律</td>
+<td>处理个人信息遵守合法、必要和最小化</td>
+<td>任意个人资料可以传入外部 AI</td>
+</tr>
+<tr>
+<td><a href="https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm">2025-03 内容标识办法</a></td>
+<td>自 2025-09-01 施行的规章制度</td>
+<td>生成合成内容的标识与申明义务</td>
+<td>所有发布类型适用一模一样的手工处理</td>
+</tr>
+<tr>
+<td><a href="https://www.nber.org/papers/w31161">2023 NBER 客服研究</a></td>
+<td>企业客服团队，5179 人</td>
+<td>特定 AI 助手人均处理量提升约 14%，新手增幅更大</td>
+<td>任意客服工具或企业都有同样效果</td>
+</tr>
+<tr>
+<td><a href="https://aiinstitute.hbs.edu/navigating-the-jagged-technological-frontier/">2023 HBS × BCG</a></td>
+<td>758 名顾问实验</td>
+<td>研究范围内任务 AI 可带来提速与质量变化</td>
+<td>AI 对所有咨询业务都有同等改善</td>
+</tr>
+<tr>
+<td><a href="https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/">2025 METR</a></td>
+<td>16 名经验丰富开发者、246 任务</td>
+<td>2025 年特定条件下 AI 使开发完成时间增加约 19%</td>
+<td>今天所有编码任务一定变慢</td>
+</tr>
+<tr>
+<td><a href="https://metr.org/blog/2026-02-24-uplift-update/">2026 METR 更新</a></td>
+<td>新一轮研究方法解释</td>
+<td>新数据存在选择偏差和计时限制</td>
+<td>已精确证明 AI 在 2026 的提效比例</td>
+</tr>
+<tr>
+<td><a href="https://www.reuters.com/business/swedens-klarna-shifts-ai-focus-cost-cuts-growth-2025-09-10/">2025 Klarna 报道</a></td>
+<td>路透新闻采访与公司陈述</td>
+<td>经营方向转向服务与增长</td>
+<td>公司所谓等效工时可以当实际裁员人数</td>
+</tr>
+<tr>
+<td><a href="https://www.shopify.com/news/unserious-exploration">2025 Shopify 官方文章</a></td>
+<td>公司自述 / 内部要求</td>
+<td>企业鼓励 AI 工作习惯</td>
+<td>所有雇主都有同样制度</td>
+</tr>
+<tr>
+<td><a href="https://hai.stanford.edu/ai-index/2026-ai-index-report/economy">2026 Stanford AI Index</a></td>
+<td>美国及全球劳动市场数据汇编</td>
+<td>年轻员工、岗位招聘受到不均衡影响</td>
+<td>数据能直接预测某个中国读者被裁风险</td>
+</tr>
+<tr>
+<td><a href="https://www.anthropic.com/research/labor-market-impacts">2026 Anthropic 就业研究</a></td>
+<td>美国就业指标 + 平台使用口径</td>
+<td>未发现高暴露工作失业率系统性上升，年轻人招聘有初步迹象</td>
+<td>AI 已经造成任何国家同等规模失业</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>使用边界：</strong>报道中的引述属于当事人观点，学术测量有样本限制；政策是否适用于某人须核对地方细则。培训机构收费前建议与当地官方渠道核对承办资格。</p>
+</article></main><footer class="wrap"><p>AI 酋长 Andy · 学习和研究资料，不能保证避免失业、涨薪或录用。<a href="../docs/ADVERSARIAL_AUDIT.html">阅读对抗式审核</a></p><p>需要结合个人情况讨论求职、职业发展、AI 应用或副业方向，可自愿联系微信 <strong>AIPMAndy</strong> · <a href="https://metaver.vip/" target="_blank" rel="noopener noreferrer">个人官网</a>。具体咨询范围与费用事先沟通，免费资料可直接使用，不保证录用、收入或效果。</p></footer></body></html>

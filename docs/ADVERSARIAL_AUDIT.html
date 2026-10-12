@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>ADVERSARIAL_AUDIT｜AI 时代不被淘汰保姆级指南</title><style>
+:root{--bg:#f7f7f4;--paper:#fff;--ink:#1d2e29;--muted:#627269;--line:#dfe5df;--accent:#376957;--gold:#b28a50}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.85 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}button,select{font:inherit}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}.site-nav{background:#172922;color:#eff4ec;position:relative}.site-nav .wrap{display:flex;align-items:center;justify-content:space-between;min-height:66px;gap:12px;flex-wrap:wrap}.site-nav a{color:#e8eee9}.site-nav .brand{font-size:16px;font-weight:800;text-decoration:none;letter-spacing:.02em}.navlinks{display:flex;gap:20px;font-size:13px}
+.hero{background:#172922;color:#fff;padding-bottom:68px}.hero img.cover{display:block;width:100%;max-width:1060px;max-height:460px;object-fit:cover;margin:0 auto}.hero-inner{padding-top:36px}.eyebrow{font-weight:750;letter-spacing:.16em;color:#b59d7a;font-size:11px;margin:0 0 8px}.hero h1{font-size:clamp(39px,5.6vw,66px);line-height:1.16;letter-spacing:-1.2px;margin:0 0 21px}.hero p{color:#d4ded6;max-width:720px;font-size:17px;margin:0}.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;background:#eae7dc;color:#182e27;border-radius:6px;border:1px solid #eae7dc;padding:11px 21px;font-weight:700;font-size:14px;cursor:pointer;text-decoration:none}.btn.secondary{background:transparent;border-color:#718078;color:#f4f5ef}.btn:hover{text-decoration:none;filter:brightness(.96)}
+section.chapter{border-bottom:1px solid var(--line);padding:51px 0}.chapter h2{font-size:27px;line-height:1.4;margin:5px 0 13px;letter-spacing:-.5px}.subtext{color:var(--muted);max-width:820px;margin:0 0 20px}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.card{border:1px solid var(--line);background:#fff;border-radius:7px;padding:22px;min-height:170px}.card h3{font-size:18px;margin:8px 0}.card p{font-size:14px;color:var(--muted);margin:0}.mini{font-size:12px;font-weight:800;color:var(--gold)}
+.columns{display:grid;grid-template-columns:1fr 1fr;gap:16px}.panel{border:1px solid var(--line);background:white;border-radius:8px;padding:22px}.panel label{font-weight:650;display:block;margin:12px 0 7px}.panel select{width:100%;padding:10px;border:1px solid #cfd9d1;border-radius:6px;background:#fff;color:var(--ink)}.suggestion{margin-top:18px;border-left:3px solid #85a995;padding:15px 17px;background:#f4f7f3;font-size:14px;line-height:1.8}.suggestion p{margin:8px 0}.suggestion strong{display:block;font-size:16px}
+.days{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.day{border:1px solid var(--line);border-radius:7px;padding:17px 19px;display:flex;align-items:flex-start;gap:12px;background:#fff;cursor:pointer}.day.done{border-color:#a2b7a7;background:#f2f7f1}.day input{accent-color:#397c61;margin-top:6px;width:17px;height:17px}.day .day-name{display:block;font-weight:750;margin-bottom:5px}.day .desc{display:block;font-size:13px;color:var(--muted)}.day .donewhen{display:block;font-size:12px;color:#59735d;margin-top:10px}.day-number{color:#b1966c;font-weight:850;font-size:24px;line-height:1.2}.bar{height:9px;background:#e2e7e1;border-radius:20px;overflow:hidden}.bar-fill{height:100%;background:#568e6f;width:0%;transition:width .2s}.progress-line{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:0 0 11px}.muted-link{border:0;background:none;text-decoration:underline;color:#65796b;cursor:pointer;font-size:13px}.note{font-size:13px;color:var(--muted)}
+.resources{display:grid;grid-template-columns:repeat(2,1fr);gap:11px}.resource{padding:17px 20px;border:1px solid var(--line);border-radius:7px;background:white;color:var(--ink);display:block}.resource strong{display:block}.resource span{font-size:13px;color:var(--muted)}footer{color:var(--muted);font-size:13px;padding:32px 0 55px}
+.article-page{max-width:900px;margin:30px auto 60px;background:#fff;border:1px solid #e4e5df;box-shadow:0 15px 55px #1d29210a;padding:52px 61px}.article-page h1{font-size:31px;line-height:1.45;margin:4px 0 24px}.article-page h2{font-size:22px;border-bottom:1px solid var(--line);padding-bottom:11px;margin:54px 0 19px}.article-page h3{font-size:18px;margin:32px 0 12px}.article-page p{line-height:1.95;margin:15px 0 21px}.article-page strong{color:#204c3b}.article-page img{display:block;width:100%;height:auto;margin:24px auto;border:1px solid var(--line)}.article-page pre{overflow:auto;background:#f2f5f2;border:1px solid #dfe6df;padding:18px 20px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.7;font-size:13px}.article-page code{font-size:13px;overflow-wrap:anywhere}.article-page blockquote{margin:20px 0;padding:4px 18px;border-left:3px solid #9caa91;background:#f5f7f4}.article-page table{border-collapse:collapse;width:100%;min-width:600px;font-size:14px}.article-page table td,.article-page table th{border:1px solid #dce3dc;padding:10px;text-align:left;vertical-align:top}.table-wrap{overflow-x:auto;margin:20px 0}.article-page ul,.article-page ol{padding-left:25px}.article-page li{margin:7px 0}
+@media(max-width:750px){.wrap{padding:0 18px}.cards,.columns,.days,.resources{grid-template-columns:1fr}.hero{padding-bottom:43px}.hero img.cover{max-height:none}.hero-inner{padding-top:24px}.chapter h2{font-size:23px}.site-nav .wrap{padding-top:10px;padding-bottom:10px}.navlinks{gap:12px;flex-wrap:wrap}.article-page{border:0;box-shadow:none;margin:0;padding:23px 18px}.article-page h1{font-size:25px}.article-page h2{font-size:20px;margin-top:40px}}
+</style><style>.article-page blockquote{background:#f0f4ef;border-left:3px solid #49715b;padding:7px 19px;margin:16px 0}.article-page pre{background:#f5f6f3;white-space:pre-wrap;overflow-wrap:anywhere}.article-page img{max-width:100%;height:auto}.article-page h2{scroll-margin-top:24px}.article-page h3{scroll-margin-top:24px}.article-page code{overflow-wrap:anywhere}.article-page ol,.article-page ul{padding-left:22px}.article-page a{text-decoration:underline}@media(max-width:650px){.article-page{border:none;margin:0;padding:23px 18px}}</style><style>.article-page .table-scroll{display:block;box-sizing:border-box;width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;margin:16px 0 25px}.article-page .table-scroll>table{width:100%;min-width:600px;margin:0}.article-page{min-width:0}</style></head><body><nav class="site-nav"><div class="wrap"><a class="brand" href="../index.html">AI 时代不被淘汰保姆级指南</a><div class="navlinks"><a href="../article.html">完整攻略</a><a href="../docs/START-HERE.html">按处境开始</a><a href="../lab.html">评分实验</a><a href="../docs/SOURCES.html">资料来源</a><a href="https://metaver.vip/" target="_blank" rel="noopener noreferrer">个人官网</a></div></div></nav><main class="article-page"><article><h1 id="对抗式审核记录-·-2026-10-12">对抗式审核记录 · 2026-10-12</h1>
+<p>项目版本：<strong>2.0 深度研究版</strong>。审核对象包括公开研究、完整文章、静态站、可复制 Prompt、课堂数据、评分工具、隐私安全及求职练习。</p>
+<p>这是一份<strong>自我质疑和修订记录</strong>，不是经过第三方审计认证。完成部分静态测试不代表真实业务效果或线上运行已经验证。</p>
+<h2 id="审核方法">审核方法</h2>
+<ol>
+<li><strong>就业研究反方</strong>：假设“AI 能力增强”不一定意味着岗位安全，寻找相反数据。</li>
+<li><strong>没有 AI 经验的读者</strong>：假设他只用手机/不会 CSV/没有购买会员预算，看能否从第一天开始。</li>
+<li><strong>正失业的读者</strong>：假设下个月房租马上到期，看教程是否误导其暂停投递去买课。</li>
+<li><strong>企业安全负责人</strong>：假设员工把客户资料发给外部工具、让 Agent 自动发布或删库，能否提前阻止。</li>
+<li><strong>面试官</strong>：假设作品完全由 AI 代写或使用虚构数据，能否追问出真实能力。</li>
+<li><strong>测试工程师</strong>：假设 AI 给出重复行、漏行、错误标签、错位输出，能否由程序发现。</li>
+<li><strong>事实核查者</strong>：对每个数字追溯对象、时间、方法及外推限制。</li>
+</ol>
+<h2 id="第一轮-研究与因果审核">第一轮：研究与因果审核</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>质疑</th>
+<th>旧稿问题</th>
+<th>修复动作</th>
+<th>复验依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI 暴露不等于失业</td>
+<td>只讲宏观预测，缺少 2026 实际数据</td>
+<td>增补 Anthropic 2026 实际暴露研究与年轻人招聘不确定性</td>
+<td>SOURCES 中日期和口径</td>
+</tr>
+<tr>
+<td>提效不保证</td>
+<td>只有假设加速演算</td>
+<td>增补 NBER 正向研究、METR 反向实验和 2026 局限更新</td>
+<td>GUIDE 第十九章、评估协议</td>
+</tr>
+<tr>
+<td>技能工资溢价不等于涨薪承诺</td>
+<td>没有充分区分相关性</td>
+<td>标明 PwC 关联性，不推断个人涨薪</td>
+<td>SOURCES 数字表</td>
+</tr>
+<tr>
+<td>职业标题太大</td>
+<td>“不被淘汰”容易被误会成保证</td>
+<td>README、首屏和 FAQ 明确不能保证不失业</td>
+<td>手册与网站提示</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="第二轮-能否跟做">第二轮：能否跟做</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>质疑</th>
+<th>旧稿问题</th>
+<th>修复动作</th>
+<th>复验依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prompt 没标准答案</td>
+<td>12 条虚构评论演示没有独立评分器</td>
+<td>新增 24 条虚构样本、标准答案、故意错误示范、CSV 评分器</td>
+<td>评分脚本及单元测试</td>
+</tr>
+<tr>
+<td>会用工具才看得懂</td>
+<td>缺少具体复制、导入、纠错步骤</td>
+<td>新增零基础工具教程和离线网页评分</td>
+<td>13-ai-tools-selection、lab.html</td>
+</tr>
+<tr>
+<td>单次快了就宣称提效</td>
+<td>旧稿有口径说明但练习不严格</td>
+<td>先冻结标准、拆分 T0/T1、漏项和严重错误、复测</td>
+<td>15-evaluation-protocol</td>
+</tr>
+<tr>
+<td>作品无法复核</td>
+<td>旧稿作品模板偏短</td>
+<td>新增 6 项作品评分、面试六问与来源清单</td>
+<td>17-portfolio-review</td>
+</tr>
+<tr>
+<td>只有一种职业路线</td>
+<td>主要是泛任务方法</td>
+<td>十个岗位练习、按场景分流、初学/低预算版本</td>
+<td>16-sector-playbooks、18-low-budget</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="第三轮-求职-成本与安全">第三轮：求职、成本与安全</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>质疑</th>
+<th>旧稿问题</th>
+<th>修复动作</th>
+<th>复验依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>被裁员的人不需要“刷工具”</td>
+<td>没有足够具体的收入优先路线</td>
+<td>现金流盘点、A/B/C 岗位、投递漏斗、停止条件</td>
+<td>11-career-defense</td>
+</tr>
+<tr>
+<td>简历容易被 AI 编出业绩</td>
+<td>原稿仅简单提醒</td>
+<td>JD → 证据 → 作品 → 追问 → 投递反馈闭环</td>
+<td>12-job-search</td>
+</tr>
+<tr>
+<td>员工可能泄密</td>
+<td>只有短安全列表</td>
+<td>输入分级、最小权限、只读沙盒、人工审批与回滚</td>
+<td>14-security-and-compliance</td>
+</tr>
+<tr>
+<td>AI 生成内容合法性和版权</td>
+<td>缺少中国大陆发布要求</td>
+<td>补充 2025 内容标识规定、原始出处</td>
+<td>法规资料与安全清单</td>
+</tr>
+<tr>
+<td>“省了时间”却增加支出</td>
+<td>没有订阅及复核成本一起算</td>
+<td>评估协议要求记录会员、token、时间、返工</td>
+<td>评估表</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="第四轮-程序与材料审查">第四轮：程序与材料审查</h2>
+<p>必须通过：<code>python3 scripts/check_content.py</code>、<code>python3 -m unittest discover -s tests -v</code>、对演示 CSV 运行评分工具，并用 <code>node --check</code> 检查首页和实验页脚本。检测覆盖：本地图片和链接、封面尺寸、实验样本数量、示范错项数量、重复 ID、无效标签、遗漏 ID。</p>
+<p><strong>浏览器仍需复核的项目：</strong>手机宽度是否溢出、静态页图像显示、复选框是否能本地保存与重置、实验评分按钮点击、页面链接在真实 GitHub Pages 下是否正确。没有经过线上发布就不能声称线上实测通过。</p>
+<h2 id="审核后的剩余限制">审核后的剩余限制</h2>
+<ul>
+<li>研究受样本、地区、研究年份、工具迭代影响；不能算个人失业概率。</li>
+<li>24 条虚构反馈的教学标签是人工规定的，不是业务客观真理；实验也不能代表真实客服系统质量。</li>
+<li>工作与薪资建议未读取读者个人实际数据，不构成定制职业咨询或投资/法律建议。</li>
+<li>中国大陆政策与用人单位内部制度可能更新，需要在使用现场核实。</li>
+<li>当前仍是<strong>可发布项目文件</strong>；GitHub 仓库与 Pages 是否在线，应单独验证。</li>
+</ul>
+<h2 id="审稿人最后一个问题">审稿人最后一个问题</h2>
+<p><strong>一个今天完全不会用 AI 的人，能否在 7 天后拿出真实、有来源、能复核的作品？</strong></p>
+<p>本项目提供最小路径：24 条虚构评论 → 固定任务标准 → 人工基线 → AI 分类 → 独立评分 → 错误复核 → 可展示练习报告。最后如果结果是“变慢、做错、应当停”，这也必须如实保留。</p>
+<h2 id="v3-0-反方审核-政策-案例-因果">v3.0 反方审核：政策、案例、因果</h2>
+<ul>
+<li><strong>政策夸大：</strong>全国 3000 万人次培训目标不等于每人有补贴，已逐条增加地方资格、官方渠道核验和有效期警告。</li>
+<li><strong>案例营销：</strong>Klarna 所谓“等效 700 人”不应冒充实际裁员 700 人，已经只用于说明自述与服务质量分开。</li>
+<li><strong>研究外推：</strong>NBER 客服、BCG 顾问、METR 资深开发者测量不同指标，不允许直接并列算平均提效。</li>
+<li><strong>青年就业因果：</strong>Anthropic 和 Stanford 的美国数据有年龄、地区与时间口径限制，不能直接推断中国个人失业概率。</li>
+<li><strong>隐私与内容合规：</strong>法律规范约束如何使用数据和发布内容，不代表任何工具经过安全审核。</li>
+<li><strong>真正能操作：</strong>新增政策办理核验表、案例反向检查卡与 JD 证据表，供读者保留来源。</li>
+</ul>
+<p><strong>未被解决的限制：</strong>没有当地实时补贴名额和个人资格信息；没有用户企业的任务数据；不能为读者断言一定能保住工作。原始依据见 <a href="SOURCES.html">来源与限制</a>。</p>
+</article></main><footer class="wrap"><p>AI 酋长 Andy · 学习和研究资料，不能保证避免失业、涨薪或录用。<a href="../docs/ADVERSARIAL_AUDIT.html">阅读对抗式审核</a></p><p>需要结合个人情况讨论求职、职业发展、AI 应用或副业方向，可自愿联系微信 <strong>AIPMAndy</strong> · <a href="https://metaver.vip/" target="_blank" rel="noopener noreferrer">个人官网</a>。具体咨询范围与费用事先沟通，免费资料可直接使用，不保证录用、收入或效果。</p></footer></body></html>

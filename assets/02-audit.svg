@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 770" role="img" aria-label="先问四个问题，再交给 AI" width="1440" height="770">
+<rect width="1440" height="770" fill="#F7F6F1"/>
+<text x="70" y="68" fill="#38675B" font-size="20" font-weight="650" letter-spacing="2" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">AI ERA / FIELD NOTES    02</text>
+<line x1="68" y1="94" x2="1370" y2="94" stroke="#DCE1D8" stroke-width="2"/>
+<text x="70" y="175" fill="#132822" font-size="53" font-weight="700" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">先问四个问题，再交给 AI</text>
+<text x="72" y="220" fill="#66716B" font-size="23" font-weight="400" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">四个条件越清楚，越适合拿来做第一周的小实验。</text>
+<rect x="75" y="285" width="620" height="150" rx="12" fill="#FFFFFF" stroke="#DCE1D8" stroke-width="1.5"/>
+<text x="99" y="350" fill="#B88C52" font-size="40" font-weight="750" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">A</text>
+<text x="175" y="342" fill="#132822" font-size="34" font-weight="700" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">合法输入</text>
+<text x="175" y="392" fill="#66716B" font-size="24" font-weight="400" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">公开或获得授权的资料</text>
+<rect x="744" y="285" width="620" height="150" rx="12" fill="#FFFFFF" stroke="#DCE1D8" stroke-width="1.5"/>
+<text x="768" y="350" fill="#B88C52" font-size="40" font-weight="750" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">B</text>
+<text x="844" y="342" fill="#132822" font-size="34" font-weight="700" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">明确产出</text>
+<text x="844" y="392" fill="#66716B" font-size="24" font-weight="400" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">字段、格式、验收标准</text>
+<rect x="75" y="472" width="620" height="150" rx="12" fill="#FFFFFF" stroke="#DCE1D8" stroke-width="1.5"/>
+<text x="99" y="537" fill="#B88C52" font-size="40" font-weight="750" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">C</text>
+<text x="175" y="529" fill="#132822" font-size="34" font-weight="700" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">人工可复核</text>
+<text x="175" y="579" fill="#66716B" font-size="24" font-weight="400" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">能回到原始资料查对错</text>
+<rect x="744" y="472" width="620" height="150" rx="12" fill="#FFFFFF" stroke="#DCE1D8" stroke-width="1.5"/>
+<text x="768" y="537" fill="#B88C52" font-size="40" font-weight="750" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">D</text>
+<text x="844" y="529" fill="#132822" font-size="34" font-weight="700" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">错误可承担</text>
+<text x="844" y="579" fill="#66716B" font-size="24" font-weight="400" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">能停止、纠正、撤回</text>
+<line x1="68" y1="714" x2="1370" y2="714" stroke="#DCE1D8" stroke-width="2"/>
+<text x="70" y="747" fill="#66716B" font-size="17" font-weight="400" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">AI 酋长 Andy  /  一张图，只讲清楚一件事</text>
+</svg>

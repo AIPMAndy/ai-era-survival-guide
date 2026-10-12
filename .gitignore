@@ -1,0 +1,16 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+*.pem
+*.key
+*.log
+.private/
+client-data/
+customer-data/
+secrets/
+
+*.py[cod]
+!.env.example

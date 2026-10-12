@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>19-policy-and-opportunities｜AI 时代不被淘汰保姆级指南</title><style>
+:root{--bg:#f7f7f4;--paper:#fff;--ink:#1d2e29;--muted:#627269;--line:#dfe5df;--accent:#376957;--gold:#b28a50}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.85 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}button,select{font:inherit}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}.site-nav{background:#172922;color:#eff4ec;position:relative}.site-nav .wrap{display:flex;align-items:center;justify-content:space-between;min-height:66px;gap:12px;flex-wrap:wrap}.site-nav a{color:#e8eee9}.site-nav .brand{font-size:16px;font-weight:800;text-decoration:none;letter-spacing:.02em}.navlinks{display:flex;gap:20px;font-size:13px}
+.hero{background:#172922;color:#fff;padding-bottom:68px}.hero img.cover{display:block;width:100%;max-width:1060px;max-height:460px;object-fit:cover;margin:0 auto}.hero-inner{padding-top:36px}.eyebrow{font-weight:750;letter-spacing:.16em;color:#b59d7a;font-size:11px;margin:0 0 8px}.hero h1{font-size:clamp(39px,5.6vw,66px);line-height:1.16;letter-spacing:-1.2px;margin:0 0 21px}.hero p{color:#d4ded6;max-width:720px;font-size:17px;margin:0}.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;background:#eae7dc;color:#182e27;border-radius:6px;border:1px solid #eae7dc;padding:11px 21px;font-weight:700;font-size:14px;cursor:pointer;text-decoration:none}.btn.secondary{background:transparent;border-color:#718078;color:#f4f5ef}.btn:hover{text-decoration:none;filter:brightness(.96)}
+section.chapter{border-bottom:1px solid var(--line);padding:51px 0}.chapter h2{font-size:27px;line-height:1.4;margin:5px 0 13px;letter-spacing:-.5px}.subtext{color:var(--muted);max-width:820px;margin:0 0 20px}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.card{border:1px solid var(--line);background:#fff;border-radius:7px;padding:22px;min-height:170px}.card h3{font-size:18px;margin:8px 0}.card p{font-size:14px;color:var(--muted);margin:0}.mini{font-size:12px;font-weight:800;color:var(--gold)}
+.columns{display:grid;grid-template-columns:1fr 1fr;gap:16px}.panel{border:1px solid var(--line);background:white;border-radius:8px;padding:22px}.panel label{font-weight:650;display:block;margin:12px 0 7px}.panel select{width:100%;padding:10px;border:1px solid #cfd9d1;border-radius:6px;background:#fff;color:var(--ink)}.suggestion{margin-top:18px;border-left:3px solid #85a995;padding:15px 17px;background:#f4f7f3;font-size:14px;line-height:1.8}.suggestion p{margin:8px 0}.suggestion strong{display:block;font-size:16px}
+.days{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.day{border:1px solid var(--line);border-radius:7px;padding:17px 19px;display:flex;align-items:flex-start;gap:12px;background:#fff;cursor:pointer}.day.done{border-color:#a2b7a7;background:#f2f7f1}.day input{accent-color:#397c61;margin-top:6px;width:17px;height:17px}.day .day-name{display:block;font-weight:750;margin-bottom:5px}.day .desc{display:block;font-size:13px;color:var(--muted)}.day .donewhen{display:block;font-size:12px;color:#59735d;margin-top:10px}.day-number{color:#b1966c;font-weight:850;font-size:24px;line-height:1.2}.bar{height:9px;background:#e2e7e1;border-radius:20px;overflow:hidden}.bar-fill{height:100%;background:#568e6f;width:0%;transition:width .2s}.progress-line{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:0 0 11px}.muted-link{border:0;background:none;text-decoration:underline;color:#65796b;cursor:pointer;font-size:13px}.note{font-size:13px;color:var(--muted)}
+.resources{display:grid;grid-template-columns:repeat(2,1fr);gap:11px}.resource{padding:17px 20px;border:1px solid var(--line);border-radius:7px;background:white;color:var(--ink);display:block}.resource strong{display:block}.resource span{font-size:13px;color:var(--muted)}footer{color:var(--muted);font-size:13px;padding:32px 0 55px}
+.article-page{max-width:900px;margin:30px auto 60px;background:#fff;border:1px solid #e4e5df;box-shadow:0 15px 55px #1d29210a;padding:52px 61px}.article-page h1{font-size:31px;line-height:1.45;margin:4px 0 24px}.article-page h2{font-size:22px;border-bottom:1px solid var(--line);padding-bottom:11px;margin:54px 0 19px}.article-page h3{font-size:18px;margin:32px 0 12px}.article-page p{line-height:1.95;margin:15px 0 21px}.article-page strong{color:#204c3b}.article-page img{display:block;width:100%;height:auto;margin:24px auto;border:1px solid var(--line)}.article-page pre{overflow:auto;background:#f2f5f2;border:1px solid #dfe6df;padding:18px 20px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.7;font-size:13px}.article-page code{font-size:13px;overflow-wrap:anywhere}.article-page blockquote{margin:20px 0;padding:4px 18px;border-left:3px solid #9caa91;background:#f5f7f4}.article-page table{border-collapse:collapse;width:100%;min-width:600px;font-size:14px}.article-page table td,.article-page table th{border:1px solid #dce3dc;padding:10px;text-align:left;vertical-align:top}.table-wrap{overflow-x:auto;margin:20px 0}.article-page ul,.article-page ol{padding-left:25px}.article-page li{margin:7px 0}
+@media(max-width:750px){.wrap{padding:0 18px}.cards,.columns,.days,.resources{grid-template-columns:1fr}.hero{padding-bottom:43px}.hero img.cover{max-height:none}.hero-inner{padding-top:24px}.chapter h2{font-size:23px}.site-nav .wrap{padding-top:10px;padding-bottom:10px}.navlinks{gap:12px;flex-wrap:wrap}.article-page{border:0;box-shadow:none;margin:0;padding:23px 18px}.article-page h1{font-size:25px}.article-page h2{font-size:20px;margin-top:40px}}
+</style><style>.article-page blockquote{background:#f0f4ef;border-left:3px solid #49715b;padding:7px 19px;margin:16px 0}.article-page pre{background:#f5f6f3;white-space:pre-wrap;overflow-wrap:anywhere}.article-page img{max-width:100%;height:auto}.article-page h2{scroll-margin-top:24px}.article-page h3{scroll-margin-top:24px}.article-page code{overflow-wrap:anywhere}.article-page ol,.article-page ul{padding-left:22px}.article-page a{text-decoration:underline}@media(max-width:650px){.article-page{border:none;margin:0;padding:23px 18px}}</style><style>.article-page .table-scroll{display:block;box-sizing:border-box;width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;margin:16px 0 25px}.article-page .table-scroll>table{width:100%;min-width:600px;margin:0}.article-page{min-width:0}</style></head><body><nav class="site-nav"><div class="wrap"><a class="brand" href="../index.html">AI 时代不被淘汰保姆级指南</a><div class="navlinks"><a href="../article.html">完整攻略</a><a href="../docs/START-HERE.html">按处境开始</a><a href="../lab.html">评分实验</a><a href="../docs/SOURCES.html">资料来源</a><a href="https://metaver.vip/" target="_blank" rel="noopener noreferrer">个人官网</a></div></div></nav><main class="article-page"><article><h1 id="政策怎么用-ai-职业培训和失业保障">政策怎么用：AI、职业培训和失业保障</h1>
+<p><strong>核查日期：2026-10-12。适用地区：中国大陆。</strong> 以下只说明公开文件写了什么、普通人如何查，<strong>不能当作个人补贴资格或法律意见</strong>。政策可能有地方细则、项目名额、课程准入及更新，以参保地、人社部门与实际通知为准。</p>
+<h2 id="一-国家确实在推动-ai-应用-但政策不会替你找工作">一、国家确实在推动 AI 应用，但政策不会替你找工作</h2>
+<p>2025 年 8 月，国务院发布 <strong>《关于深入实施“人工智能+”行动的意见》国发〔2025〕11 号</strong>，提出推动 AI 与科学、产业、消费、民生、治理、全球合作等领域融合，到 2027 年在六大重点领域广泛深度融合，并提出智能体和新一代智能终端普及目标。这些是<strong>国家层面的发展目标</strong>，不是“某企业必须招聘 AI 人才”或者“个人能领多少补贴”。<a href="https://www.cac.gov.cn/2025-08/27/c_1758018277755538.htm">原始文件：国家网信办转载国务院公文</a>。</p>
+<p><strong>普通人怎么用？</strong> 看你所在行业是否已有真实的新工作。例如经营一家门店的人，可以观察门店预约、商品资料、售后知识库；做产品的人看需求整理、测试和用户支持；制造业一线人员看质量追溯与设备记录。先查本地真实岗位 JD 和企业的具体试点，别直接根据政策标题去辞职转行。</p>
+<h2 id="二-职业技能培训确实有政策-但不能假设人人免费">二、职业技能培训确实有政策，但不能假设人人免费</h2>
+<p>2025 年 6 月，国务院就业促进和劳动保护工作领导小组发布 <strong>《关于开展大规模职业技能提升培训行动的指导意见》国就劳发〔2025〕4 号</strong>，提出 2025—2027 年面向重点领域与就业重点群体开展大规模职业技能培训，<strong>补贴性培训 3000 万人次以上是全国三年政策目标</strong>。文件强调制造业、数字经济、具身智能、数据安全等方向，并提出课程要参考职业标准，培训质量评估要结合技能与就业成果。<a href="https://www.gov.cn/zhengce/zhengceku/202507/content_7032222.htm">中国政府网官方文件</a>。</p>
+<p>这不意味着“3000 万人都能免费报名同一门 AI 课”，更不等于任何机构打着政策旗号的培训都是政府认可的。具体课程、补贴标准和申请对象，要看当地公开通知及承办资质。</p>
+<p><strong>实际操作：</strong></p>
+<ol>
+<li>查询当地人力资源和社会保障局官网；关键词用“地区名 + 职业技能培训 + 补贴目录 + 2026”，或在当地官方政务服务平台搜索。</li>
+<li>查通知的<strong>发文机关、文号、发布日期、适用对象、培训机构、报名窗口与补贴是否需要先垫付</strong>。</li>
+<li>查这门课是否真的对应你要申请的岗位：找到至少 5 条有效招聘 JD，记录招聘方要求的能力和作品。</li>
+<li>如对机构有疑问，直接向当地人社部门或 12333 咨询，留存对方的正式答复或线上说明。不要把客服口头答复当作永久承诺。</li>
+<li>培训完成后检查能否拿到可验证的技能证据，以及是否有合法岗位招聘或就业服务衔接。拿到培训证书不等于有录用资格。</li>
+</ol>
+<p>还有一份政策可用于追溯：九部门印发的 <strong>《加快数字人才培育支撑数字经济发展行动方案（2024—2026年）》</strong>，提出数字工程师和数字技能提升等项目；同样需要当地项目细则落地。<a href="https://www.cac.gov.cn/2024-04/18/c_1715116192334988.htm">国家网信办原始通知</a>。</p>
+<h2 id="三-2026-年-连公共就业服务都在推进-ai">三、2026 年：连公共就业服务都在推进 AI</h2>
+<p>2026 年 7 月，<strong>人社部等四部门《关于加快推进“人工智能＋人社”应用发展的实施意见》人社部发〔2026〕40号</strong>明确提出职业分类知识图谱、招聘需求识别、求职意向匹配、智慧面试、职业指导、技能培训等应用场景；2026、2027、2030 均有阶段性目标。它是指导<strong>人社领域应用建设</strong>的政策，不是“已全国统一上线 AI 自动匹配”，也不是“把个人简历上传任何第三方 AI 就能获得推荐”。<a href="https://www.nda.gov.cn/sjj/zwgk/zcfb/0708/20260708133949899211227_pc.html">国家数据局公文</a>。</p>
+<p><strong>求职者怎么用？</strong> 优先查看官方公共就业平台上<strong>已经实际开通</strong>的岗位搜索、职业指导和培训入口；具体是否可用要以当地页面为准。再自己建立真实 JD 记录表，不让 AI 编造招聘公司、岗位和投递状态。</p>
+<h2 id="四-失业时先保现金流-别把-学-ai-排在缴房租前面">四、失业时先保现金流，别把“学 AI”排在缴房租前面</h2>
+<p>《中华人民共和国社会保险法》第四十五条规定，失业保险金涉及参保缴费时间、非本人意愿中断就业、失业登记与求职要求等条件；各地经办规则和申领流程应以最新当地公布内容为准。<a href="https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_e81d115419b4463ebb59ec46467fb136.html">全国法律文本</a>。</p>
+<p><strong>实际操作：</strong>先确认劳动关系解除材料、参保地和当前就业状态。到 <a href="https://www.12333.gov.cn/portal/common/bszn/sydysl">全国人社政务服务平台 12333</a> 查询参保地开通情况、最新申请条件和入口；必要时咨询参保地经办机构。<strong>不要以为主动离职必然领取失业保险金，也不要把历史网页关于临时失业补助金的规则当作当前普遍政策。</strong>领取待遇、开始灵活就业或重新就业可能需要报告或重新核实资格。</p>
+<p>能申领的待遇应及时办理，同时继续投递真实岗位。手头现金只够一两个月时，优先保留求职和必要生活开支，暂缓没有明确效果的高价 AI 培训。</p>
+<h2 id="五-ai-用在公司和公众号-要先确认合规边界">五、AI 用在公司和公众号，要先确认合规边界</h2>
+<p><strong>《个人信息保护法》</strong>对个人信息处理规定合法、正当、必要、目的限制和最小化等要求。法律并未规定“把姓名遮掉就自动成为完全匿名数据”。客户简历、医疗健康、订单详情和财务资料通常不能因为“只想测试一下 AI”就上传未经授权的外部服务。<a href="https://fgk.chinatax.gov.cn/zcfgk/c100009/c5211776/content.html">国家税务总局法规库全文</a>。</p>
+<p><strong>《人工智能生成合成内容标识办法》</strong>自 <strong>2025 年 9 月 1 日</strong>起施行。第十条涉及发布生成合成内容时主动声明并使用平台标识功能；实际需要结合平台规则和内容类型判断，尤其是图片、音视频等。不能移除或伪造依法应保留的标识。<a href="https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm">国家网信办文件</a>。</p>
+<p><strong>普通人今天就做：</strong>用<strong>虚构的教学数据</strong>先练习，公开分享作品时明确“模拟数据”；企业工作要有授权范围，敏感数据默认不放到不受控工具；公开发布 AI 合成内容要按法规和平台提示做标识。涉及劳动争议和敏感个人信息的具体处理要咨询当地专业人士。</p>
+<h2 id="六-培训资格核验表-复制填写">六、培训资格核验表（复制填写）</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>字段</th>
+<th>填写方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>所在地区、参保地</td>
+<td>______</td>
+</tr>
+<tr>
+<td>政策名称与发文机关</td>
+<td>______</td>
+</tr>
+<tr>
+<td>原文网址、文号、发布日期</td>
+<td>______</td>
+</tr>
+<tr>
+<td>最新有效期与报名窗口</td>
+<td>______</td>
+</tr>
+<tr>
+<td>适用对象，我是否满足</td>
+<td>已核实 / 待核实</td>
+</tr>
+<tr>
+<td>课程、机构、官方名单</td>
+<td>______</td>
+</tr>
+<tr>
+<td>补贴金额与支付条件</td>
+<td>按当地通知填写，未知则不填</td>
+</tr>
+<tr>
+<td>与目标岗位的关系</td>
+<td>至少 5 份公开 JD 里的技能要求</td>
+</tr>
+<tr>
+<td>咨询日期和结果</td>
+<td>______</td>
+</tr>
+<tr>
+<td>我的下一步</td>
+<td>报名 / 咨询 / 暂缓</td>
+</tr>
+</tbody>
+</table></div>
+<p><a href="20-real-world-cases.html">真实案例与研究</a> · <a href="21-why-change.html">政策与职业变化的因果链</a> · <a href="../index.html">返回首页</a></p>
+</article></main><footer class="wrap"><p>AI 酋长 Andy · 学习和研究资料，不能保证避免失业、涨薪或录用。<a href="../docs/ADVERSARIAL_AUDIT.html">阅读对抗式审核</a></p><p>需要结合个人情况讨论求职、职业发展、AI 应用或副业方向，可自愿联系微信 <strong>AIPMAndy</strong> · <a href="https://metaver.vip/" target="_blank" rel="noopener noreferrer">个人官网</a>。具体咨询范围与费用事先沟通，免费资料可直接使用，不保证录用、收入或效果。</p></footer></body></html>

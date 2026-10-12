@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 770" role="img" aria-label="六类人，练法不同" width="1440" height="770">
+<rect width="1440" height="770" fill="#F7F6F1"/>
+<text x="70" y="68" fill="#38675B" font-size="20" font-weight="650" letter-spacing="2" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">AI ERA / FIELD NOTES    05</text>
+<line x1="68" y1="94" x2="1370" y2="94" stroke="#DCE1D8" stroke-width="2"/>
+<text x="70" y="175" fill="#132822" font-size="53" font-weight="700" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">六类人，练法不同</text>
+<text x="72" y="220" fill="#66716B" font-size="23" font-weight="400" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">先选你眼下真实在做的事；用同一套方法做出不同的作品。</text>
+<rect x="68" y="285" width="421" height="145" rx="12" fill="#FFFFFF" stroke="#DCE1D8" stroke-width="1.5"/>
+<text x="91" y="343" fill="#132822" font-size="32" font-weight="700" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">应届生</text>
+<text x="91" y="390" fill="#38675B" font-size="22" font-weight="400" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">一份公开 JD 作品</text>
+<rect x="522" y="285" width="421" height="145" rx="12" fill="#FFFFFF" stroke="#DCE1D8" stroke-width="1.5"/>
+<text x="545" y="343" fill="#132822" font-size="32" font-weight="700" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">在职人员</text>
+<text x="545" y="390" fill="#38675B" font-size="22" font-weight="400" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">一条重复工作流</text>
+<rect x="976" y="285" width="421" height="145" rx="12" fill="#FFFFFF" stroke="#DCE1D8" stroke-width="1.5"/>
+<text x="999" y="343" fill="#132822" font-size="32" font-weight="700" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">求职者</text>
+<text x="999" y="390" fill="#38675B" font-size="22" font-weight="400" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">岗位差距与证据</text>
+<rect x="68" y="463" width="421" height="145" rx="12" fill="#FFFFFF" stroke="#DCE1D8" stroke-width="1.5"/>
+<text x="91" y="521" fill="#132822" font-size="32" font-weight="700" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">管理者</text>
+<text x="91" y="568" fill="#38675B" font-size="22" font-weight="400" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">有授权的小试点</text>
+<rect x="522" y="463" width="421" height="145" rx="12" fill="#FFFFFF" stroke="#DCE1D8" stroke-width="1.5"/>
+<text x="545" y="521" fill="#132822" font-size="32" font-weight="700" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">创作者</text>
+<text x="545" y="568" fill="#38675B" font-size="22" font-weight="400" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">真实内容与验收</text>
+<rect x="976" y="463" width="421" height="145" rx="12" fill="#FFFFFF" stroke="#DCE1D8" stroke-width="1.5"/>
+<text x="999" y="521" fill="#132822" font-size="32" font-weight="700" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">开发者</text>
+<text x="999" y="568" fill="#38675B" font-size="22" font-weight="400" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">测试、Review、回滚</text>
+<line x1="68" y1="714" x2="1370" y2="714" stroke="#DCE1D8" stroke-width="2"/>
+<text x="70" y="747" fill="#66716B" font-size="17" font-weight="400" letter-spacing="0" font-family="-apple-system,BlinkMacSystemFont,Noto Sans CJK SC,Microsoft YaHei,Arial,sans-serif">AI 酋长 Andy  /  一张图，只讲清楚一件事</text>
+</svg>
