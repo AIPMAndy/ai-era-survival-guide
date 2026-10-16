@@ -41,7 +41,7 @@ for file in ROOT.rglob('*.html'):
  txt=file.read_text(encoding='utf8')
  scan=Scan(file);scan.feed(txt)
  if re.search(r'text-align\s*:\s*(start|end)\b',txt,re.I):errors.append('Nonstandard text align '+str(file.relative_to(ROOT)))
- if file.name=='index.html' and scan.scripts!=1:errors.append('Homepage requires one interactive script')
+ if file == ROOT/'index.html' and scan.scripts!=1:errors.append('Homepage requires one interactive script')
  if file.name=='article.html' and scan.images<5:errors.append('Article missing diagrams')
  if file.name=='lab.html' and scan.scripts!=1:errors.append('Lab page requires one evaluation script')
 for file in (ROOT/'assets').glob('*.svg'):
