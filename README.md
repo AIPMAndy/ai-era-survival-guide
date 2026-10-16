@@ -1,6 +1,6 @@
 # AI 时代不被淘汰保姆级指南
 
-> AI 酋长 Andy 整理 · **v3.0（2026-10-12）** · 开源、可执行、持续更新
+> AI 酋长 Andy 整理 · **v5.0（2026-10-15）** · 开源、可执行、持续更新
 
 ![AI 时代不被淘汰保姆级指南](assets/wechat-cover-900x383.png)
 
@@ -11,6 +11,15 @@
 一篇文章讲清楚岗位变化、一周练出第一个作品、一个月把它变成可重复使用的工作流程。适合学生、职场人、转行者、求职者、管理者、内容创作者和开发者。
 
 [🌐 在线互动指南](https://aipmandy.github.io/ai-era-survival-guide/) · [GitHub 仓库](https://github.com/AIPMAndy/ai-era-survival-guide) · [📖 完整攻略](GUIDE.md) · [🌐 图文阅读页](article.html) · [🧪 24 条反馈评分器](lab.html) · [🚀 从这里开始](docs/START-HERE.md) · [🧭 7 天交互训练](index.html#challenge) · [📋 30 天路线](docs/08-thirty-days.md) · [🧰 Prompt](prompts/README.md) · [📂 模板](templates/README.md) · [🔎 数据与来源](docs/SOURCES.md) · [🏛 政策与资格](docs/19-policy-and-opportunities.md) · [📊 真实案例](docs/20-real-world-cases.md)
+
+## 🇨🇳 新增：2027—2029 中国职场六册实操攻略（v5.0）
+
+**这次把原来的通用 AI 能力指南，补成了适合中国招聘、求职、在职转型使用的完整分册。** 具体政策、真实案例、30 类岗位任务、2027—2029 年的可检验情景，以及三套模拟实操数据。
+
+**[📖 六册专题目录](series/index.html) · [🏛 中国政策与就业](series/01-policy.md) · [📈 2027—2029 三年预测](series/02-forecast.md) · [💼 30 类岗位逐个拆解](series/03-roles.md) · [🎯 求职与转型路线](series/04-career-paths.md) · [🧰 7/30/90 天训练](series/05-practice.md) · [🔎 真实案例及反方审核](series/06-cases.md) · [🧪 三套从零实验](series/07-labs.md)**
+
+> 资料研究基准为 2026 年 10 月。**政策目标不等于岗位被替代比例，海外实验不等于中国的行业结论，练习数据为虚构教学数据。**本项目不会预测个人失业概率，也不保证就业、涨薪或培训补贴。
+
 
 ## 新增：政策和真实案例，为什么现在要练 AI？
 
