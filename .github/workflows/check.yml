@@ -23,6 +23,24 @@ jobs:
         run: |
           python3 -m unittest discover -s tests -v
           python3 scripts/grade_feedback.py labs/sample-predictions-not-a-model-result.csv
+      - name: Validate China 2027-2029 series and three exercise scorers
+        run: |
+          python3 series/scripts/test_scorers.py
+          python3 - <<'PYTEST'
+          from pathlib import Path
+          import re
+          root=Path('series')
+          for slug in ['01-policy','02-forecast','03-roles','04-career-paths','05-practice','06-cases','07-labs']:
+              p=root/(slug+'.md')
+              assert p.exists() and len(p.read_text(encoding='utf8'))>1000,p
+              for u in re.findall(r'!\\[[^\\]]*\\]\\(([^)]+)\\)',p.read_text(encoding='utf8')):
+                  if not u.startswith(('https:','http:')):
+                      assert (root/u).exists(),(p,u)
+          for file in ['24条评论_练习数据.csv','24条评论_参考答案.csv','模拟财务对账30行.csv','模拟财务对账_标准答案.csv','虚构JD10条_证据练习.csv','虚构JD_技能标签标准答案.csv']:
+              assert (root/'可直接填写的表格'/file).is_file(),file
+          assert (root/'index.html').is_file()
+          print('PASS: six volumes, three labs, assets and navigation')
+          PYTEST
       - name: Check laboratory JavaScript syntax
         run: |
           python3 - <<'PYTEST'
