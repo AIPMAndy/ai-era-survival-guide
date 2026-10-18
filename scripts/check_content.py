@@ -54,9 +54,9 @@ if len(list((ROOT/'prompts').glob('[0-9][0-9]-*.md')))!=12:errors.append('Prompt
 if len(list((ROOT/'templates').glob('*.md')))!=16:errors.append('Template count must be 15 + README')
 if len(list((ROOT/'examples').glob('*.md')))!=7:errors.append('Need 7 role examples including PM')
 guide=(ROOT/'GUIDE.md').read_text(encoding='utf8')
-for word in ['岗位','任务','授权','人工复核','Day 1','30 天','90 天','失业','面试','对抗式']:
+for word in ['岗位','任务','主业','副业','2027','2028','2029','失业','面试','咨询']:
  if word not in guide:errors.append('Guide missing '+word)
-if 'AI 时代不被淘汰保姆级指南' not in (ROOT/'README.md').read_text(encoding='utf8'):errors.append('README title mismatch')
+if 'AI时代不被淘汰保姆级攻略' not in (ROOT/'README.md').read_text(encoding='utf8'):errors.append('README title mismatch')
 if len(re.findall(r'^## [一二三四五六七八九十]+、',guide,re.M))!=11:errors.append('Expected 11 numbered guide chapters')
 import csv
 with (ROOT/'labs/feedback-24.csv').open(encoding='utf-8-sig',newline='') as f:sample=list(csv.DictReader(f))
@@ -64,8 +64,10 @@ with (ROOT/'labs/feedback-24-gold.csv').open(encoding='utf-8-sig',newline='') as
 if len(sample)!=24 or len(gold)!=24:errors.append('Expected 24 rows in both lab sample and gold')
 if [r['id'] for r in sample]!=[str(i) for i in range(1,25)]:errors.append('Lab IDs must be 1..24 in order')
 if {r['id'] for r in gold}!={str(i) for i in range(1,25)}:errors.append('Gold IDs must be 1..24')
+for f in ['assets/cover-v6.svg'] + [f'assets/latest-{i:02d}.svg' for i in range(1,10)]:
+ if not (ROOT/f).is_file():errors.append('Missing new illustration '+f)
 if errors:
  print('FAIL: '+str(len(errors))+' problem(s)')
  for e in errors:print(' - '+e)
  sys.exit(1)
-print('PASS: local links, HTML, 23 guide chapters, 8 SVG, 900x383 cover, 12 prompts, 15 templates, 24 lab rows, policy and case appendix')
+print('PASS: local links, latest 11-chapter guide, new cover and 9 SVG, old tool assets, datasets, policy and cases')
