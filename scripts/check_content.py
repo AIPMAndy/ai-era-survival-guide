@@ -57,7 +57,7 @@ guide=(ROOT/'GUIDE.md').read_text(encoding='utf8')
 for word in ['岗位','任务','授权','人工复核','Day 1','30 天','90 天','失业','面试','对抗式']:
  if word not in guide:errors.append('Guide missing '+word)
 if 'AI 时代不被淘汰保姆级指南' not in (ROOT/'README.md').read_text(encoding='utf8'):errors.append('README title mismatch')
-if len(re.findall(r'^## [一二三四五六七八九十]+、',guide,re.M))!=23:errors.append('Expected 23 numbered guide chapters')
+if len(re.findall(r'^## [一二三四五六七八九十]+、',guide,re.M))!=11:errors.append('Expected 11 numbered guide chapters')
 import csv
 with (ROOT/'labs/feedback-24.csv').open(encoding='utf-8-sig',newline='') as f:sample=list(csv.DictReader(f))
 with (ROOT/'labs/feedback-24-gold.csv').open(encoding='utf-8-sig',newline='') as f:gold=list(csv.DictReader(f))

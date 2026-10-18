@@ -1,438 +1,174 @@
-<!DOCTYPE html>
-
-<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>完整图文攻略：政策与真实案例版｜AI 时代不被淘汰保姆级指南</title><style>
-:root{--bg:#f7f7f4;--paper:#fff;--ink:#1d2e29;--muted:#627269;--line:#dfe5df;--accent:#376957;--gold:#b28a50}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.85 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
-a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}button,select{font:inherit}
-.wrap{max-width:1060px;margin:0 auto;padding:0 24px}.site-nav{background:#172922;color:#eff4ec;position:relative}.site-nav .wrap{display:flex;align-items:center;justify-content:space-between;min-height:66px;gap:12px;flex-wrap:wrap}.site-nav a{color:#e8eee9}.site-nav .brand{font-size:16px;font-weight:800;text-decoration:none;letter-spacing:.02em}.navlinks{display:flex;gap:20px;font-size:13px}
-.hero{background:#172922;color:#fff;padding-bottom:68px}.hero img.cover{display:block;width:100%;max-width:1060px;max-height:460px;object-fit:cover;margin:0 auto}.hero-inner{padding-top:36px}.eyebrow{font-weight:750;letter-spacing:.16em;color:#b59d7a;font-size:11px;margin:0 0 8px}.hero h1{font-size:clamp(39px,5.6vw,66px);line-height:1.16;letter-spacing:-1.2px;margin:0 0 21px}.hero p{color:#d4ded6;max-width:720px;font-size:17px;margin:0}.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;background:#eae7dc;color:#182e27;border-radius:6px;border:1px solid #eae7dc;padding:11px 21px;font-weight:700;font-size:14px;cursor:pointer;text-decoration:none}.btn.secondary{background:transparent;border-color:#718078;color:#f4f5ef}.btn:hover{text-decoration:none;filter:brightness(.96)}
-section.chapter{border-bottom:1px solid var(--line);padding:51px 0}.chapter h2{font-size:27px;line-height:1.4;margin:5px 0 13px;letter-spacing:-.5px}.subtext{color:var(--muted);max-width:820px;margin:0 0 20px}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.card{border:1px solid var(--line);background:#fff;border-radius:7px;padding:22px;min-height:170px}.card h3{font-size:18px;margin:8px 0}.card p{font-size:14px;color:var(--muted);margin:0}.mini{font-size:12px;font-weight:800;color:var(--gold)}
-.columns{display:grid;grid-template-columns:1fr 1fr;gap:16px}.panel{border:1px solid var(--line);background:white;border-radius:8px;padding:22px}.panel label{font-weight:650;display:block;margin:12px 0 7px}.panel select{width:100%;padding:10px;border:1px solid #cfd9d1;border-radius:6px;background:#fff;color:var(--ink)}.suggestion{margin-top:18px;border-left:3px solid #85a995;padding:15px 17px;background:#f4f7f3;font-size:14px;line-height:1.8}.suggestion p{margin:8px 0}.suggestion strong{display:block;font-size:16px}
-.days{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.day{border:1px solid var(--line);border-radius:7px;padding:17px 19px;display:flex;align-items:flex-start;gap:12px;background:#fff;cursor:pointer}.day.done{border-color:#a2b7a7;background:#f2f7f1}.day input{accent-color:#397c61;margin-top:6px;width:17px;height:17px}.day .day-name{display:block;font-weight:750;margin-bottom:5px}.day .desc{display:block;font-size:13px;color:var(--muted)}.day .donewhen{display:block;font-size:12px;color:#59735d;margin-top:10px}.day-number{color:#b1966c;font-weight:850;font-size:24px;line-height:1.2}.bar{height:9px;background:#e2e7e1;border-radius:20px;overflow:hidden}.bar-fill{height:100%;background:#568e6f;width:0%;transition:width .2s}.progress-line{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:0 0 11px}.muted-link{border:0;background:none;text-decoration:underline;color:#65796b;cursor:pointer;font-size:13px}.note{font-size:13px;color:var(--muted)}
-.resources{display:grid;grid-template-columns:repeat(2,1fr);gap:11px}.resource{padding:17px 20px;border:1px solid var(--line);border-radius:7px;background:white;color:var(--ink);display:block}.resource strong{display:block}.resource span{font-size:13px;color:var(--muted)}footer{color:var(--muted);font-size:13px;padding:32px 0 55px}
-.article-page{max-width:900px;margin:30px auto 60px;background:#fff;border:1px solid #e4e5df;box-shadow:0 15px 55px #1d29210a;padding:52px 61px}.article-page h1{font-size:31px;line-height:1.45;margin:4px 0 24px}.article-page h2{font-size:22px;border-bottom:1px solid var(--line);padding-bottom:11px;margin:54px 0 19px}.article-page h3{font-size:18px;margin:32px 0 12px}.article-page p{line-height:1.95;margin:15px 0 21px}.article-page strong{color:#204c3b}.article-page img{display:block;width:100%;height:auto;margin:24px auto;border:1px solid var(--line)}.article-page pre{overflow:auto;background:#f2f5f2;border:1px solid #dfe6df;padding:18px 20px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.7;font-size:13px}.article-page code{font-size:13px;overflow-wrap:anywhere}.article-page blockquote{margin:20px 0;padding:4px 18px;border-left:3px solid #9caa91;background:#f5f7f4}.article-page table{border-collapse:collapse;width:100%;min-width:600px;font-size:14px}.article-page table td,.article-page table th{border:1px solid #dce3dc;padding:10px;text-align:left;vertical-align:top}.table-wrap{overflow-x:auto;margin:20px 0}.article-page ul,.article-page ol{padding-left:25px}.article-page li{margin:7px 0}
-@media(max-width:750px){.wrap{padding:0 18px}.cards,.columns,.days,.resources{grid-template-columns:1fr}.hero{padding-bottom:43px}.hero img.cover{max-height:none}.hero-inner{padding-top:24px}.chapter h2{font-size:23px}.site-nav .wrap{padding-top:10px;padding-bottom:10px}.navlinks{gap:12px;flex-wrap:wrap}.article-page{border:0;box-shadow:none;margin:0;padding:23px 18px}.article-page h1{font-size:25px}.article-page h2{font-size:20px;margin-top:40px}}
-</style><style>.article-page blockquote{background:#f0f4ef;border-left:3px solid #49715b;padding:7px 19px;margin:16px 0}.article-page pre{background:#f5f6f3;white-space:pre-wrap;overflow-wrap:anywhere}.article-page img{max-width:100%;height:auto}.article-page h2{scroll-margin-top:24px}.article-page h3{scroll-margin-top:24px}.article-page code{overflow-wrap:anywhere}.article-page ol,.article-page ul{padding-left:22px}.article-page a{text-decoration:underline}@media(max-width:650px){.article-page{border:none;margin:0;padding:23px 18px}}</style><style>.article-page .table-scroll{display:block;box-sizing:border-box;width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;margin:16px 0 25px}.article-page .table-scroll>table{width:100%;min-width:600px;margin:0}.article-page{min-width:0}</style></head><body><nav class="site-nav"><div class="wrap"><a class="brand" href="index.html">AI 时代不被淘汰保姆级指南</a><div class="navlinks"><a href="article.html">完整攻略</a><a href="docs/START-HERE.html">按处境开始</a><a href="lab.html">评分实验</a><a href="docs/SOURCES.html">资料来源</a><a href="https://metaver.vip/" target="_blank" rel="noopener noreferrer">个人官网</a></div></div></nav><main class="article-page"><article><h1 id="ai-时代不被淘汰保姆级指南">AI 时代不被淘汰保姆级指南</h1>
-<p><strong>AI 酋长 Andy｜2026 年 10 月整理｜持续更新</strong></p>
-<p>你每天在公司里干的活，哪些已经能让 AI 做？哪些暂时还不行？如果领导让你用 AI 把同一件事做快一倍，你知道从哪儿下手吗？</p>
-<p>我做过多年 B 端 AI 产品，现在也在做内容和咨询。最近接触工作和转型方面的问题，一个很明显的变化是：大家都知道 AI 很厉害，但一问自己的岗位该怎么用，就开始说工具名字。会打开聊天框，离真正解决工作问题还有一段距离。</p>
-<p>我自己也踩过坑。AI 可以很快帮我写网页、整理文章，但生成的 HTML 放进公众号，还是会报一堆排版错误。浏览器里能打开，交到别人手上未必能用。最后那些检查、修改、交付的工作，一样得有人负责。</p>
-<p>这篇就讲实际的。先看你的岗位受到什么影响，再找一个每天都在做的任务，用 AI 完成一次，测时间、查错误、留下作品。最后把这些证据用到工作、求职或职业转型里。</p>
-<p>全文的训练周期分三段：<strong>7 天做出第一个结果，30 天建立自己的工作流程，90 天积累能够向别人展示的成果。</strong> 这是行动时间表，无法保证任何人永远不会失业，也不承诺涨薪或拿到 offer。</p>
-<p><img alt="岗位、任务、成果的关系" src="assets/01-task-map.svg"/></p>
-<h2 id="一-先把-被-ai-淘汰-说清楚">一、先把“被 AI 淘汰”说清楚</h2>
-<p>网上经常有人说某个岗位要消失了。我建议先问一句：<strong>消失的是整个岗位，还是这个岗位里的一部分工作？</strong></p>
-<p>2025 年国际劳工组织与 NASK 的研究估计，全球约四分之一的工作处在某种程度的生成式 AI 暴露范围内。研究同时强调，更常见的情况可能是工作内容被改造，不能把“任务受到影响”直接换算成“岗位马上消失”。来源：<a href="https://www.ilo.org/resource/news/one-four-jobs-risk-being-transformed-genai-new-ilo%E2%80%93nask-global-index-shows">ILO，2025</a>。</p>
-<p>世界经济论坛的《2025 年未来就业报告》预计，到 2030 年，现有工作所需技能中约 39% 将发生变化或不再适用。这个数字是基于企业调查形成的预测，既包括 AI，也受人口结构、经济与其他技术变化影响。不能据此说“AI 将淘汰 39% 的人”。来源：<a href="https://www.weforum.org/publications/the-future-of-jobs-report-2025/">WEF，2025</a>。</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>你听到的说法</th>
-<th>应该怎么理解</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>AI 能写报告，所以报告岗位要没了</td>
-<td>先分出找资料、整理、判断、沟通、承担结果这几项任务</td>
-</tr>
-<tr>
-<td>某职业 AI 暴露程度高</td>
-<td>说明工作中有更多任务可以受 AI 影响，不能直接推算个人失业概率</td>
-</tr>
-<tr>
-<td>企业都在用 Agent</td>
-<td>先看这个 Agent 能否在真实数据和流程里稳定工作</td>
-</tr>
-<tr>
-<td>以后只要会写 Prompt</td>
-<td>工具和界面都会变。业务理解、核查、交付和责任更值得积累</td>
-</tr>
-</tbody>
-</table></div>
-<p>对个人来说，有四种需要区分的变化：</p>
-<ol>
-<li><strong>工作变快。</strong> 原来要两小时整理材料，现在一小时能完成。团队可能会要求你做更多事。</li>
-<li><strong>工作被重新组合。</strong> AI 做初稿，人来确认事实、判断取舍、和客户沟通。</li>
-<li><strong>岗位要求提高。</strong> 招聘广告可能要求你会使用 AI 工具，还要拿得出实际成果。</li>
-<li><strong>部分工作需求收缩。</strong> 如果某项工作非常标准化、重复多、容易验收，公司可能减少相关投入。具体速度取决于行业、管理和成本，不能凭职业名称断言。</li>
-</ol>
-<p>先别问“AI 能不能替代我”，拿出你的工作清单，我们一项项看。</p>
-<h3 id="国家政策到底在推动什么-先看四份原始文件">国家政策到底在推动什么？先看四份原始文件</h3>
-<p><strong>第一份：2025 年国务院《人工智能+》行动意见。</strong> 国发〔2025〕11 号提出跨行业推广 AI 应用和智能体的发展目标，重点涉及产业、科学、民生等领域。这里有发展方向，<strong>没有任何一个人的就业保证</strong>。你要做的是回头查看自己行业里已经存在的 AI 工作任务，顺便核对招聘 JD 有没有具体要求。<a href="https://www.cac.gov.cn/2025-08/27/c_1758018277755538.htm">国务院公文</a>。</p>
-<p><strong>第二份：2025—2027 年职业技能提升培训行动。</strong> 国就劳发〔2025〕4 号提到面向重点行业和人群开展补贴性培训，<strong>3000 万人次以上是三年全国培训目标</strong>。你能否参加、要不要垫资、当地有哪些班，必须看参保地和培训所在地的官方公告，不能拿全国目标推算自己的补贴。<a href="https://www.gov.cn/zhengce/zhengceku/202507/content_7032222.htm">中国政府网</a>。</p>
-<p><strong>第三份：2026 年《人工智能+人社》实施意见。</strong> 人社部发〔2026〕40 号涉及职业图谱、岗位匹配、智慧招聘、职业指导和培训等公共服务场景。<strong>写入文件不等于你所在地已经上线</strong>。到官方公共就业平台核实是否有真实可用的功能，再决定用什么。<a href="https://www.nda.gov.cn/sjj/zwgk/zcfb/0708/20260708133949899211227_pc.html">国家数据局公开文件</a>。</p>
-<p><strong>第四份：个人信息与 AI 内容标识规则。</strong> 客户简历不能因为方便就传给外部 AI；公开发布生成合成内容，应按适用法规及平台要求声明和标识。《个人信息保护法》强调合法、必要、最小化；《人工智能生成合成内容标识办法》于 2025 年 9 月 1 日施行。<a href="https://fgk.chinatax.gov.cn/zcfgk/c100009/c5211776/content.html">个人信息保护法</a> · <a href="https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm">标识办法</a>。</p>
-<p><strong>怎么看政策才不会被坑？</strong>打开官网，核对日期、文号、适用人群、当地承办机构，再去看与你想求的岗位有无实际关系。政策是方向，招聘要求和合法的真实练习才是你今天能动手的事。细节见 <a href="docs/19-policy-and-opportunities.html">《政策与办理路径》</a>。</p>
-<h3 id="真实企业里发生了什么-不能只讲-ai-很厉害">真实企业里发生了什么？不能只讲 AI 很厉害</h3>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>真实证据</th>
-<th>发生了什么</th>
-<th>你该学什么</th>
-<th>不能理解成什么</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://www.nber.org/papers/w31161">NBER 客服现场研究</a></td>
-<td>研究一家企业 <strong>5,179 名客服</strong>，AI 助手使每小时处理量平均增加约 <strong>14%</strong>，新手受益更大</td>
-<td>重复问题先做 AI 建议，再人工核对</td>
-<td>所有客服都能提效 14%</td>
-</tr>
-<tr>
-<td><a href="https://aiinstitute.hbs.edu/navigating-the-jagged-technological-frontier/">HBS × BCG 顾问实验</a></td>
-<td><strong>758 名顾问</strong>在 AI 擅长的实验任务上做得更快、质量评分更高</td>
-<td>挑适合 AI 的任务，保留判断</td>
-<td>整个咨询行业可直接自动化</td>
-</tr>
-<tr>
-<td><a href="https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/">METR 开发者实验</a></td>
-<td><strong>16 名开发者、246 项任务</strong>，在 2025 年特定环境里使用 AI 平均多花约 <strong>19%</strong> 时间</td>
-<td>总时间要算复核、测试和返工</td>
-<td>AI 永远会拖慢所有开发者</td>
-</tr>
-<tr>
-<td><a href="https://www.reuters.com/business/swedens-klarna-shifts-ai-focus-cost-cuts-growth-2025-09-10/">Klarna 战略调整</a></td>
-<td>曾重度宣传 AI 降本，2025 年调整重点，重新强调服务质量与增长</td>
-<td>处理量之外还看投诉、转人工和结果</td>
-<td>“AI 相当于 700 人”就是实际裁了 700 人</td>
-</tr>
-<tr>
-<td><a href="https://www.shopify.com/news/unserious-exploration">Shopify 内部 AI 要求</a></td>
-<td>2025 年管理层将适当使用 AI 作为内部工作习惯要求</td>
-<td>看自己目标雇主的真实岗位要求</td>
-<td>所有企业都会一样、会 AI 就保住工作</td>
-</tr>
-</tbody>
-</table></div>
-<p>这些例子放在一起，你就知道为什么我坚持让读者<strong>人工做一次、AI 做一次、把错误和总时间一起测</strong>。一家公司用得好，不代表你所在公司照着用就会好；某项实验变慢，也不表示其他任务不用 AI。还有一个容易被忽略的点：<strong>就业变化可能先反映在初级岗位招聘，而非现有员工立即被裁</strong>。Anthropic 2026 年美国数据研究尚未发现高暴露岗位失业率系统性上升，对年轻人招聘放缓的迹象仍然谨慎。<a href="https://www.anthropic.com/research/labor-market-impacts">研究原文</a>。</p>
-<p>这些研究是具体公司、任务、地点和工具的证据，不能当作中国所有岗位的预测。要逐条核对，看 <a href="docs/20-real-world-cases.html">《六个真实案例》</a>；想知道职业变化的原因，看 <a href="docs/21-why-change.html">《为什么岗位会变化》</a>。</p>
-<h2 id="二-第一步-把你的工作拆到任务层">二、第一步：把你的工作拆到任务层</h2>
-<p>很多人写简历会写“负责内容运营”“负责产品管理”“负责商务”。这种话太大了，AI 能做多少没法判断。</p>
-<p>你需要把工作拆成一件件真实发生的事。以一个运营同学的周一为例（<strong>教学示例，不是真实客户记录</strong>）：</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>工作任务</th>
-<th>输入</th>
-<th>交付给谁</th>
-<th>现在怎么做</th>
-<th>谁最终验收</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>整理上周留言</td>
-<td>公开评论</td>
-<td>负责人</td>
-<td>手工复制并分类</td>
-<td>负责人</td>
-</tr>
-<tr>
-<td>写活动文案初稿</td>
-<td>产品卖点、活动规则</td>
-<td>设计和运营</td>
-<td>参考旧稿重写</td>
-<td>运营负责人</td>
-</tr>
-<tr>
-<td>判断活动原因</td>
-<td>投放数据与用户反馈</td>
-<td>项目组</td>
-<td>对比指标、追问渠道</td>
-<td>业务负责人</td>
-</tr>
-<tr>
-<td>回复投诉</td>
-<td>客户信息与承诺</td>
-<td>客户</td>
-<td>查询订单并协调</td>
-<td>客服负责人</td>
-</tr>
-<tr>
-<td>复盘会议</td>
-<td>讨论记录和待办</td>
-<td>项目成员</td>
-<td>手工整理纪要</td>
-<td>会议负责人</td>
-</tr>
-</tbody>
-</table></div>
-<p>第一项可能很适合 AI 辅助分类；第二项适合先出草稿；第三项不能让 AI 凭想象写原因；第四项涉及隐私和公司承诺，要按权限执行；第五项可以由 AI 草拟纪要，但负责人需要确认决定与待办。</p>
-<p><strong>你现在就做。</strong>打开一个表格，把过去五个工作日真正做过的事情写出来。建议先列 15—30 项，不要求恰好 20 项。每项填五列：输入、步骤、产出、频率、出错代价。可以直接复制 <a href="templates/task-inventory.html">任务清单模板</a>。</p>
-<h3 id="一条可直接用的-prompt">一条可直接用的 Prompt</h3>
-<pre><code class="language-text">你是一位工作任务分析师。
-我的岗位：[岗位]
-最近5天真实做过的事：[逐条粘贴]
-我拥有的工具和权限：[真实情况]
-请把工作拆成具体任务，每行只保留一个可以交付的动作。
-输出：任务、输入、动作、产出、频率、验收者、需要人工判断的地方。
-不要根据岗位名称编造我没做过的工作。
-缺少信息请标注“待补充”，优先问我最重要的3个问题。
-</code></pre>
-<p><strong>这一关的完成标准：</strong>能拿出一张清单，领导或同事看一眼就知道你每天具体做了什么。如果一行里还写着“负责战略增长”，继续拆。</p>
-<p><img alt="任务拆分的五个维度" src="assets/02-audit.svg"/></p>
-<h2 id="三-第二步-判断哪些任务适合交给-ai">三、第二步：判断哪些任务适合交给 AI</h2>
-<p>这里给你一张简单的四问表。它是<strong>自己安排实验的工具，不是研究机构提供的失业概率模型</strong>。</p>
-<ul>
-<li><strong>能否拿到合法的输入？</strong> 比如公开招聘 JD、匿名样本、自己写的文字。没有授权的客户资料，先别传。</li>
-<li><strong>能不能说清产出长什么样？</strong> 例如表格要有哪几列，纪要要保留哪些决策。</li>
-<li><strong>结果能否被人快速检查？</strong> 能核对原始材料、公式和引用，比无法验证的“市场一定会增长”更适合起步。</li>
-<li><strong>出错的代价能否承受？</strong> 错一个活动文案还可以改；泄露客户隐私、发错财务数据，成本就高得多。</li>
-</ul>
-<p>你可以用下面的矩阵选第一个练习：</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th></th>
-<th>能快速复核</th>
-<th>难以快速复核</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>低风险</td>
-<td><strong>优先练</strong>：格式整理、公开资料归纳、文案草稿</td>
-<td>小范围试验，保留人工检查</td>
-</tr>
-<tr>
-<td>高风险</td>
-<td>有权限、有复核流程再试</td>
-<td>暂缓自动化，交给有责任权限的人判断</td>
-</tr>
-</tbody>
-</table></div>
-<p><strong>第一周别碰最难的任务。</strong>挑一项低风险、每周至少重复一次、自己能检查好坏的工作。用 <a href="templates/opportunity-scorecard.html">任务机会评估模板</a> 记录原因。</p>
-<h3 id="你可能想问-我的岗位风险到底是多少">你可能想问：我的岗位风险到底是多少？</h3>
-<p>个人没有足够信息时，我不会给你一个“失业概率 87%”的数字。你可以整理一个<strong>关注顺序</strong>，但不应把自评总分叫作真实概率。对岗位最有用的判断，是哪些具体任务已经能用现有工具完成、哪些仍需要你承担责任，以及公司是否真的在调整工作流程。</p>
-<h2 id="四-第三步-学会一套工作方法-不用追十种工具">四、第三步：学会一套工作方法，不用追十种工具</h2>
-<p>我推荐从一个固定流程开始：<strong>给材料 → 说明任务 → 提出验收标准 → 做出初稿 → 找回原始证据 → 人工确认。</strong></p>
-<p>比如你想整理一份公开招聘 JD。你把岗位正文给 AI，要求它只提取职位名称、职责、技能、年限、所在城市，并把每条要求连回原文。再逐行核查，遇到模糊的技能要求，别让它自作主张解释成具体经验年限。</p>
-<p>同样一段 JD，能直接复制走的结果是一张有列名、有出处的表；“这个岗位很适合你”这种笼统判断没什么用。</p>
-<p><strong>最小工具组合：</strong>一个你能合法正常使用的 AI 助手、一个文档或表格、一处能保存原始证据的文件夹。免费版本能完成验证就先用免费的。不要一口气买几个会员。</p>
-<p>工具选择只看五点：是否可用、数据怎么处理、能否导出、产出是否方便核查、你能否承担成本。功能会变，入口也会变，别把整套能力绑在某一家工具上。</p>
-<p><img alt="AI 工作流从输入到交付的五步" src="assets/08-workflow.svg"/></p>
-<h3 id="万能任务指令">万能任务指令</h3>
-<pre><code class="language-text">我要完成：[具体工作任务]。
-原始材料：[粘贴已授权的材料]
-使用范围：[允许使用的数据与工具]
-输出格式：[表头、字数、结构或示例]
-验收标准：[必须准确的字段与禁止的错误]
-请先检查信息够不够；缺少就列出来，不要猜。
-生成后提供“逐项核验清单”，标记来源不确定的部分。
-</code></pre>
-<h2 id="五-第四步-同一项工作-做一次前后对比">五、第四步：同一项工作，做一次前后对比</h2>
-<p>我建议你找一个真实任务，比如整理上周的公开评论。先不用 AI 完成一次，记录耗时和错误；再把同一批公开材料交给 AI 辅助处理，记录总耗时，<strong>包括写指令、复核、修改的时间</strong>。</p>
-<p>对比时只看三个东西：</p>
-<ul>
-<li><strong>总时间。</strong> <code>原始耗时</code>、<code>AI 操作耗时</code>、<code>复核修改耗时</code>分别记录。总时间是后两者之和。</li>
-<li><strong>质量。</strong> 比如 20 条分类中有多少需要重新归类。数量一定要实际数过。</li>
-<li><strong>可重复性。</strong> 下周换一批材料，别人能不能按你的说明再次跑出来。</li>
-</ul>
-<p>假设一个演示案例：人工整理一批公开评论花了 70 分钟；AI 初稿花 12 分钟，人工复核 25 分钟，总共 37 分钟。<strong>这些是演算示例，不是我的客户成绩。</strong>如果 AI 少分类了三条重要意见，节省的时间还要和错误代价一起考虑。更好的做法是把遗漏类型写进复核清单，下次再测。</p>
-<blockquote>
-<p><strong>结果要写成这样：</strong>“某次样本中，人工 70 分钟；AI 辅助含复核 37 分钟；复核发现 3 条分类问题。尚未测试更多批次。”</p>
-</blockquote>
-<p>别写“效率提升 300%”或者“彻底解放双手”。只写真的测过的东西。</p>
-<p><img alt="效率与准确性记录表" src="assets/03-measure.svg"/></p>
-<h3 id="直接使用这个复盘-prompt">直接使用这个复盘 Prompt</h3>
-<pre><code class="language-text">这是一次工作测试的真实记录：[填写]
-人工用时：[分钟]
-AI生成用时：[分钟]
-人工检查修改用时：[分钟]
-输入数量与错误数量：[数据]
-请算出总用时与变化比例，清楚区分时间节省和质量变化。
-说明样本大小、不确定因素和下次需要复测的条件。
-如果没有基准数据，就不要推算效率提升。
-</code></pre>
-<h2 id="六-第五步-把会用-ai-变成可被看见的能力">六、第五步：把会用 AI 变成可被看见的能力</h2>
-<p>你说自己“熟练使用 AI”，面试官很难判断真假。你可以拿出一份小作品，把问题、输入材料、处理流程、检查方法、结果放在一起。</p>
-<p>例如你是一位产品经理：</p>
-<ol>
-<li>从官网收集公开的三个产品功能说明，保留来源链接。</li>
-<li>选出一个实际的用户问题，例如“功能太多，第一次使用不知道点哪里”。</li>
-<li>用 AI 整理产品的流程差异，自己逐项复核。</li>
-<li>画出一版更简单的使用流程，说明取舍。</li>
-<li>找一位真实用户试用你的原型，记录他在哪里停住。</li>
-<li>做成 3 页案例：问题、过程、验证。不要说某个不存在的功能让转化率提高了多少。</li>
-</ol>
-<p>这个作品很小，却能让人看到你怎么思考、怎么用工具、怎么检查结果。对求职者来说，比在简历里写“精通 Prompt”更具体。</p>
-<p>模板直接拿走：<a href="templates/portfolio-case.html">项目作品卡</a>，<a href="examples/product-manager-case.html">匿名作品示例</a>。</p>
-<p><img alt="能力证据卡" src="assets/04-portfolio.svg"/></p>
-<h2 id="七-六种人-分别先练什么">七、六种人，分别先练什么</h2>
-<p>你可以先按身份找自己的起点。下面都是起步练习，<strong>具体结果由实际执行决定</strong>。</p>
-<h3 id="1-学生和应届生">1. 学生和应届生</h3>
-<p>先看 10 条目标岗位的公开招聘 JD，把反复出现的技能归在一起。选一个能做的小作品，不需要先投简历海投。比如想做运营，完成一份公开内容数据的分析；想做产品，完成一个产品体验和改版建议。要能回答“数据从哪来、做错了怎么查”。参考 <a href="examples/graduate-case.html">应届生示例</a>。</p>
-<h3 id="2-工作几年-担心岗位变化的职场人">2. 工作几年、担心岗位变化的职场人</h3>
-<p>选一项每周重复的任务。建立工作底稿、AI 指令、人工检查清单。跑通三次，再把真实节省的时间与质量问题整理成一页报告，找负责人讨论是否值得纳入团队流程。参考 <a href="examples/operations-case.html">运营示例</a>。</p>
-<h3 id="3-正在找工作的人">3. 正在找工作的人</h3>
-<p>先拆 5—10 条真正准备投递的 JD，做能力差距表。用 AI 帮你检查简历是否有事实、逻辑和表述问题，项目经历必须真实。模拟面试后记录回答中缺了哪些证据，按岗位补作品，不要编造学历、任职、项目结果。参考 <a href="examples/jobseeker-case.html">求职示例</a>。</p>
-<h3 id="4-管理者或小团队负责人">4. 管理者或小团队负责人</h3>
-<p>先盘点团队高频任务和最常见的返工。只选一个低风险流程，找一位实际使用者共同测试。说清审批权、数据权限、人工复核人和终止条件。不要把客户信息直接上传到未经批准的外部工具。参考 <a href="examples/manager-case.html">团队负责人示例</a>。</p>
-<h3 id="5-内容创作者和自由职业者">5. 内容创作者和自由职业者</h3>
-<p>用 AI 做选题素材归档、文字整理、封面结构草案、跨平台格式调整，保留自己的观点和真实经历。注意图片授权、引用来源、平台 AI 标识和推广披露。作品最后能否在公众号、视频号等目标平台正常显示，要实际验收。参考 <a href="examples/creator-case.html">内容案例</a>。</p>
-<h3 id="6-程序员和-ai-产品从业者">6. 程序员和 AI 产品从业者</h3>
-<p>找一个真实且边界清楚的需求，用 AI 辅助写测试、生成脚手架、补文档，但每次都要自己 review diff、跑测试、检查依赖和权限。AI 写出的代码能够运行，离安全上线还差监控、鉴权、回滚和故障排查。参考 <a href="examples/developer-case.html">开发者案例</a>。</p>
-<p><img alt="六种人的起步练习" src="assets/05-roles.svg"/></p>
-<h2 id="八-求职时-怎样展示自己适应-ai-的能力">八、求职时，怎样展示自己适应 AI 的能力</h2>
-<p>把招聘 JD 打开。先拿荧光笔圈出四种信息：工作结果、需要协作的人、必备技能、能证明能力的项目。再打开自己的简历，逐项找证据。缺的不要让 AI 帮你编，安排一个小作品去补。</p>
-<p>比如 JD 写“能够进行用户研究和产品分析”。你有一次真实的用户访谈吗？有没有访谈提纲、记录、结论？有没有因为访谈结果而调整过产品设计？如果没有，先找允许研究的公开场景做一轮练习，而不是在简历里写“用户洞察能力强”。</p>
-<h3 id="简历里可以怎么写">简历里可以怎么写</h3>
-<p>不推荐：<code>熟练掌握各类大模型工具，具备卓越 AI 思维。</code></p>
-<p>可以按实际情况写：<code>使用 AI 辅助整理公开用户评论，建立主题分类表；人工复核分类结果并修正错误，输出一页需求分析报告。</code> 如果测过时间，还可以写实测时间和样本大小；没有测过，就不要补数据。</p>
-<p>面试官追问时，你要能打开作品，展示原始输入、AI 输出、人工修改，以及你为什么做这个判断。这比背几个新名词更有说服力。</p>
-<p>求职自查模板：<a href="templates/job-match.html">岗位差距清单</a>；提示词：<a href="prompts/07-job-match.html">JD 到作品规划</a>。</p>
-<h2 id="九-哪些东西一定不能直接交给-ai">九、哪些东西一定不能直接交给 AI</h2>
-<p>这部分比“十个必装工具”更重要。</p>
-<p><strong>第一类，未经授权的资料。</strong> 客户姓名、联系方式、简历、合同、内部账单、源代码、账号密码、密钥。没得到授权，也没确认数据去向，就不要粘贴给外部服务。</p>
-<p><strong>第二类，需要专业责任的结论。</strong> 医疗诊断、法律结论、财务税务决策、重要合同条款、招聘歧视相关判断。可以用 AI 帮助整理问题，但最后交给有权限和资质的人确认。</p>
-<p><strong>第三类，无法核查却会对外传播的内容。</strong> “某公司裁员 80%”“某工具已经完全取代人类”“我的客户全部涨薪”。先找原始出处，别直接发。</p>
-<p><strong>第四类，自动执行后难以挽回的操作。</strong> 批量删除数据、自动付款、对外群发邮件、发布平台账号内容、修改生产系统权限。先做沙盒测试，设置人审和回滚方式。</p>
-<p>NIST 的 AI 风险管理框架及生成式 AI 专项指引，把可靠性、隐私、安全、透明度等放在重要位置。这些并不会被一个“高级 Prompt”自动解决。来源：<a href="https://www.nist.gov/itl/ai-risk-management-framework">NIST AI RMF</a>。</p>
-<p><img alt="AI 数据与自动化安全检查" src="assets/06-safety.svg"/></p>
-<p>拿走 <a href="templates/security-checklist.html">发布与隐私检查表</a>，每次交付前过一遍。</p>
-<h2 id="十-如果公司不让你用-ai-怎么办">十、如果公司不让你用 AI 怎么办</h2>
-<p>先看公司有没有明确政策。禁止上传客户信息和内部文档，就按照规定执行。可以用公开资料或自行编写的测试数据，先练工具基本操作。不要为了证明能力，绕过公司安全制度。</p>
-<p>如果公司允许试点，可以准备一页申请：要改进哪个流程、材料从哪来、是否包含私人数据、谁复核、最坏后果是什么、试点需要多少时间、什么情况下停止。负责人批准后再做。</p>
-<p>一项小流程跑通三次，比和同事争论一百遍“AI 是未来”更容易推动改变。</p>
-<h2 id="十一-七天训练-从焦虑到一份能检查的作品">十一、七天训练：从焦虑到一份能检查的作品</h2>
-<p>从今天开始，先留出每天 60—90 分钟。时间不够可以拉长周期，<strong>不要为了打卡牺牲睡眠或当前工作</strong>。</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>日期</th>
-<th>今天做什么</th>
-<th>结束时必须有的东西</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Day 1</td>
-<td>写出过去五个工作日的任务</td>
-<td>至少 15 项真实任务，不足就照实记录</td>
-</tr>
-<tr>
-<td>Day 2</td>
-<td>找一个低风险高频任务</td>
-<td>一张有授权和验收标准的任务卡</td>
-</tr>
-<tr>
-<td>Day 3</td>
-<td>不用 AI 完成一次</td>
-<td>原始材料、用时、质量基准</td>
-</tr>
-<tr>
-<td>Day 4</td>
-<td>用 AI 完成同一类任务</td>
-<td>Prompt、AI 输出、人工修改记录</td>
-</tr>
-<tr>
-<td>Day 5</td>
-<td>算总耗时、复核错误</td>
-<td>一张数据真实的前后对照表</td>
-</tr>
-<tr>
-<td>Day 6</td>
-<td>整理成可展示的作品</td>
-<td>2—3 页匿名案例、可复现步骤</td>
-</tr>
-<tr>
-<td>Day 7</td>
-<td>对照岗位要求，确定下一步</td>
-<td>继续 / 修改 / 暂停的理由，30 天方向</td>
-</tr>
-</tbody>
-</table></div>
-<p><img alt="七天、三十天、九十天的进阶安排" src="assets/07-roadmap.svg"/></p>
-<p><a href="docs/07-seven-days.html">打开逐日详细步骤</a> · <a href="index.html#challenge">可离线打卡网页</a></p>
-<h3 id="七天执行教练-prompt">七天执行教练 Prompt</h3>
-<pre><code class="language-text">我是[岗位/求职状态]。我过去五天做过的事：[真实任务]。
-每天可用时间：[分钟]，可使用的工具：[具体工具]。
-请按“拆任务、选任务、做基线、AI试验、检查对比、写作品、做复盘”安排七天。
-每次只给我今天的3个动作，写清所需材料、操作步骤、产出和验收标准。
-我没提供的数据一律留空，不许假定实验成功。
-涉及隐私、公司权限和高风险操作时请提醒我先停止并确认。
-</code></pre>
-<h2 id="十二-30-天-把一次偶然成功变成稳定工作方法">十二、30 天，把一次偶然成功变成稳定工作方法</h2>
-<p>第一周：照上面的 7 天计划做出第一份作品。第二周：找 2—3 个真实批次复测，检查你的流程是不是只对某一份材料有效。第三周：把可重复的步骤写成 SOP，让另一个人按说明试，记录他哪一步出错。第四周：整理出第二个作品，或者把第一个做成可复用模板，并将结果用在实际工作汇报、求职案例或合作提案中。</p>
-<p>你应该积累的是：<strong>原始材料（脱敏）、任务说明、Prompt、人工检查规则、实际测量数据、修改记录、最终成果。</strong> 30 天过后，至少应该比第 1 天更清楚自己会做什么、哪里还不会。</p>
-<p><a href="docs/08-thirty-days.html">30 天详细路线</a></p>
-<h2 id="十三-90-天-决定你的下一条职业路线">十三、90 天，决定你的下一条职业路线</h2>
-<p>90 天用来观察某项能力能否持续创造价值。你可以保留两条线：</p>
-<ul>
-<li><strong>眼前的工作与收入：</strong> 先把已有任务做好，把能证明的结果呈现给团队或下一家公司的面试官。</li>
-<li><strong>未来的能力资产：</strong> 每月留下一份可复用作品、一个可靠的工作流、一些经过核实的行业理解。</li>
-</ul>
-<p>每个月问自己四个问题：新工具改变了哪些任务？我靠什么拿到真实反馈？哪些环节仍需要我判断或担责？把这套方法交给别人，他能不能做出来？</p>
-<p>如果岗位需求明显变化，就开始研究内部转岗、外部岗位和可迁移技能。具体选项要结合收入压力、家庭和当地就业环境决定。不要因为一篇文章冲动辞职。</p>
-<p><a href="docs/09-ninety-days.html">90 天路线</a></p>
-<h2 id="十四-十个常见错误-照着避开">十四、十个常见错误，照着避开</h2>
-<ol>
-<li><strong>每天只刷 AI 新闻。</strong> 收藏十条演示，没有一次实际交付。</li>
-<li><strong>把岗位当成一整块。</strong> 连自己有哪些任务都说不出来。</li>
-<li><strong>没有授权就上传公司资料。</strong> 可能把工作问题变成信息安全问题。</li>
-<li><strong>只看生成速度。</strong> 复核用了两小时，算效率时却漏掉。</li>
-<li><strong>用演示效果冒充工作成果。</strong> 跑通一次，没测试不同输入。</li>
-<li><strong>把阅读量当成业务结果。</strong> 有人看、有人问、有人付款，分开记录。</li>
-<li><strong>简历写得很会用 AI。</strong> 面试官一追问，拿不出作品和底稿。</li>
-<li><strong>追最贵的会员。</strong> 旧工具还能用，就先别加订阅。</li>
-<li><strong>一口气自动化所有流程。</strong> 权限和错误处理跟不上。</li>
-<li><strong>认为七天能改变命运。</strong> 七天最多完成第一轮练习。后面还得持续更新。</li>
-</ol>
-<h2 id="十五-完全没用过-ai-今天从哪里开始">十五、完全没用过 AI，今天从哪里开始？</h2>
-<p>先别着急装插件、租服务器，更没必要买“提示词大师课”。你需要的是一个能正常打开的 AI 助手、一份<strong>公开或者自己编的材料</strong>，和一个能保存结果的文档。手机也能完成起步练习，处理表格时电脑方便一些。中国大陆常用工具或海外工具的可用范围、政策、账户权限会变化，使用你所在地区和公司允许的工具就行。</p>
-<p>这里给你一个现成的练习。仓库的 <a href="labs/feedback-24.csv"><code>labs/feedback-24.csv</code></a> 有 24 条我为教学编写的虚构商品评价。每一条带一个编号。现在打开文件，先自己给前八条分类，分成价格、功能、履约、其他、需人工复核五类。记录花了几分钟。接着打开你能用的 AI 助手，新建对话，把完整数据和分类规则复制进去，让 AI 只返回 <code>id,category</code> 两列。输出以后打开 <a href="lab.html">离线评分页</a>，粘贴进去核对。找出漏了哪些 ID、把哪几条分错了。</p>
-<p>你会发现一个有意思的细节：有些评论根本不适合靠关键词直接分类。比如“付款失败，还显示已扣款”，表面上是付款问题，但处理它需要查订单和支付状态，这种情况下我宁可把它先标成“需人工复核”。<strong>真正能交付的工作流程，需要知道哪些情况不应该让 AI 猜。</strong></p>
-<p>操作遇到问题，先看三件事：输入格式对吗？原文有没有被截断？AI 有没有把你给的分类规则改掉？先用五条样本试通，再放大到 24 条。连五条都做不对，别急着研究 Agent。</p>
-<p><a href="docs/13-ai-tools-selection.html">详细到复制和评分的教程</a> · <a href="lab.html">24 条评分器</a> · <a href="docs/18-low-budget-and-no-access.html">低预算版本</a></p>
-<h3 id="失业时-先查得到的公共保障-再决定培训预算">失业时，先查得到的公共保障，再决定培训预算</h3>
-<p>失业保险金的基本条件涉及缴纳失业保险满一年、非本人意愿中断就业等要求；具体资格、登记与申领以当地最新规则为准。先通过 <a href="https://www.12333.gov.cn/portal/common/bszn/sydysl">全国人社政务服务平台办理指南</a> 查询入口，必要时咨询参保地经办部门。<strong>不要误把高价培训当成必须先交的“上岸费”。</strong>是否能参加补贴培训，也必须在当地官方公告里核验。这一套核验问题已经做成 <a href="templates/policy-check.html">可填写表格</a>。</p>
-<h2 id="十六-如果你已经失业-最该做的可能根本不是学-ai">十六、如果你已经失业，最该做的可能根本不是学 AI</h2>
-<p>失业的人和坐在办公室里研究工作流的人，优先级不一样。你可能正在付房租、还贷款、养家，或者离下一笔收入还有一段时间。这时候不要因为网上说“AI 会取代所有人”，就花上万元报一个课程。先算生活费还能撑多久、之前的经验在哪类岗位里还能直接使用、现有招聘渠道有没有响应。</p>
-<p>给求职划出固定时间。选三类职位：自己能马上上手的、需要补一小块能力的、差距很大的转型岗位。前两类先投，第三类用小成本试。你有五年产品经验，就先看需要产品能力的 AI 岗位；别只因为新岗位名里带“算法”就从零重学一整套数学。</p>
-<p>怎么用 AI 帮自己找工作？先找五到十条<strong>真实的 JD</strong>，把岗位职责、技能、经验要求逐条摘出来。再把自己的履历放在旁边，每条要求都找一段经历或者作品来证明。没有做过就写没有。让 AI 帮你发现表述不清的地方可以，绝对别让它给你编公司、学历、项目和绩效。随后做一次模拟面试，让它追问：你亲手做了什么？结果有谁验收？这个数字从哪里来？</p>
-<p>有一个误区要避开：<strong>做作品也会让人上瘾。</strong>把第三个网站搭好、第五版简历做完，如果始终不投递、不联系招聘方，还是拿不到市场反馈。职位链接、投递日期、是否有回音、卡在哪一轮，都应该记录。连续两周没面试，先回头看定位和渠道；面试不少却总失败，重点改准备和表达。别用刷 AI 新闻代替求职。</p>
-<p><a href="docs/11-career-defense.html">失业时的收入与求职防线</a> · <a href="docs/12-job-search.html">JD 到面试完整方法</a></p>
-<h2 id="十七-在职的人怎么做-才不会把-ai-学习变成工作事故">十七、在职的人怎么做，才不会把 AI 学习变成工作事故？</h2>
-<p>想把一个新工具带进公司，先弄清楚谁允许你用、哪些资料可以用、出了问题谁负责。客户名单、合同、内部财务、还没公开的产品资料，都不适合直接贴进个人聊天账号。公司禁止外部 AI，就用本项目的虚构数据练习。<strong>不要拿规避安全制度来证明自己很懂技术。</strong></p>
-<p>真正适合做第一次试验的是一段小流程。比如一周要整理一次公开评论，先拿上周已经公开的样本，确定输出的五个主题、哪些必须人工复核、哪些情况属于失败。找负责人确认规则，然后对照“全部手工”和“AI 先整理、人工再检查”分别花多少时间。结果变慢了也照实写。</p>
-<p>三次试验都能交付，再谈是否让团队用。给领导汇报时别说“我已经实现全面自动化”，直接拿出一页纸：以前谁做、每次多久、现在一共多久、返工多少条、风险怎么管、下一批谁来验收。领导最需要知道的是能不能稳定交付、会不会出事。</p>
-<p>尤其注意 Agent。可以操作文件、邮件、浏览器和数据库的 AI，权限比只回答问题的聊天工具高很多。第一次试验优先只读权限；删除、修改生产数据、对外发送、付款，必须有明确授权、人工确认和回滚。仓库中的网页、客户邮件和外部材料都可能混进诱导 AI 越权的内容，外部文字不能当成给 Agent 的系统命令。</p>
-<p><a href="docs/14-security-and-compliance.html">企业数据与 Agent 检查表</a> · <a href="templates/workflow-sop.html">给领导看的工作流模板</a></p>
-<h2 id="十八-怎么判断-我真的学会了-而不是-ai-在替我考试">十八、怎么判断“我真的学会了”，而不是 AI 在替我考试？</h2>
-<p>我建议用一个很笨的标准。把你做的作品交给另一个人，<strong>不给他打开你之前的对话</strong>，只提供任务说明、公开或授权的输入、运行步骤、验收规则。让他照着做。如果他做不出来，说明还有一部分知识只存在你的脑子里。你可以教他，但不能因为自己的电脑里跑通一次就说“已经形成工作流”。</p>
-<p>再加一个反向测试。故意给 AI 一条难分类的信息、一个缺失的字段、一份不存在的来源，看看它会不会瞎补、有没有拒绝、是否提醒人工检查。得到好看的文字不难，发现它错在哪里才是岗位能力的一部分。</p>
-<p>最终要留下四样东西：<code>输入原件</code>、<code>操作步骤</code>、<code>人工修改记录</code>、<code>结果与局限</code>。一个真实可复核的案例，比十张漂亮的工作流图更有价值。我做 AI 产品和内容时，也见过 HTML 在普通浏览器里能打开，复制进公众号却报一堆格式错误。这种问题要到目标环境里才会暴露，所以验收必须放在真正使用的地方。</p>
-<p>作品能不能写进简历？可以写<strong>你确实做过的动作</strong>，例如“使用 AI 辅助分类 24 条虚构反馈，按预先设定的标准答案复核，并纠正四条示例错误”。但如果你只是运行了仓库里的教学数据，就得明确标注个人练习，不要写成自己为某家电商提升了真实业务指标。</p>
-<p><a href="docs/17-portfolio-review.html">作品的六项评审标准</a> · <a href="docs/15-evaluation-protocol.html">评估协议</a></p>
-<h2 id="十九-ai-让人变快还是变慢-别光看演示">十九、AI 让人变快还是变慢？别光看演示</h2>
-<p>这个问题，我专门查了几份相互不完全一致的研究。美国一项客服辅助研究跟踪了数千名客服员工，发现被研究系统帮助的新手平均改善更明显。另一项 2025 年针对资深开源开发者的随机实验却发现，在当时的工具和任务条件下，AI 辅助组平均反而多花了 19% 的时间。到了 2026 年，这家研究机构又说明，新一轮实验受到参与者选择等偏差影响，暂时无法可靠估计最新工具带来的速度变化。</p>
-<p>这三件事并不矛盾。任务不同、使用者不同、工具不同，结论自然不同。<strong>“AI 提效”要改成“AI 是否在我这件事上、连同复核一起提高了效率”。</strong>别引用别人实验里的数字给自己的作品包装成绩。</p>
-<p>还有一种情况：AI 生成的速度确实很快，但质量变差了。比如客服漏掉一条严重投诉、分析报告编了一个不存在的出处、代码运行起来却把权限放得太宽。复核和修复的时间必须算在成本里。严重错误有时不能简单用效率收益抵消。</p>
-<p>我的建议很明确。第一轮用小样练流程，第二轮换一批样本做复测，第三轮让别人按你的说明再跑一次。总耗时、质量、可重复性至少三项达标，才考虑扩大使用。</p>
-<p><strong>研究出处：</strong><a href="https://www.nber.org/papers/w31161">NBER 客服现场研究</a>；<a href="https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/">METR 2025 年随机实验</a>；<a href="https://metr.org/blog/2026-02-24-uplift-update/">METR 2026 年测量更新</a>。</p>
-<h3 id="三个真实案例为什么对你的测量有帮助">三个真实案例为什么对你的测量有帮助</h3>
-<p>NBER 客服研究发现，AI 提示对新手帮助较大；METR 在 2025 年的熟练开源开发实验中测到完成时间增加；Klarna 也改变了过于强调 AI 降本的经营重点。三件事说的是不同任务。<strong>真正该问的是：这一次我要交付的结果是什么，检查要花多久，出现错误会造成什么后果。</strong>测量方法见 <a href="docs/15-evaluation-protocol.html">评估协议</a>，案例原始出处见 <a href="docs/20-real-world-cases.html">案例库</a>。</p>
-<h2 id="二十-什么能力值得长期积累-看你能不能承担一个结果">二十、什么能力值得长期积累？看你能不能承担一个结果</h2>
-<p>我不太赞成给出一个“未来十大铁饭碗”的榜单。今天看起来稳定的岗位，也会碰上行业变化。大部分人也没办法因为一篇文章就从运营转成算法工程师。</p>
-<p>我更愿意看一件事能不能交付。你能不能找出一个真实问题，拿到可合法使用的资料，做出方案，验证效果，跟相关的人沟通，发现错误以后修正？这些事情里包含业务判断、协作、责任和专业经验。即使工具再换一次，这套工作方式仍然可以继续用。但同样要承认：它们不能保证个人永远不受裁员、经济周期、行业收缩影响。</p>
-<p>比如行政同学可以先做一份准确、可以追责的会议纪要；财务同学可以用<strong>虚构报价表</strong>练公式检查；做产品的可以拿公开 App 研究用户流程；设计师拿授权材料做 brief；程序员在小型开源项目里补测试。等这些练习通过，才逐步提高复杂度。具体岗位练习我整理了 <a href="docs/16-sector-playbooks.html">十种职业起步表</a>。</p>
-<p>对于想换岗位的人，别只说“我的迁移能力很好”。找出在两个岗位里都用得上的一个真实动作，例如用户访谈、需求拆解、客户沟通、项目推进，再准备原始证明材料。这比把个人简介改成“AI 复合型人才”有用。</p>
-<h2 id="二十一-如果-30-天之后还没有明显改善-怎么办">二十一、如果 30 天之后还没有明显改善，怎么办？</h2>
-<p>先回答四个问题。是选的工作根本不适合 AI？是工具和输入有问题？是自己不会验收？还是市场里并不需要这种成果？四种原因处理办法不同。</p>
-<p><strong>工作不适合 AI</strong>：停掉自动化，转去做其他高频任务。<strong>质量不过关</strong>：先修数据、校验规则和人工审核。<strong>流程跑通却没人买账</strong>：去找业务方问清为什么不需要，不要继续给演示视频加特效。<strong>求职总没有反馈</strong>：检查岗位匹配、履历证据、投递渠道和面试表达，别把缺乏面试简单归因于“AI 淘汰了我”。</p>
-<p>你还可以把成果写成一份失败报告：我尝试了什么、实际花了多少时间、漏了几条、哪一步无权限、下次为何暂停。能识别不适合自动化的任务，也是一种能力。很多人舍不得把实验判失败，最后把“已经花掉的时间”当成继续投入的理由。</p>
-<h2 id="二十二-真正可以拿走的七件东西">二十二、真正可以拿走的七件东西</h2>
-<p>做完这份指南，建议你的文件夹里至少有：一份岗位任务表、一张权限与风险卡、一份原始样本、一组 AI 运行输出、一份人工错误记录、一页总成本对照、一份可公开的匿名作品。这七件材料能帮助你向同事或面试官解释自己做了什么。材料缺了就补；实测为零就写零。</p>
-<p>如果你是失业求职状态，还要多一份真实投递记录和下一步现金流安排。如果你是负责人，还要多一份企业审批与回滚说明。如果你是学生，必须把真实任职经历和公开练习清楚分开。做到这里，你的 AI 学习才开始和实际职业结果联系起来。</p>
-<p><a href="docs/START-HERE.html">从零开始路线</a> · <a href="docs/15-evaluation-protocol.html">评估协议</a> · <a href="docs/ADVERSARIAL_AUDIT.html">对抗式审核记录</a></p>
-<h2 id="二十三-今天就开始">二十三、今天就开始</h2>
-<p>现在打开电脑，新建一个文件夹。里面只需要四样东西：<code>tasks.md</code>、<code>experiment.md</code>、<code>work-sample.md</code>、<code>review.md</code>。第一个文件写你过去五天做了什么；第二个放你打算测试的任务；第三个留给作品；第四个记录真实结果。</p>
-<p>我写保姆级攻略，是希望读者看完以后真能做出点东西。AI 能帮你出初稿、写代码、整理资料，这些已经不难。最该花精力的地方，是搞清问题、判断结果、对交付负责。</p>
-<p><strong>今天先选一个任务。明天拿着结果回来。</strong></p>
-<hr/>
-<h3 id="资料与使用说明">资料与使用说明</h3>
-<p>本文由 AI 酋长 Andy 独立编写。国际研究的数字和具体限制见 <a href="docs/SOURCES.html">资料来源</a>；职业路径、打分表、七天任务和教学案例是作者整理的练习方法。<strong>职业变化具有行业、地区、个人差异，无法预测个人是否会失业。</strong> 使用实际公司材料时请遵守权限与保密制度。欢迎在 GitHub 提交勘误、可核实的数据以及脱敏的实操反馈。</p>
-</article></main><footer class="wrap"><p>AI 酋长 Andy · 学习和研究资料，不能保证避免失业、涨薪或录用。<a href="docs/ADVERSARIAL_AUDIT.html">阅读对抗式审核</a></p><p>需要结合个人情况讨论求职、职业发展、AI 应用或副业方向，可自愿联系微信 <strong>AIPMAndy</strong> · <a href="https://metaver.vip/" target="_blank" rel="noopener noreferrer">个人官网</a>。具体咨询范围与费用事先沟通，免费资料可直接使用，不保证录用、收入或效果。</p></footer></body></html>
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>AI时代不被淘汰保姆级攻略｜普通人未来3年该如何应对</title><meta name="description" content="AI酋长Andy对中国职场2027—2029年的判断，30种岗位的AI用法、主业升级、副业与求职路径"/><style>:root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f7f6f3;color:#1d252f;font:18px/1.9 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}a{color:#89683f;text-underline-offset:3px}a:hover{color:#554126}.container{max-width:860px;padding:30px 30px 100px;margin:auto;background:#fff;box-shadow:0 20px 65px #16263808}header{padding:20px 30px;background:#111a25;color:#fff;font-size:14px}header a{color:#f5dfbe;text-decoration:none;margin-right:25px}h1,h2,h3{color:#131c28;font-family:"Songti SC","Noto Serif CJK SC",serif;line-height:1.38}h1{font-size:clamp(34px,5vw,54px);margin:1.2em 0 .55em}h2{font-size:clamp(29px,4vw,38px);padding-top:65px;padding-bottom:13px;border-bottom:1px solid #d8c9b1;margin:26px 0 30px}h3{font-size:clamp(23px,3vw,29px);margin-top:38px}p{margin:1.1em 0;color:#29313b}strong{color:#111923;font-weight:650}figure{margin:43px 0 50px}img{display:block;width:100%;height:auto;border:1px solid #e2ded6}figcaption{font-size:13px;letter-spacing:.3px;color:#7c807f;margin:10px 4px 0}blockquote{border-left:3px solid #b79362;padding:8px 20px;margin:30px 0;color:#3b4149;background:#faf8f5}.table-scroll{width:100%;overflow-x:auto;margin:25px 0}table{border-collapse:collapse;min-width:620px;width:100%;font-size:15px;line-height:1.55}td,th{padding:13px;text-align:left;border-bottom:1px solid #e7e5df;vertical-align:top}th{background:#f5f1eb}li{margin:8px 0}code{font-size:.84em;background:#f1f0ed;padding:2px 5px;border-radius:3px}.cover{max-width:1160px;margin:30px auto 0;padding:0 16px}.cover img{width:100%;border:0}.small{font-size:14px;color:#69717c}footer{padding:28px;text-align:center;font-size:13px;color:#7b8186}@media(max-width:680px){body{font-size:16.5px;line-height:1.83}.container{padding:15px 20px 65px;box-shadow:none}.cover{margin:0;padding:0}figure{margin:30px -6px 34px}h2{padding-top:42px}header{padding:15px 18px}header a{margin-right:14px;font-size:12px}}</style></head><body><header><a href="./">项目首页</a><a href="series/">六册研究资料</a><a href="lab.html">原有实验工具</a></header><div class="cover"><img src="assets/cover-v6.svg" alt="AI时代不被淘汰保姆级攻略，普通人未来3年该如何应对"/></div><main class="container"><h1>AI 时代，普通人怎样才能不被淘汰？</h1>
+<p><strong>中国职场未来三年怎么变，我把自己的判断和具体做法都写在这里。</strong></p>
+<p>AI 时代到底怎么才能不被淘汰？这个问题我最近经常听到。有人已经工作十年，担心公司接入 AI 以后减少岗位。有人正在找工作，简历投了很多份，想知道现在学什么才有用。还有人每天看 AI 新闻、试各种工具，工作方式却基本没变。</p>
+<p>我做了多年 B 端 AI 产品，平时也做职业咨询。这次把国务院、人社部门的政策、2026 年招聘数据、企业的真实使用情况，以及我接触过的求职问题放在一起看，研究了三十种常见岗位。</p>
+<p>先把我的建议说清楚。<strong>主业尽量守住，在主业里把 AI 用起来，逐步争取更完整的工作职责。同时从自己原来的专业能力出发，建立一个小的第二收入来源。</strong></p>
+<p>这条路适合多数有家庭、有工作、需要稳定收入的人。你原来做运营，就先在运营岗位里用 AI 提高工作能力；做财务，就从财务数据和经营分析下手；做制造，就从设备、工艺和质量问题入手。有经验的人没必要为了一个热门词汇把过去十年的积累扔掉。</p>
+<p>未来三年会有变化。我下面直接讲为什么变、哪些岗位会变、该怎么应对。研究数据和政策原文放在最后，方便查。</p>
+<figure><img src="assets/latest-01.svg" alt="主业、AI 与第二收入的关系" loading="lazy"/><figcaption>主业、AI 与第二收入的关系</figcaption></figure>
+<h2>一、中国的就业市场已经开始变化</h2>
+<p>先看几组数字。</p>
+<p>智联招聘 2026 年 7 月发布《2026 年人工智能产业人才发展报告》。根据它的平台数据，2026 年上半年 AI 行业招聘企业数同比增长 <strong>24.8%</strong>，职位数增长 <strong>10.6%</strong>，求职人数增长 <strong>10.5%</strong>。其中 AI 产品经理职位数增长 <strong>87.7%</strong>，智能体开发人才需求增长 <strong>244%</strong>。[1]</p>
+<p>这组数字说明 AI 行业在扩大招聘，同时求职的人也多了。特别要注意，增长快的岗位不一定有很多空缺。一个岗位从一百个涨到两百个，增长百分之百；另一个岗位即便下降一些，仍可能有几万个机会。找工作还得结合城市、经验要求、实际招聘数量来看。</p>
+<p>同一份报告还有个数据，我觉得更值得注意。AI 行业招聘岗位中，机械设计及制造工程师占 <strong>6.8%</strong>，软件研发占 <strong>6.2%</strong>，人工智能工程师占 <strong>6.1%</strong>。人事、销售、产品等职位也排在前面。[1]</p>
+<p>这意味着 AI 公司需要的不光是算法工程师。业务要落地，就要有人做硬件、制造、销售、产品、交付和运营。懂业务的人有机会进入 AI 行业，原有行业也会需要更多会用 AI 的员工。</p>
+<p>年轻人的就业压力也不能忽略。教育部发布的信息显示，2026 届普通高校毕业生预计 <strong>1270 万人</strong>。[2] 我在做求职咨询时能感受到，很多人关心的已经是能否拿到面试、有没有适合自己的岗位，以及下一份工作能不能积累经验。</p>
+<p>国家的方向也很明确。国务院 2025 年发布《关于深入实施“人工智能+”行动的意见》，提出到 2027 年，AI 与六个重点领域广泛深度融合，新一代智能终端、智能体等应用普及率超过 <strong>70%</strong>；2030 年超过 <strong>90%</strong>。[3]</p>
+<p>2026 年，人社部等部门又发布了“人工智能+人社”实施意见，提出在就业匹配、培训、社保等方面推进应用，到 2027 年探索约五十个高价值应用场景。[4]</p>
+<p>还有一份值得知道的文件。国务院有关部门提出，2025—2027 年开展补贴性职业技能培训三千万人次以上，涉及先进制造、数字经济和生活服务等方向。[9] 对想转岗的人，这意味着可以留意当地人社部门公布的课程和报名条件。自己适合学什么，还是先看岗位的真实需求。</p>
+<p>把这些放在一起看，我的判断是，<strong>企业接下来会先改变具体任务，慢慢改变岗位要求，再决定团队需要怎么配置。</strong></p>
+<p>它不会整齐划一地发生。互联网企业、制造业龙头可能已经在上系统。一些中小公司还在用 Excel、微信群和人工录入。这个差异恰好给普通人留下了时间。你不用今天就把所有模型学会，但应该开始改变自己的工作方法。</p>
+<h2>二、为什么很多工作会变</h2>
+<p>在 B 端做过产品就知道，企业采购一套系统，最后一定要算账。买回来以后能不能赚钱，能不能减少重复劳动，能不能接进原有业务系统，能不能稳定运行，出了错有没有人处理。</p>
+<p>AI 也是这样。</p>
+<p>假设一家电商公司每天要处理三千条客户消息。以前需要十几个客服轮班。现在可以让 AI 先回答配送查询、产品规格和常见售后问题，人工接退款争议、复杂投诉和高价值客户。客服这个岗位还会在，但原来每天重复回答的问题会减少，知识库维护、服务质量、疑难问题处理的比重会增加。</p>
+<p>再看产品经理。过去一个新功能可能先写十几页 PRD，再画流程图、原型图。现在文档和原型初稿会便宜很多。公司往后更愿意问，这个需求是谁提的，客户愿不愿意买单，上线以后指标有没有变化。只会写材料的人会比较被动，懂客户和交付的人会有机会。</p>
+<p>财务也类似。票据识别、凭证整理、基础对账会继续自动化。企业还得有人判断异常，解释利润为什么变了、哪些客户回款慢、哪些费用不合理。懂会计准则、业务和系统的人会承担更多事情。</p>
+<p>这里有两项研究可以帮助理解。</p>
+<p>美国一项涉及 <strong>5179 名客服</strong>的研究发现，引入生成式 AI 辅助后，客服平均每小时解决的问题数增加约 <strong>14%</strong>，新人获得的帮助尤其明显。[5] 工具把优秀客服的部分经验变成了实时建议。</p>
+<p>另一项研究却得出了不同结果。METR 在 2025 年让 <strong>16 名资深开源开发者</strong>处理 <strong>246 个真实任务</strong>，发现当时使用 AI 工具的任务平均多花了约 <strong>19%</strong> 时间。[6] 2026 年研究团队又说，新一轮测试中工具使用习惯和样本选择发生变化，效果还需要继续测。[7]</p>
+<p>我看完更确信一件事。<strong>AI 能不能提高效率，要看任务。</strong> 标准问题可能很快就能处理，复杂系统里一次错误修改反而会多出几个小时排查。企业最终会把工具留在真正有效的环节。</p>
+<p>所以，未来岗位变化最明显的地方，通常有三个特征。工作重复多，输入材料相对固定，结果容易检查。会议摘要、资料分类、商品文案、基础报表、代码样板都在里面。客户谈判、现场工艺调整、复杂决策、质量签字等工作，短期更需要经验和责任。</p>
+<figure><img src="assets/latest-02.svg" alt="日常任务的变化" loading="lazy"/><figcaption>日常任务的变化</figcaption></figure>
+<h2>三、2027、2028、2029 年，我怎么看</h2>
+<h3>2027 年，AI 开始成为很多岗位的日常工具</h3>
+<p>我预计先发生的变化集中在客服、运营、市场、行政、软件研发、财务共享、销售支持。公司会要求员工把文档整理、常见问题回复、报表初稿、测试代码等事情做得更快。有的公司采购统一的工具，有的允许团队自己试。</p>
+<p>这一年，同一岗位的人会出现明显差异。一个运营还在手工整理几百条评论，另一个已经能快速整理用户问题，随后自己决定选题和广告预算。一个产品经理用几天整理竞品材料，另一个把更多时间放在访谈客户和确认需求上。</p>
+<p><strong>2027 年最值得做的事，是让 AI 稳定参与主业。</strong> 不用追所有新功能。挑自己每周都做的事情，学会把材料整理好，交给工具处理一部分，最后自己审核结果。能节约时间，就去承担更多有价值的工作。</p>
+<h3>2028 年，招聘会更看重一个人负责多大范围</h3>
+<p>如果前一年的应用持续有效，岗位说明书会进一步改变。运营可能同时承担内容、投放和用户转化。财务从日常核算向业务分析延伸。产品经理需要看懂 AI 系统的成本、权限和上线效果。开发者要会使用 AI 编码，也能负责测试、部署和故障处理。</p>
+<p>新人的入口可能更难。以前公司愿意安排新人做数据录入、材料整理、测试用例初稿，现在这些工作已经有一部分可以交给工具。新人就要更早接触真实问题，学会把一个小项目做完整。</p>
+<p><strong>2028 年重点争取职责。</strong> 你负责的环节越靠近客户、订单、成本和交付，经验越容易积累，也更容易在下一次跳槽时讲清楚自己的价值。</p>
+<h3>2029 年，部分公司的岗位会重新组合</h3>
+<p>到 2029 年，我预计会看到更多综合型岗位。运营懂数据和客户，产品经理懂业务与系统，财务懂经营，制造工程师懂设备与数据，销售懂产品交付。部分纯执行岗位可能减少，部分公司也会因为订单扩大继续招聘。</p>
+<p>我更担心一种人。工作做了很多年，仍然只负责其中一个容易标准化的步骤，不清楚客户为什么付钱，也不知道自己的工作如何影响结果。一旦公司改变流程，这个人就很难向别的岗位移动。</p>
+<p><strong>2029 年，我更看重三个积累。</strong> 行业经验、AI 工作能力、稳定的客户关系。第三项也包括公司外的客户来源。有人靠专业咨询获得副业收入，有人靠内容接到项目，有人帮家里生意做推广。这些事情需要时间，适合从现在慢慢开始。</p>
+<p>我把三年的判断画成一张图。不同城市和行业推进速度会有差别，但准备方向已经比较明确。</p>
+<figure><img src="assets/latest-03.svg" alt="三年的岗位变化" loading="lazy"/><figcaption>三年的岗位变化</figcaption></figure>
+<h2>四、哪些岗位最值得担心，哪些能力会更值钱</h2>
+<p>我把三十种常见岗位拆了一遍，发现有一条规律。<strong>只提供初稿、整理和搬运的人更容易被压价，能完成整段业务的人更容易留下来。</strong></p>
+<p>这并不只影响办公室。制造、外贸、本地服务也会逐步改变。区别在于有些工作可以直接在电脑里完成，有些还要连设备、跑现场、和客户谈。</p>
+<p>给大家一张岗位地图。后面再逐个讲具体应该怎么做。</p>
+<div class="table-scroll"><table><tr><th>工作方向</th><th>最先改变的任务</th><th>建议往哪里发展</th></tr><tr><td>行政与人事</td><td>纪要、表格、JD 初稿、资料整理</td><td>流程管理、招聘质量、组织协作</td></tr><tr><td>财务与法务</td><td>票据识别、对账、条款定位</td><td>经营分析、异常判断、专业审核</td></tr><tr><td>客服与销售</td><td>常见问题、线索整理、会议纪要</td><td>客户关系、复杂问题、成交和续约</td></tr><tr><td>内容与电商</td><td>标题、素材、字幕、基础报表</td><td>选品、投放、转化、利润和复购</td></tr><tr><td>产品与设计</td><td>PRD、低保真原型、通用设计稿</td><td>需求验证、产品结果、用户体验</td></tr><tr><td>研发与测试</td><td>样板代码、接口初稿、用例生成</td><td>系统架构、测试质量、部署运维</td></tr><tr><td>制造与物流</td><td>质检初筛、报表、排程建议</td><td>现场工艺、设备数据、异常处理</td></tr><tr><td>教育与服务</td><td>备课材料、客服问答、预约整理</td><td>教学效果、客户体验、长期服务</td></tr></table></div>
+<p>其中最值得注意的，是从岗位名字转向看日常任务。同样叫运营，有人在批量发素材，有人管投放预算、利润和复购。前者更容易被工具影响，后者的业务经验会继续有用。</p>
+<h2>五、30 种岗位，直接告诉你 AI 怎么用</h2>
+<p>这一部分可以直接跳到自己的职业看。我尽量把步骤说到日常工作里。软件用公司已有的就行，WPS、Excel、钉钉、飞书、企业自建知识库，以及国内正常可用的 AI 模型，都可以用来做第一步。涉及公司客户、合同和员工数据，先用企业批准的环境，别随手传到个人账号。</p>
+<h3>办公、财务、人力和法务</h3>
+<p><strong>01 行政文员。</strong> 会议纪要、通知初稿、报销材料分类、工作日报，可以先让 AI 帮忙整理。比如开完周会，把可使用的会议记录整理成决议、负责人、截止日期三列，自己核对以后发出。想往上走，就去负责会议后的执行跟进、OA 流程和跨部门协调。公司需要的是一件事最终有人推进，不缺一份写得漂亮的纪要。</p>
+<p><strong>02 招聘 HR。</strong> 用 AI 起草 JD、归纳岗位要求、设计结构化面试问题，给招聘经理准备候选人对照表。最有价值的能力还是理解用人部门，到底需要一个什么人，招聘渠道哪个有效，候选人为什么放弃 offer。简历筛选涉及个人权益，要把候选人真实经历、判断依据和人工决策留下来。下一步可以往招聘运营、人才发展或 HRBP 发展。</p>
+<p><strong>03 财务会计。</strong> 在 WPS 或 Excel 里先整理清楚报销、应收账款、成本科目，让工具辅助检查金额差异、重复报销、账龄变化和异常支出。每个月给业务负责人多解释一步，比如利润降了，是客单价变了、渠道费用涨了，还是坏账增加。会做账是基础，能看懂业务里的钱往哪儿走，才能逐步承担经营分析、业财一体化和财务数字化工作。</p>
+<p><strong>04 法务助理。</strong> 合同的付款期限、违约条款、保密义务、争议解决，可以让 AI 辅助提取，形成条款对照表。法律依据自己查原文，合同是否接受由法务负责人判断。法务的升级方向在法律检索、合同管理、业务风险和合规流程。将来企业需要的仍是知道哪条约定会给业务带来实际麻烦的人。</p>
+<p><strong>05 采购专员。</strong> 供应商报价整理、不同币种与税费口径统一、合同条款对照、到货时间比较，都可以用 AI 省时间。自己负责总成本、供应商资质、质量、付款条件和实际交期。下一步往供应链管理、成本分析、供应商开发走。能帮公司减少库存积压和异常采购，比单纯把询价表做得更快更有价值。</p>
+<h3>客服、销售与外贸</h3>
+<p><strong>06 客服专员。</strong> 让 AI 从已确认的知识库里查退换货规则、物流说明和产品参数，再给出回复草稿。自己接复杂投诉、补偿争议、异常订单和情绪激动的用户。进一步可以接知识库维护、服务质检和客服运营。客服岗位不会只用解决了多少条咨询衡量，解决率、转人工比例、投诉率和复购同样重要。</p>
+<p><strong>07 销售开发。</strong> 找公开的企业资料、分析目标公司的业务、准备首次沟通的问题，让 AI 先帮你做功课。自己确认客户是不是真的有需求、谁负责预算、现在为什么要采购。不要把自动群发几千条消息当成销售能力。向上走需要会判断线索质量、管理 CRM 和持续推进成交。</p>
+<p><strong>08 大客户销售。</strong> 用 AI 整理客户会议纪要、产品功能对照、竞品资料和方案目录。真正的谈判、交付承诺、合同和回款仍要自己跟。你应该熟悉客户内部的决策过程，知道技术负责人、业务负责人和采购各关心什么。能带着团队完成从售前到回款的流程，会比只擅长做 PPT 更有竞争力。</p>
+<p><strong>09 外贸业务员。</strong> 我很看好懂行业的外贸人使用 AI。多语言邮件、产品规格说明、常见问题、夜间询盘整理，工具都能帮忙。上班后自己确认询盘真实性、产品认证、MOQ、交货期、付款方式和贸易条款。AI 可以减少语言和时差的障碍，能不能签单还看产品、供应链和信任。后面可以往大客户、海外渠道和跨境业务负责人走。</p>
+<p>阿里国际站 2025 年披露过一个义乌机械商家的案例。沙特买家在凌晨询问无油螺杆空气压缩机，AI 接待助手先回答产品问题，随后由商家继续推进业务。平台称最终达成了大额订单。[8] 我觉得这种组合比较符合国内中小企业的实际情况。夜里先把客户接住，白天由懂产品的人跟进。公司没必要把完整销售决策交给机器。</p>
+<h3>内容、运营、电商与设计</h3>
+<p><strong>10 电商运营。</strong> 商品标题、详情页初稿、评价整理、促销素材可以用 AI 生成。更重要的是看懂商品毛利、平台扣点、广告成本、库存和退货率。比如一个链接卖得多却利润低，你要找出是投放太贵、折扣过大，还是售后成本高。下一步去负责品类、增长或店铺经营，别把价值只放在上架和做图上。</p>
+<p><strong>11 直播运营。</strong> AI 可以从历史直播记录里整理高频问题、提取高转化商品的特点、生成脚本初稿、归纳每场复盘。自己决定选品、价格、库存、主播节奏和售后承诺。最应该熟悉的数字是进房、停留、点击、下单、退款和最终毛利。会剪切片有用，能解释一场直播为什么赚钱会更有用。</p>
+<p><strong>12 视频剪辑。</strong> 自动字幕、粗剪、镜头分段、背景清理已经能节约很多制作时间。剪辑师往后需要更懂叙事、节奏、内容定位、平台规则和商业交付。你要知道一条视频前几秒为什么有人停留，哪段让用户离开，品牌信息是否传达到位。懂内容结果的剪辑师仍然有空间，反复机械裁切的收费会越来越难维持。</p>
+<p><strong>13 平面设计。</strong> 用 AI 出草图、排版参考、海报尺寸变体，能减少前期探索。但最终的品牌规范、字体授权、商业使用、产品信息和视觉一致性需要设计师把关。以后更适合往品牌设计、视觉体系、产品设计和业务创意走。客户付费是为了传播效果和统一的品牌形象，不是为了买十张差不多的 AI 图片。</p>
+<p><strong>14 新媒体编辑。</strong> 资料检索、访谈整理、标题建议、图文排版、视频转文字都适合工具辅助。选题、事实核查、内容角度和表达方式必须自己掌握。尤其现在网上 AI 文章很多，大家一眼就能看出那些重复的套话。懂自己的读者、愿意研究原始资料、能够持续说清楚一件事的编辑，价值会提高。做公开内容时按平台要求完成 AI 标识。</p>
+<p>我自己做内容最直观的经验来自一条职业晋升相关的视频。那条内容给我带来过 <strong>1200 元的实际成交</strong>。这个结果提醒我，流量多少当然有用，更关键的是你讲的事情有没有人真正需要，看到内容以后会不会来咨询。做职业内容和做娱乐流量，后面的商业逻辑差别很大。</p>
+<p><strong>15 交互设计。</strong> 线框图、通用组件、初步页面流程可以让 AI 帮忙生成。下一步要把时间花在用户研究、复杂流程、无障碍和真实操作测试上。比如一个老人办理业务总找不到下一步按钮，你能解释原因并改好，价值比多画几版相似页面更高。适合继续向 UX 研究、复杂业务设计和设计系统发展。</p>
+<h3>产品、研发、测试与数据</h3>
+<p><strong>16 普通产品经理。</strong> 把用户访谈、客服反馈和竞品材料整理给 AI，让它辅助生成需求文档、原型和问题清单。自己去确认需求是否真实、优先级怎么排、技术实现花多少成本、上线以后怎么衡量。别把写 PRD 当成工作成果的终点。我带过的求职咨询里，产品经理经常需要解决的就是这个问题，简历写了很多项目动作，却没交代为什么做和最后有什么变化。</p>
+<p><strong>17 AI 产品经理。</strong> 这一类岗位要求更具体。要懂大模型适合处理什么任务，知识库怎么更新，检索结果如何引用，工具调用权限怎么设计，如何评估准确率、成本和延迟。做客服智能体，就看它能否回答真实问题、什么时候转人工、错答怎么追溯；做文档助手，就看有多少问题能找到正确原文。能把 Demo 做出来只是入门，做成业务能长期使用的产品才算交付。</p>
+<p><strong>18 前端开发。</strong> 页面框架、样式、组件初稿和单元测试可以交给 AI 协助。你继续负责状态管理、性能、可访问性、浏览器兼容和安全问题。代码能生成不代表能直接上线。会把功能跑通、能定位线上错误、能与产品和后端协作的开发者，价值仍然很高。</p>
+<p><strong>19 后端开发。</strong> AI 很适合生成接口样板、SQL 查询建议、文档和测试草稿。难点在权限、事务、数据库性能、幂等、并发、失败重试和线上可用性。你要能看懂生成代码可能在哪个边界出问题，尤其是支付、订单和账户类系统。经验丰富的后端可以把 AI 当成辅助开发者，把主要精力放在系统设计和稳定交付上。</p>
+<p><strong>20 软件测试。</strong> 测试用例初稿、日志归纳、简单自动化脚本可以让 AI 帮忙。测试人员应当更熟悉业务里的高风险路径，例如重复付款、网络中断、错误退款、越权访问、数据恢复和回归问题。往质量工程和测试开发走，掌握接口测试、自动化回归、质量指标以及 AI 应用本身的评估。</p>
+<p><strong>21 数据分析师。</strong> SQL 初稿、数据字典整理、图表生成、文字摘要可以用 AI。真正值得投入的仍然是指标口径、数据质量、统计基础和业务解释。比如订单增长了百分之二十，可能是活动带来的，也可能是渠道口径变了。你能找到原因，告诉负责人下一步该怎么改，就比做出一份漂亮的图表更重要。</p>
+<p><strong>22 智能体工程师。</strong> 需要掌握模型接口、工作流编排、工具调用、权限、状态、日志、失败恢复和测试。真正的业务往往涉及 CRM、工单系统、数据库或企业知识库，这些系统不能随便访问。企业愿意为能稳定运行、容易追责、能维护的方案付钱。只会做聊天界面，长期竞争力有限。</p>
+<p><strong>23 数据标注和 AI 训练。</strong> 简单标签、重复清洗、标准格式转换会受到自动化影响。更值得发展的是难例处理、标签规范、抽检方法、模型错误分析、多模态质量管理。比如客服意图识别经常把退款和物流纠纷混在一起，你要能发现分类标准的问题，补充边界样本，帮助整个系统提高质量。</p>
+<figure><img src="assets/latest-04.svg" alt="12 类典型岗位的升级方向" loading="lazy"/><figcaption>12 类典型岗位的升级方向</figcaption></figure>
+<h3>制造、教育、医疗与实体服务</h3>
+<p><strong>24 教师与培训。</strong> 教案初稿、题目变体、课堂材料、学生常见错误整理可以让 AI 协助。老师应该投入更多时间在课程设计、课堂反馈和学生真正不会的知识点上。职业培训尤其要贴近真实岗位，讲一个会用的工作方法，比讲半天模型原理更能帮助学员。你自己熟悉的课程内容，也有机会延伸成专业辅导和知识产品。</p>
+<p><strong>25 医护文书与医院运营。</strong> AI 可以在获批准的系统里辅助整理病历草稿、排班、流程问答和行政资料。临床决策、患者沟通、病历签署和隐私管理仍按专业制度执行。医院里的运营、信息化、质控岗位，更需要懂业务流程、规范和系统的人。学会用工具整理信息是一部分，医疗专业责任仍然要靠专业人员承担。</p>
+<p><strong>26 工业质检员。</strong> 机器视觉已经可以辅助发现外观缺陷，AI 也能帮助归纳质检记录和异常模式。人的主要工作会更偏向复核难例、定位缺陷原因和推动工艺调整。看到一批产品有划痕，你还要判断是设备磨损、原料、参数还是操作流程出了问题。向质量工程、设备维护和工艺改进方向走很实际。</p>
+<p><strong>27 生产计划。</strong> 排产表、库存预警、订单变化汇总可以让 AI 提供建议。负责人必须掌握设备产能、人员班次、物料到货和紧急插单的真实约束。下一步往 MES、ERP 协同和供应链计划走。能让交付日期更准、库存更低、生产少停机，才是这一岗位的价值。</p>
+<p><strong>28 仓储物流。</strong> 工单分类、路线建议、库存异常和运输日报可以自动整理。人工仍要处理实际收货、破损、延误、丢件和现场协同。懂 WMS、运输数据、库存周转与成本的人，能从操作岗位进入仓储管理、物流运营和供应链改善。</p>
+<p><strong>29 建筑设计与造价。</strong> 规范检索、工程量预处理、清单对照、方案图初稿可以用 AI 辅助。施工现场、材料价格、图纸会审、合同变更和工程责任仍需专业判断。可以往 BIM 协同、项目管理、造价控制和数字化工程走。工具帮你快一点查资料，你需要解释为什么这样设计和这样计价。</p>
+<p><strong>30 社区养老和本地服务。</strong> 排班、预约、常见问题、服务记录、活动宣传适合用 AI 处理。真正决定复购的是有没有准时到达、服务是否稳定、老人和家属是否信任。熟悉客户需求的服务人员可以向运营、管理、客户关系发展。家里有门店、小作坊或农产品生意，也可以直接把这些工具用在自己的经营上。</p>
+<p>三十个岗位讲完，我最建议普通人先抓住自己所在的行业。<strong>行业经验还在，你就有一个可以借力的地方。</strong> 产品经理先研究产品怎么交付，销售先研究怎么成交，制造工程师先研究怎么解决现场问题。AI 是工具，具体工作仍然要有人做完。</p>
+<h2>六、普通人需要补的 AI 能力，我认为有四项</h2>
+<p>前面讲了这么多岗位，学习方向其实可以收敛到四项。用不着每个人都去训练大模型，也不需要每个月订阅十几种工具。</p>
+<p><strong>第一项，能把问题讲清楚。</strong> 你要提供什么资料、完成什么任务、遵守什么业务规则、最后输出给谁，都要说得明白。比如要求 AI 整理销售记录，只说“分析一下”很容易得到一堆空话。告诉它数据字段、订单口径、关注的异常和汇报对象，结果会更有用。</p>
+<p><strong>第二项，能处理文件、表格和资料。</strong> 很多人在公司里花时间最多的工作，仍然是 Excel、WPS、PPT、PDF、会议记录、合同和客户消息。这些东西先学会整理，能在常用软件里调用 AI 完成初稿，收益已经很直接。再去研究数据清洗、知识库和自动化。</p>
+<p><strong>第三项，能发现 AI 的错误。</strong> 做财务就核金额和税费，做法务核法律原文，做运营核产品参数，做开发跑测试，做医疗遵循专业审核。你比模型更清楚什么地方错一次就会出事，这恰好是经验的价值。</p>
+<p><strong>第四项，能把几个工作环节连起来。</strong> 比如客服问答整理完自动形成工单，工单分给对应负责人，处理结果写回系统，客户再收到消息。再比如销售会议结束以后，客户需求进入 CRM，负责人明确下一步跟进时间。这时你开始做的是工作流程，已经比单纯会聊天多走了一层。</p>
+<p>国内有哪些工具可以开始用？一般办公可以从 WPS、Excel、钉钉、飞书里的现有能力，以及企业允许使用的豆包、通义、Kimi、腾讯元宝、DeepSeek 等工具里选择。写代码就接自己已有的 IDE、测试框架和代码仓库。企业应用优先考虑系统是否可接入、数据放在哪里、权限如何管理。</p>
+<p>工具会继续变，别给某个产品押太多时间。<strong>先练自己岗位里能长期复用的能力。</strong></p>
+<figure><img src="assets/latest-05.svg" alt="AI 进入日常工作的四个步骤" loading="lazy"/><figcaption>AI 进入日常工作的四个步骤</figcaption></figure>
+<h2>七、我为什么建议每个人保留主业，同时准备副业</h2>
+<p>我现在做内容、职业咨询和 AI 相关服务，最明显的感受是，一个人的专业经验可以有不止一种收入方式。原来在公司里做产品，经验只通过工资变现。后来我用这些经验讲职业成长、分析 AI 产品、辅导求职，开始有公司以外的客户。</p>
+<p>有一条职业晋升内容带来过 <strong>1200 元的成交</strong>。这事让我更明确，做内容的商业价值要看能解决谁的问题。我也遇到过在海外工作的从业者通过内容联系我，咨询求职和 AI 转型。一个人的行业经验，经过长期分享，有机会被公司以外的人看见。</p>
+<p>所以我建议有工作的人，优先把工资收入维持住，再慢慢建立自己的客户来源。副业一开始不需要做很大，每个月有几位真实咨询者、几个小订单，就能知道市场到底需要什么。</p>
+<h3>适合普通人的四种副业</h3>
+<p><strong>专业服务。</strong> 你原来做什么，就围绕那项能力提供服务。做产品经理可以提供职业辅导、需求梳理和产品原型；做开发可以帮小团队开发网站、内部工具；做设计可以提供品牌视觉和电商物料；做数据分析可以帮助商家整理经营报表；做外贸可以提供产品资料与跨语种业务支持。原有经验越扎实，服务越容易交付。</p>
+<p><strong>内容带来客户。</strong> 不必每个人都做娱乐账号。做财务的人可以讲小企业常见的经营问题；做产品的人可以讲真实的产品取舍；做招聘的人可以讲简历和面试里容易出错的地方；做制造的人可以讲设备、工艺和质检。内容选题要靠近你能解决的问题。有人看完愿意来找你，才有机会产生后续服务。</p>
+<p><strong>把重复服务做成产品。</strong> 如果你每周都有人问同样的问题，就整理成资料、课程、模板或小工具。先通过一对一服务知道用户真正卡在哪里，再决定哪些部分适合标准化。职业辅导可以沉淀成课程，设计服务可以做成产品包，软件开发可以把反复使用的功能做成工具。</p>
+<p><strong>帮家里原来的生意做增长。</strong> 这条路尤其适合已经有门店、商品、农产品或本地服务的家庭。AI 可以协助整理商品介绍、客户常见问题、短视频脚本、活动海报和客服信息。有人做餐饮，就把菜单、团购、外卖评价、老客户服务接起来；有人做制造加工，就把产品手册、多语资料和询价流程先做好。起点是一门已经存在的生意，很多事情更容易判断。</p>
+<p>我给不同主业整理了一个对应关系，想做第二收入可以直接参考。</p>
+<div class="table-scroll"><table><tr><th>现有职业</th><th>值得先考虑的第二收入</th></tr><tr><td>产品经理</td><td>简历面试辅导、产品咨询、业务原型</td></tr><tr><td>程序员</td><td>企业小工具、自动化、网站维护</td></tr><tr><td>设计师</td><td>品牌物料、电商设计、演示文稿</td></tr><tr><td>运营人员</td><td>账号诊断、内容服务、用户增长</td></tr><tr><td>财务人员</td><td>经营报表、预算管理、数字化协助</td></tr><tr><td>招聘与 HR</td><td>简历修改、模拟面试、招聘流程咨询</td></tr><tr><td>外贸从业者</td><td>产品资料、多语内容、跨境业务支持</td></tr><tr><td>教师</td><td>专业辅导、课程资料、具体知识点服务</td></tr><tr><td>工程师</td><td>设备知识培训、工艺流程梳理</td></tr><tr><td>本地商家</td><td>门店内容、客户服务、线上获客</td></tr></table></div>
+<p>这里面有些工作涉及专业资质和公司保密义务，比如财务代理、法律服务和使用企业客户信息，还是按行业要求办。副业最好从自己的公开知识、原创资料和可以独立交付的服务开始。</p>
+<figure><img src="assets/latest-06.svg" alt="主业如何延伸出第二收入" loading="lazy"/><figcaption>主业如何延伸出第二收入</figcaption></figure>
+<h3>副业最容易踩的两个坑</h3>
+<p>第一个是还没有客户就先投入很多钱。注册公司、买软件、买设备、报课程、招团队，开支一下就上来了。我更愿意先找出一项具体服务，看看有没有人愿意付钱，再根据订单决定投入。</p>
+<p>第二个是主业还没站稳就急着辞职。没有稳定订单的时候，副业很容易让人焦虑。你要做内容、服务或者开发工具，都需要积累。工资承担生活开支，副业承担试错，通常更合适。</p>
+<p>对于失业、家里开支压力大的人，这个顺序还得更谨慎。先解决收入，找到下一份可持续的工作，再慢慢发展副业。</p>
+<h2>八、我做求职咨询时，最想提醒的三个问题</h2>
+<p>我经常遇到求职者只把注意力放在 AI 热点上。有人想从普通产品经理转 AI 产品，有人担心自己做过的运营工作以后不值钱，还有同学准备面试 AI 治理岗位，却不知道 JD 背后真正需要的业务能力是什么。</p>
+<p>之前我辅导过准备<strong>抖音直播 AI 治理方向</strong>面试的同学。这个岗位听起来很前沿，拆开以后还是实际业务。直播有什么违规或风险内容，系统怎么识别，模型漏掉了什么，误判后谁处理，业务规则怎样更新，审核效率与用户体验怎么平衡。懂模型很重要，懂平台业务和治理流程同样重要。</p>
+<p>这就是我一直强调行业经验的原因。模型和工具可以继续学，岗位里的业务规则、真实客户和工作判断，需要通过实际工作积累。</p>
+<p>还有求职者会说自己很会用 AI，简历里列了十几款工具。我通常更想知道，他把工具用在什么工作里，替他解决过哪件具体麻烦，最后结果有没有变化。一次完整的产品交付、一次运营转化改善、一次质量问题修复，能讲清楚这些事情，简历就会扎实很多。</p>
+<p>对于大家最关心的三种处境，我的建议也不一样。</p>
+<h3>已经失业，先把收入接回来</h3>
+<p>优先投递与原有行业、原岗位有经验重合的工作。AI 可以帮你按 JD 调整简历表达、整理面试常见追问、分析目标公司的公开业务资料。把过去做过的实际项目讲清楚，别为了追热点把自己包装成没有做过的 AI 专家。</p>
+<p>我建议先把求职节奏稳住。明确一批目标公司、持续投递、跟进招聘进度、复盘面试。短期收入压力比较大的话，也可以考虑同领域稍微下探一个职位，先恢复稳定现金流。政府公共就业服务、失业保险和培训政策可去当地人社渠道查询，相关资格按当地实际办理。</p>
+<h3>正在跳槽，往原专业和 AI 的交叉处找</h3>
+<p>普通产品经理可以关注 AI 应用产品、企业服务产品、行业智能化产品。做运营的可以关注增长运营、AI 运营、数据分析相关岗位。做财务的可以看财务共享、业务财务和数字化项目。做制造的可以看智能制造、质量数据、工厂信息化相关岗位。</p>
+<p>关键在于能复用多少原来的经验。一个做过汽车产品的人转汽车 AI 应用，比完全不了解行业的人更容易理解业务。你掌握的行业知识和项目经验，应该是简历里最突出的部分。</p>
+<p>薪资也要看得细。相同的月薪，十二薪和十六薪不一样；底薪、奖金、社保公积金、城市成本和岗位稳定性也会影响最后拿到手的钱。别只因为岗位名称多了“AI”就降薪转行。</p>
+<h3>刚毕业，先接触真实的工作</h3>
+<p>应届生要尽快进入业务场景。想做产品，可以尝试实习、企业合作项目或有真实用户的小产品；想做运营，可以为一个真实活动负责宣传与报名；想做开发，把一个功能从需求做到部署；想做 AI 产品，至少接触数据、业务规则、评估和用户反馈。</p>
+<p>学历和基础技能依然重要。AI 会降低一些基础工作的进入门槛，同时也会让用人单位更看重你能否解决实际问题。第一段能被验证的经历，比简历上一串工具名称更有说服力。</p>
+<figure><img src="assets/latest-07.svg" alt="不同职场阶段怎么安排下一步" loading="lazy"/><figcaption>不同职场阶段怎么安排下一步</figcaption></figure>
+<h2>九、做管理者的人，我还有一条单独建议</h2>
+<p>如果你已经是团队负责人、部门经理或者高管，单纯学会使用几个 AI 工具还不够。你最需要改变的是团队的工作分工。</p>
+<p>拿销售团队举例。过去销售每天找客户资料、写纪要、更新 CRM、汇总周报。现在可以让 AI 在企业系统里辅助完成信息整理，销售把更多时间用来筛选重点客户、了解预算、谈条件和推进回款。主管要看的是有效线索、成交周期和客户留存，不能只看自动生成了多少份报告。</p>
+<p>做运营管理也一样。先把素材生产、用户反馈汇总和活动日报处理得更快，再重新分配选题、投放、数据分析和客户运营。研发管理则可以先从代码审查、测试辅助、文档检索和故障复盘下手，明确哪些结果必须人工确认。</p>
+<p>我做高管 AI 成长陪跑时，最关注管理者能否把 AI 用进实际工作。一个负责人自己写 PPT 更快，带来的改善有限。能推动团队更快处理客户、减少重复劳动、提高交付质量，价值就大得多。</p>
+<p>管理者应该掌握业务流程、数据、系统权限、团队职责和成本。你不用成为算法工程师，但需要知道项目做到什么程度才算能用，谁来维护，出了问题找谁。</p>
+<figure><img src="assets/latest-08.svg" alt="管理者如何推动团队使用 AI" loading="lazy"/><figcaption>管理者如何推动团队使用 AI</figcaption></figure>
+<h2>十、未来三年，普通人具体怎么安排</h2>
+<p>我建议按三个阶段推进。先把工作方式改掉，再争取更完整的职责，最后增加公司以外的收入来源。</p>
+<p><strong>接下来一个月。</strong> 把自己工作里最经常遇到的两三类事情交给 AI 辅助。例如整理会议、处理文档、生成商品资料、分析客服问题、编写测试初稿。你自己熟悉内容，能很快看出结果是否准确。一个月以后，至少有一项日常工作已经用得比较顺手。</p>
+<p><strong>接下来三个月。</strong> 在公司里多争取一段工作。从只负责内容生产，走向参与选题和数据；从只负责报表，走向解释异常；从只负责代码，走向联调和上线；从只负责客户录入，走向筛选重点客户。把这些实际变化留在工作成果里，以后内部晋升或跳槽都用得上。</p>
+<p><strong>接下来一年。</strong> 继续积累本职能力，找到一个你能够独立提供的服务。可以从内容、咨询、设计、开发或小生意开始，先有真实客户，再逐步把交付做顺。工作稳定的人利用晚上和周末做一点就行，没必要用熬夜换进度。</p>
+<p><strong>2027 年。</strong> 重点是把 AI 当成工作习惯，让自己在原行业更能干。</p>
+<p><strong>2028 年。</strong> 重点是争取更大职责。尽量负责客户、业务数据、交付或团队里的一段完整流程。</p>
+<p><strong>2029 年。</strong> 重点是把行业经验、AI 使用能力和自己的客户来源逐步结合。你可以继续在公司发展，也可以在已经有订单和经验的基础上增加副业投入。</p>
+<figure><img src="assets/latest-09.svg" alt="从现在到未来三年的工作安排" loading="lazy"/><figcaption>从现在到未来三年的工作安排</figcaption></figure>
+<h2>十一、我最后想说几句</h2>
+<p>很多人担心 AI 是因为看到它突然能做以前需要几个人才能完成的事情。这种变化确实在发生。我自己做 AI 产品、做职业咨询，也能感受到企业和个人对 AI 的期待已经变了。</p>
+<p>但把时间都用来担心，解决不了问题。你还得看自己懂哪个行业，能解决什么事情，什么工作交给工具最划算，自己能不能承担更完整的结果。</p>
+<p>我给普通人的建议始终很简单。<strong>守住主业，用好 AI，争取更有价值的工作，再利用自己的经验慢慢建立第二收入。</strong></p>
+<p>做运营就研究怎么带来客户，做产品就研究产品怎么交付，做开发就把系统做稳，做财务就能解释经营中的钱，做制造就解决现场问题。把一项专业能力做到更深，比每隔几周换一个 AI 方向更可靠。</p>
+<p>未来三年会有人转行，有人换公司，有人靠原有经验找到新的岗位，也会有人把副业慢慢做成生意。我希望你手里至少有一条正在变强的主业，以及一条有机会长出来的第二收入。</p>
+<h2>我把更多资料放到 GitHub 了</h2>
+<p>前面提到的三十种岗位，我做了更细的分类。公开政策、原始研究、各职业的操作方法，也整理进了开源项目《AI 时代不被淘汰保姆级指南》。需要查具体岗位的人，可以直接打开。</p>
+<p><strong><a href="https://github.com/AIPMAndy/ai-era-survival-guide" target="_blank" rel="noopener noreferrer">AI 时代不被淘汰保姆级指南｜GitHub 开源项目</a></strong></p>
+<p>https://github.com/AIPMAndy/ai-era-survival-guide</p>
+<h2>资料来源</h2>
+<p>这些来源用于核对文章里的政策、招聘统计和研究结果。2027—2029 年的岗位判断，是我结合现有信息提出的个人分析。</p>
+<p>[1] 智联招聘《2026 年人工智能产业人才发展报告》，2026 年 7 月。见<a href="https://www.jingjiribao.cn/static/detail.jsp?id=670199" target="_blank" rel="noopener noreferrer">经济日报相关报道</a>和<a href="https://mobile.rmzxw.com.cn/tranm/index/url/www.rmzxw.com.cn/c/2026-07-17/3948106.shtml" target="_blank" rel="noopener noreferrer">人民政协网具体岗位数据</a>。</p>
+<p>[2] 教育部转载新华社《扩大岗位供给 提升服务效能》，2026 年 6 月。<a href="https://www.moe.gov.cn/jyb_xwfb/s5147/202606/t20260615_1440719.html" target="_blank" rel="noopener noreferrer">原文</a>。</p>
+<p>[3] 国务院《关于深入实施“人工智能+”行动的意见》，国发〔2025〕11 号。<a href="https://www.gov.cn/zhengce/content/202508/content_7037861.htm" target="_blank" rel="noopener noreferrer">原文</a>。</p>
+<p>[4] 人社部等四部门《关于加快推进“人工智能+人社”应用发展的实施意见》，人社部发〔2026〕40 号。<a href="https://www.nda.gov.cn/sjj/zwgk/zcfb/0708/20260708133949899211227_pc.html" target="_blank" rel="noopener noreferrer">原文</a>。</p>
+<p>[5] NBER，《Generative AI at Work》，2023 年工作论文，2025 年发表于 *Quarterly Journal of Economics*。<a href="https://www.nber.org/papers/w31161" target="_blank" rel="noopener noreferrer">原文</a>。</p>
+<p>[6] METR，《Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity》，2025 年。<a href="https://arxiv.org/abs/2507.09089" target="_blank" rel="noopener noreferrer">原文</a>。</p>
+<p>[7] METR，《We are Changing our Developer Productivity Experiment Design》，2026 年 2 月。<a href="https://metr.org/blog/2026-02-24-uplift-update/" target="_blank" rel="noopener noreferrer">原文</a>。</p>
+<p>[8] 阿里国际站商家 AI 询盘案例，2025 年。<a href="https://supplier.alibaba.com/us/news/PX002C9KR.htm" target="_blank" rel="noopener noreferrer">平台案例</a>。</p>
+<p>[9] 国务院就业促进和劳动保护工作领导小组《关于开展大规模职业技能提升培训行动的指导意见》，国就劳发〔2025〕4 号。<a href="https://www.gov.cn/zhengce/zhengceku/202507/content_7032222.htm" target="_blank" rel="noopener noreferrer">原文</a>。</p></main><footer>AI 酋长 Andy · <a href="https://github.com/AIPMAndy/ai-era-survival-guide">GitHub 开源资料</a></footer></body></html>
