@@ -66,6 +66,18 @@ if [r['id'] for r in sample]!=[str(i) for i in range(1,25)]:errors.append('Lab I
 if {r['id'] for r in gold}!={str(i) for i in range(1,25)}:errors.append('Gold IDs must be 1..24')
 for f in ['assets/cover-v6.svg'] + [f'assets/latest-{i:02d}.svg' for i in range(1,10)]:
  if not (ROOT/f).is_file():errors.append('Missing new illustration '+f)
+# Latest website navigation and contact checks
+site=(ROOT/'index.html').read_text(encoding='utf8')
+article=(ROOT/'article.html').read_text(encoding='utf8')
+for label,page in [('homepage',site),('article',article)]:
+ for token in ['https://metaver.vip/','https://metaver.vip/services','AIPMAndy','data-open-contact','id="contactDialog"']:
+  if token not in page: errors.append(label+' missing '+token)
+for i in range(1,31):
+ rid=f'role-{i:02d}'
+ if f'article.html#{rid}' not in site: errors.append('Homepage missing role link '+rid)
+ if f'id="{rid}"' not in article: errors.append('Article missing role anchor '+rid)
+if 'id="roleSearch"' not in site or 'data-filter=' not in site:errors.append('Missing role search/filter controls')
+if 'navigator.clipboard' not in site or 'navigator.clipboard' not in article:errors.append('Wechat copy not implemented')
 if errors:
  print('FAIL: '+str(len(errors))+' problem(s)')
  for e in errors:print(' - '+e)

@@ -8,7 +8,7 @@
 
 我认为大多数普通人应先守住自己的主业，把 AI 真正用于每天的工作，争取从执行任务走向负责结果。同时从已有的行业经验出发，逐步建立第二收入。
 
-**[阅读全文](article.html) · [在线阅读](https://aipmandy.github.io/ai-era-survival-guide/article.html) · [查看正文 Markdown](GUIDE.md)**
+**[新版网站｜按岗位查找建议](https://aipmandy.github.io/ai-era-survival-guide/) · [阅读全文](article.html) · [查看 Markdown](GUIDE.md)**
 
 ## 内容
 
@@ -34,6 +34,14 @@
 - [原有实验及素材](series/07-labs.md)
 - [24 条反馈分类评分器](lab.html)
 - [原版互动工具](classic.html)
+
+## 关于 Andy 与联系方式
+
+我做过腾讯、百度的 AI 产品相关工作，也长期研究 AI 在工作与职业发展中的实际应用。
+
+- [个人网站 metaver.vip](https://metaver.vip/)
+- [职业咨询与 AI 陪跑服务](https://metaver.vip/services)
+- **微信 AIPMAndy**。打开微信搜索这个账号添加，也可以在[项目网站](https://aipmandy.github.io/ai-era-survival-guide/)点击“微信联系”复制账号。
 
 ## 来源与使用说明
 
