@@ -11,7 +11,7 @@ jobs:
     permissions:
       contents: read
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Check repository content, local links and images
         run: python3 scripts/check_content.py
       - name: Parse browser JavaScript
