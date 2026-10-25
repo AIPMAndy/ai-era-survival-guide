@@ -4,6 +4,9 @@
 
 **普通人未来3年该如何应对**
 
+**AI 时代普通人怎么不被淘汰？** 这是 AI 酋长 Andy 对中国职场 2027—2029 年的判断和应对攻略：30 种常见岗位的 AI 用法，在职、失业、应届、跳槽和管理者分别怎样应对，以及在主业基础上发展第二收入的路径。免费开源。
+
+
 这是我对中国职场 2027—2029 年的判断，结合政策、招聘数据、企业应用和多年来做 AI 产品、职业咨询的经历整理。
 
 我认为大多数普通人应先守住自己的主业，把 AI 真正用于每天的工作，争取从执行任务走向负责结果。同时从已有的行业经验出发，逐步建立第二收入。
@@ -54,3 +57,26 @@
 欢迎通过 Issues 提交中国岗位、企业实践和引用资料的更新建议。
 
 项目主页 https://aipmandy.github.io/ai-era-survival-guide/
+
+---
+
+<!-- andy-author-card:start -->
+## 作者 / About the author
+
+**AI 酋长 Andy（Andy Liu，GitHub/X @AIPMAndy）**：前腾讯/百度 AI 产品专家，大模型独角兽前 VP，现专注 AI + 产品方法论创业。
+
+微信 `AIPMAndy`（备注「AI 时代」） · [X @AIPMAndy](https://x.com/AIPMAndy) · [Telegram @AIPMAndy](https://t.me/AIPMAndy) · [个人官网 metaver.vip](https://metaver.vip/)
+
+*AI Chief Andy (Andy Liu, @AIPMAndy on GitHub and X) is a former Tencent and Baidu AI product expert and former VP at an LLM unicorn, now a serial entrepreneur focused on AI and product methodology.*
+
+### Andy 的其他免费指南
+
+- [GitHub 赚钱实战指南](https://aipmandy.github.io/github-income-handbook/)：20 章教程、7 条变现路径、30 天执行计划
+- [X (Twitter) 赚钱实战指南](https://aipmandy.github.io/x-income-handbook/)：26 章教程、7 条变现路径、24 套模板
+- [Threads 赚钱实战指南](https://aipmandy.github.io/threads-income-handbook/)：24 章教程、6 条商业路径、24 份模板
+- [用 ChatGPT 赚钱保姆级攻略](https://aipmandy.github.io/chatgpt-income-handbook/)：34 章教程、10 个服务包、64 套提示词
+- [失业自救手册](https://aipmandy.github.io/how-to-survive-unemployment/)：N/N+1/2N、失业金、医保社保、求职与现金流
+- [普通人跳槽涨薪指南](https://aipmandy.github.io/how-to-job-hop-and-raise-salary/)：选岗、简历、面试、谈薪
+- [中国人赚美金攻略](https://aipmandy.github.io/how-to-earn-usd-from-china/)：8 种海外收入路线
+
+<!-- andy-author-card:end -->
