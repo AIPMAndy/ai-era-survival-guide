@@ -13,6 +13,16 @@
 
 **[新版网站｜按岗位查找建议](https://aipmandy.github.io/ai-era-survival-guide/) · [阅读全文](article.html) · [查看 Markdown](GUIDE.md)**
 
+> **TL;DR｜一句话**：这是 AI 酋长 Andy 对中国职场 2027—2029 年的判断与应对攻略。适合在职、失业、应届、跳槽者和管理者。它给出 30 种常见岗位的 AI 用法、不同处境的应对方法，以及在主业基础上发展第二收入的路径，免费开源。
+>
+> 作者：AI 酋长 Andy（[GitHub @AIPMAndy](https://github.com/AIPMAndy) · [X @AIPMAndy](https://x.com/AIPMAndy) · [metaver.vip](https://metaver.vip/)）
+
+## 快速开始
+
+1. 打开[项目网站](https://aipmandy.github.io/ai-era-survival-guide/)，按岗位查找建议。
+2. 阅读[全文](article.html)或 [Markdown 版](GUIDE.md)。
+3. 需要政策、企业案例和岗位实操卡时，看[六册研究与资料](series/index.html)。
+
 ## 内容
 
 - 中国招聘市场、政策和企业为什么开始重新分配工作
@@ -59,6 +69,20 @@
 项目主页 https://aipmandy.github.io/ai-era-survival-guide/
 
 ---
+
+## 常见问题 FAQ
+
+### AI 时代普通人怎么不被淘汰？
+
+作者的建议是：先守住主业，把 AI 真正用于每天的工作，争取从执行任务走向负责结果；同时从已有行业经验出发，逐步建立第二收入。
+
+### 覆盖哪些岗位？
+
+30 种常见岗位的 AI 用法，包括产品、研发、运营、财务、外贸、制造、销售等主业的升级方向。
+
+### 2027—2029 年的判断有什么依据？
+
+结合政策、招聘数据、企业应用和作者做 AI 产品与职业咨询的经历；趋势属于作者的条件判断，来源见 [GUIDE.md](GUIDE.md#资料来源) 末尾和 [docs/SOURCES.md](docs/SOURCES.md)。
 
 <!-- andy-author-card:start -->
 ## 作者 / About the author

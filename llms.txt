@@ -1,0 +1,24 @@
+# AI时代不被淘汰保姆级攻略
+
+> 这是 AI 酋长 Andy 对中国职场 2027—2029 年的判断与应对攻略。适合在职、失业、应届、跳槽者和管理者。它给出 30 种常见岗位的 AI 用法、不同处境的应对方法，以及在主业基础上发展第二收入的路径，免费开源。
+
+作者：AI 酋长 Andy（Andy Liu，GitHub https://github.com/AIPMAndy ，X https://x.com/AIPMAndy ，个人网站 https://metaver.vip/ ）
+
+## Docs
+
+- [README](https://github.com/AIPMAndy/ai-era-survival-guide/blob/main/README.md): 项目说明（中文）
+- [GUIDE.md](https://github.com/AIPMAndy/ai-era-survival-guide/blob/main/GUIDE.md): 正文 Markdown
+- [article.html](https://github.com/AIPMAndy/ai-era-survival-guide/blob/main/article.html): 阅读全文
+- [series/index.html](https://github.com/AIPMAndy/ai-era-survival-guide/blob/main/series/index.html): 六册研究与资料
+- [docs/SOURCES.md](https://github.com/AIPMAndy/ai-era-survival-guide/blob/main/docs/SOURCES.md): 数据与来源
+- [README_EN.md](https://github.com/AIPMAndy/ai-era-survival-guide/blob/main/README_EN.md): English README
+
+## Website
+
+- [GitHub Pages](https://aipmandy.github.io/ai-era-survival-guide/): 在线版（GitHub Pages）
+
+## Optional
+
+- [Repository](https://github.com/AIPMAndy/ai-era-survival-guide)
+- [LICENSE](https://github.com/AIPMAndy/ai-era-survival-guide/blob/main/LICENSE)
+- [Author on GitHub](https://github.com/AIPMAndy)
