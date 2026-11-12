@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://aipmandy.github.io/ai-era-survival-guide/sitemap.xml
