@@ -1,0 +1,27 @@
+name: AI-era live Pages + PDF SHA verification
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-public-release:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check versioned source and structured Book data
+        run: python3 scripts/verify_live_pdf.py --local
+      - name: GET actual Pages HTML, robots, sitemap and full PDF; compare SHA-256
+        run: python3 scripts/verify_live_pdf.py --live
+      - name: Archive URL and SHA evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ai-era-live-qa
+          path: live-qa.json
+          if-no-files-found: warn

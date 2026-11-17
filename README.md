@@ -13,6 +13,8 @@
 
 **[新版网站｜按岗位查找建议](https://aipmandy.github.io/ai-era-survival-guide/) · [阅读全文](article.html) · [查看 Markdown](GUIDE.md)**
 
+**[免费下载 69 页正式 PDF](https://aipmandy.github.io/ai-era-survival-guide/pdf/ai-era-survival-guide.pdf)** · [同源版次与 SHA-256](pdf/edition.json) · [全页自动 QA 报告](pdf/qa-report.json)。PDF 由 12 份已公开 Markdown 生成，自动检查 69 页、99 书签与 158 个链接；人工高清逐页、实体 iOS/Android 与动态政策来源复核尚未最终签收。
+
 > **TL;DR｜一句话**：这是 AI 酋长 Andy 对中国职场 2027—2029 年的判断与应对攻略。适合在职、失业、应届、跳槽者和管理者。它给出 30 种常见岗位的 AI 用法、不同处境的应对方法，以及在主业基础上发展第二收入的路径，免费开源。
 >
 > 作者：AI 酋长 Andy（[GitHub @AIPMAndy](https://github.com/AIPMAndy) · [X @AIPMAndy](https://x.com/AIPMAndy) · [metaver.vip](https://metaver.vip/)）
@@ -53,6 +55,7 @@
 我做过腾讯、百度的 AI 产品相关工作，也长期研究 AI 在工作与职业发展中的实际应用。
 
 - [个人网站 metaver.vip](https://metaver.vip/)
+- [星觉科技公司官网](https://www.a6no1.cn/)
 - [职业咨询与 AI 陪跑服务](https://metaver.vip/services)
 - **微信 AIPMAndy**。打开微信搜索这个账号添加，也可以在[项目网站](https://aipmandy.github.io/ai-era-survival-guide/)点击“微信联系”复制账号。
 
