@@ -48,7 +48,7 @@ INTRO = """<section class="cover">
 <p class="muted">免费公开版。职业判断与案例保留原文的证据级别、适用范围和日期；
 历史来源不等于 2026-11-17 已完成政策重核。教学模拟不代表真实业务收入或录用结果。</p>
 </section>"""
-CSS = """
+STYLES = """
 @page { size: A5; margin: 17mm 15mm 19mm;
   @bottom-center { content: counter(page); font: 8pt 'Noto Sans CJK SC'; color: #666; }
 }
@@ -125,7 +125,7 @@ def build() -> None:
         rendered = localize_assets(rendered, part)
         sections.append('<div class="section-divider">SOURCE · ' + html.escape(part) + '</div>' + rendered)
     document = '<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><title>AI 时代不被淘汰 · AI 酋长 Andy</title></head><body>' + "\n".join(sections) + '</body></html>'
-    HTML(string=document, base_url=ROOT.as_uri() + "/").write_pdf(str(OUTPUT), stylesheets=[CSS(string=CSS)], presentational_hints=True, pdf_identifier=fingerprint[:32])
+    HTML(string=document, base_url=ROOT.as_uri() + "/").write_pdf(str(OUTPUT), stylesheets=[CSS(string=STYLES)], presentational_hints=True, pdf_identifier=fingerprint[:32])
     data = OUTPUT.read_bytes()
     MANIFEST.write_text(json.dumps({
         "title": "AI 时代不被淘汰保姆级攻略",
