@@ -1,0 +1,3 @@
+markdown==3.10
+weasyprint==68.0
+pymupdf==1.26.7

@@ -35,7 +35,7 @@ class Scan(HTMLParser):
   attrs=dict(attrs)
   for att in ('src','href'):
    if att in attrs:path_ok(self.path,attrs[att])
-  if tag=='script':self.scripts+=1
+  if tag=='script' and attrs.get('type','').lower() not in ('application/ld+json','application/json'):self.scripts+=1
   if tag=='img':self.images+=1
 for file in ROOT.rglob('*.html'):
  txt=file.read_text(encoding='utf8')

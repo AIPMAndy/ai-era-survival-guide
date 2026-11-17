@@ -1,0 +1,60 @@
+name: Source-driven Chinese PDF publication
+on:
+  push:
+    branches: [main]
+    paths:
+      - GUIDE.md
+      - 'docs/**'
+      - scripts/build_pdf.py
+      - scripts/check_pdf.py
+      - requirements-pdf.txt
+      - .github/workflows/pdf-publication.yml
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build-and-qa:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Ensure CJK typography
+        run: |
+          if ! fc-list :lang=zh family | grep -q 'Noto Sans CJK'; then
+            sudo apt-get update -qq
+            sudo DEBIAN_FRONTEND=noninteractive apt-get install -y fonts-noto-cjk
+          fi
+          fc-match 'Noto Sans CJK SC'
+      - name: Install pinned PDF renderer and QA
+        run: python3 -m pip install --disable-pip-version-check -r requirements-pdf.txt
+      - name: Build source-driven publication and rasterize every page
+        run: |
+          python3 scripts/build_pdf.py
+          python3 scripts/check_pdf.py
+      - name: Archive PDF and machine/human-review evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: ai-era-source-pdf-qa
+          path: |
+            pdf/ai-era-survival-guide.pdf
+            pdf/edition.json
+            pdf/qa-report.json
+            pdf-qa/*.png
+      - name: Publish verified PDF back to the repository (fast-forward only)
+        if: github.event_name != 'pull_request'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add pdf/ai-era-survival-guide.pdf pdf/edition.json pdf/qa-report.json
+          if git diff --cached --quiet; then
+            echo "Same source fingerprint: verified publication unchanged."
+          else
+            git commit -m "docs(pdf): publish verified Chinese AI-era handbook"
+            git push origin HEAD:main
+          fi

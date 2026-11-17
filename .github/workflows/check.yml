@@ -50,7 +50,7 @@ jobs:
               def __init__(self):
                   super().__init__();self.inside=False;self.chunks=[]
               def handle_starttag(self, tag, attrs):
-                  if tag == 'script': self.inside=True
+                  if tag == 'script': self.inside=dict(attrs).get('type','').lower() not in ('application/ld+json','application/json')
               def handle_endtag(self,tag):
                   if tag == 'script': self.inside=False
               def handle_data(self,data):
