@@ -13,7 +13,7 @@ from pathlib import Path
 import re
 from urllib.parse import quote, unquote, urlsplit
 import markdown
-from weasyprint import HTML
+from weasyprint import HTML, CSS
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "pdf" / "ai-era-survival-guide.pdf"
@@ -125,7 +125,7 @@ def build() -> None:
         rendered = localize_assets(rendered, part)
         sections.append('<div class="section-divider">SOURCE · ' + html.escape(part) + '</div>' + rendered)
     document = '<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><title>AI 时代不被淘汰 · AI 酋长 Andy</title></head><body>' + "\n".join(sections) + '</body></html>'
-    HTML(string=document, base_url=ROOT.as_uri() + "/").write_pdf(str(OUTPUT), stylesheets=None, presentational_hints=True, pdf_identifier=fingerprint[:32],)
+    HTML(string=document, base_url=ROOT.as_uri() + "/").write_pdf(str(OUTPUT), stylesheets=[CSS(string=CSS)], presentational_hints=True, pdf_identifier=fingerprint[:32])
     data = OUTPUT.read_bytes()
     MANIFEST.write_text(json.dumps({
         "title": "AI 时代不被淘汰保姆级攻略",
