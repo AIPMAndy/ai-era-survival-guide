@@ -1,0 +1,31 @@
+{
+  "title": "AI 时代不被淘汰保姆级攻略",
+  "author": "AI 酋长 Andy",
+  "publisher": "星觉科技",
+  "source_files": [
+    "GUIDE.md",
+    "docs/START-HERE.md",
+    "docs/07-seven-days.md",
+    "docs/08-thirty-days.md",
+    "docs/09-ninety-days.md",
+    "docs/11-career-defense.md",
+    "docs/15-evaluation-protocol.md",
+    "docs/19-policy-and-opportunities.md",
+    "docs/20-real-world-cases.md",
+    "docs/21-why-change.md",
+    "docs/SOURCES.md",
+    "docs/FAQ.md"
+  ],
+  "source_sha256": "167e5e2578af762588c36029730e0bc4061b9a48f00f43e895e3d25ea07ff8d9",
+  "sha256": "01b2d359460b176e608fee5336ac6df45cd014c9104d6142e68e7189486570ac",
+  "bytes": 1248639,
+  "website": "https://aipmandy.github.io/ai-era-survival-guide/",
+  "pdf_url": "https://aipmandy.github.io/ai-era-survival-guide/pdf/ai-era-survival-guide.pdf",
+  "contacts": {
+    "wechat": "AIPMAndy",
+    "personal": "https://metaver.vip/",
+    "company": "https://www.a6no1.cn/",
+    "services": "https://metaver.vip/services"
+  },
+  "evidence_policy": "Source dates are preserved; predictions and teaching simulations are not measured client outcomes."
+}

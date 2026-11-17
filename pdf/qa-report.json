@@ -1,0 +1,26 @@
+{
+  "status": "automatic_text_and_raster_qa_passed",
+  "pages": 69,
+  "bookmarks": 99,
+  "links": 158,
+  "characters": 35655,
+  "rasterized_pages": 69,
+  "pdf_sha256": "01b2d359460b176e608fee5336ac6df45cd014c9104d6142e68e7189486570ac",
+  "human_high_magnification_review": "PENDING",
+  "ios_android_real_device_review": "PENDING",
+  "source_policy_review": "PENDING",
+  "source_files": [
+    "GUIDE.md",
+    "docs/START-HERE.md",
+    "docs/07-seven-days.md",
+    "docs/08-thirty-days.md",
+    "docs/09-ninety-days.md",
+    "docs/11-career-defense.md",
+    "docs/15-evaluation-protocol.md",
+    "docs/19-policy-and-opportunities.md",
+    "docs/20-real-world-cases.md",
+    "docs/21-why-change.md",
+    "docs/SOURCES.md",
+    "docs/FAQ.md"
+  ]
+}
